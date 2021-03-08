@@ -35,6 +35,6 @@ NOTE: Change these according of the state of your project.
 
 This will log you inside the app container:
 
-``
+```
 $ make shell
 ```
