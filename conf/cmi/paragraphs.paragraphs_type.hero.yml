@@ -1,0 +1,12 @@
+uuid: 84028ef0-7e7c-4db1-bc4d-caf32f4acfcb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 31vwh07b3R-C4R_1h0Et07iqgNhXLGPlx8UZRTEu8Uo
+id: hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: 'Very diverse paragraph that covers a large area of the content and is traditionally placed on top of the page.'
+behavior_plugins: {  }

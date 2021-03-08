@@ -1,0 +1,20 @@
+uuid: f519764f-2757-4c36-a2e9-3eaad9a1c47d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 9AZLshC0aPM9jjvchyn7kEh_A4pmWjE-NJ21-CZjoRs
+name: 'Landing page'
+type: landing_page
+description: 'Content type for pages which serves as an entry point for a particular section of the site. Use landing page when you want to create a collection of links and information about a certain subject. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
