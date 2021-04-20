@@ -1,4 +1,4 @@
-uuid: 3c5235d3-298f-42d3-af28-052997364d7a
+uuid: 51d27e57-c624-446a-b342-40f98887f590
 langcode: en
 status: true
 dependencies:
@@ -99,6 +99,12 @@ content:
     weight: 10
     region: content
     third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
@@ -136,4 +142,15 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }
