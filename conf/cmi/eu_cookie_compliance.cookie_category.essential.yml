@@ -1,0 +1,13 @@
+uuid: e7d9bc05-ba26-426e-90f4-d5f20647f328
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vjybRPsIhHcmXtNdQXg1lW8Aq_r5VInc3xKS6gKOl6g
+id: essential
+label: Essential
+description:
+  value: "<p>Basic cookies required for the site to function.</p>\r\n\r\n<p><em>Details of cookies to be added.</em></p>\r\n"
+  format: full_html
+checkbox_default_state: required
+weight: -9

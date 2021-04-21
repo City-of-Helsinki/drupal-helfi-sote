@@ -1,0 +1,19 @@
+uuid: f86bd969-2918-4d2f-bd73-663f514fad38
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: _BhpJzkKyfByF3bLZ56eV_kN67Rm6pXG5IJ9ao-mJP4
+name: Page
+type: page
+description: 'Content type for pages that include information that doesn''t age as quickly as for example article or news content.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

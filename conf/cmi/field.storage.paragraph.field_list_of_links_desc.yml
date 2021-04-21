@@ -1,0 +1,23 @@
+uuid: 2d73ec20-d658-4267-adf4-14383274911d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Y4k6-UWSL0PUUaZLbVwcGnhzj2VMqSMCuEcAn_tnkb8
+id: paragraph.field_list_of_links_desc
+field_name: field_list_of_links_desc
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

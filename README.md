@@ -1,12 +1,10 @@
-# Your Drupal 9 project
-
-Description of your project.
+# City of Helsinki - SOTE Drupal 9 project
 
 ## Environments
 
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
-development | * | - | http://yoursite.docker.sh/
+development | * | - | http://helfi-sote.docker.sh/
 production | main | @main | TBD
 
 ## Requirements
@@ -37,6 +35,6 @@ NOTE: Change these according of the state of your project.
 
 This will log you inside the app container:
 
-``
+```
 $ make shell
 ```
