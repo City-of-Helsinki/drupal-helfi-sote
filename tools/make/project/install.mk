@@ -1,10 +1,10 @@
 ifeq ($(DRUPAL_VERSION),8)
 	ifeq ($(DRUPAL_CONF_EXISTS),yes)
-	    DRUPAL_NEW_TARGETS := up build drush-si drush-enable-modules drush-locale-update drush-cim drush-uli
+	    DRUPAL_NEW_TARGETS := up build drush-si drush-enable-modules drush-cim drush-updb drush-uli
 	else
 	    DRUPAL_NEW_TARGETS := up build drush-si drush-enable-modules drush-locale-update drush-uli
 	endif
-    DRUPAL_POST_INSTALL_TARGETS := drush-updb drush-locale-update drush-cim drush-uli
+    DRUPAL_POST_INSTALL_TARGETS := drush-deploy drush-locale-update drush-uli
 endif
 
 PHONY += drush-enable-modules
