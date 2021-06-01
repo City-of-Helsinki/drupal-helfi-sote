@@ -40,7 +40,7 @@ module:
   helfi_ahjo: 0
   helfi_api_base: 0
   helfi_base_config: 0
-  helfi_content: 0
+  helfi_content: 10
   helfi_example_content: 0
   helfi_gdpr_compliance: 0
   helfi_hauki: 0
@@ -48,6 +48,7 @@ module:
   helfi_media: 0
   helfi_platform_config: 0
   helfi_tpr: 0
+  helfi_tpr_config: 0
   helfi_tunnistamo: 0
   image: 0
   image_style_quality: 0
@@ -100,7 +101,6 @@ module:
   user: 0
   views_infinite_scroll: 0
   views_ui: 0
-  helfi_tpr_config: 1
   pathauto: 1
   content_translation: 10
   views: 10
