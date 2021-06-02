@@ -10,6 +10,7 @@ dependencies:
     - helfi_tpr
     - metatag
     - paragraphs
+    - path
     - readonly_field_widget
 _core:
   default_config_hash: qtsqy8LzhHO5UeLwFGm1nnadsRT7qRTYYSm2DtCro_8

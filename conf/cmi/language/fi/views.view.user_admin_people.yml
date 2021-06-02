@@ -30,7 +30,7 @@ display:
         status:
           label: Tila
           settings:
-            format_custom_true: Voimassa
+            format_custom_true: Aktiivinen
             format_custom_false: Suljettu
         roles_target_id:
           label: Käyttäjäroolit
@@ -51,7 +51,7 @@ display:
             label: Tila
             group_items:
               1:
-                title: Voimassa
+                title: Aktiivinen
               2:
                 title: Suljettu
         roles_target_id:

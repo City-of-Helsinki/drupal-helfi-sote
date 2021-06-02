@@ -1,0 +1,16 @@
+uuid: 3cd161f5-b6db-428f-b613-83bca9de5e19
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+_core:
+  default_config_hash: DPZ_wdOLQJ4O4q72Iz6ka0yQgBgBrGW0rpFHCx5rGuM
+id: unit_entity_pattern
+label: 'Unit entity pattern'
+type: 'canonical_entities:tpr_unit'
+pattern: '[tpr_unit:label]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

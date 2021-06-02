@@ -11,6 +11,7 @@ dependencies:
     - media_library
     - metatag
     - paragraphs
+    - path
     - readonly_field_widget
 _core:
   default_config_hash: b70I64wAPD0WZ3wuu-aZdaNG4PYN8JbDMToKxTo6LIw

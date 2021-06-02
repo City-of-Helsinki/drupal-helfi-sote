@@ -1,6 +1,6 @@
 uuid: 40209776-8cda-4cad-8c87-224176f99702
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - language
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jDpKvB-ZNjf7l-dHk_CINYgToXHW1HAv6Yf9ZBphRYQ
 id: language_switcher
 theme: hdbt
-region: header_top
-weight: -5
+region: header_branding
+weight: 0
 provider: null
 plugin: 'language_block:language_content'
 settings:
