@@ -14,4 +14,5 @@ general_settings:
       weight: 2
       enabled: false
   visual_inline_theme: admin
-_core: null
+_core:
+  default_config_hash: mr0RAnWEcPjx5qgnRBQFQR_rbCELlyMyDIFl_5HP5Go

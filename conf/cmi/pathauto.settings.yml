@@ -1,5 +1,8 @@
 enabled_entity_types:
   - user
+  - tpr_service
+  - tpr_unit
+  - user
 punctuation:
   double_quotes: 0
   quotes: 0
