@@ -4,7 +4,7 @@
 
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
-development | * | - | http://helfi-sote.docker.sh/
+development | * | - | http://helfi-sote.docker.so/
 production | main | @main | TBD
 
 ## Requirements
