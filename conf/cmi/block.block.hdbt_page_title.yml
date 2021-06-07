@@ -7,7 +7,7 @@ dependencies:
   theme:
     - hdbt
 _core:
-  default_config_hash: VFw6IHfxDKGCJ2sS5K2oJgmI0jUy3UxkCYwT97IW5C4
+  default_config_hash: cWAyHuLWbIx_Tsd04YPaUUGBOdvtYeKIjFXBXJhmi2w
 id: hdbt_page_title
 theme: hdbt
 region: before_content
