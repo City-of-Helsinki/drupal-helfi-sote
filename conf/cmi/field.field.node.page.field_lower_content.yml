@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.map
   module:
     - entity_reference_revisions
 id: node.page.field_lower_content
@@ -36,6 +37,7 @@ settings:
       gallery: gallery
       list_of_links: list_of_links
       content_cards: content_cards
+      map: map
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -73,6 +75,9 @@ settings:
       list_of_links_item:
         weight: -17
         enabled: false
+      map:
+        enabled: true
+        weight: 31
       text:
         enabled: true
         weight: -29
