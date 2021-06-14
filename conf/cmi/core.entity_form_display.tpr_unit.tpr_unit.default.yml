@@ -11,10 +11,9 @@ dependencies:
     - media_library
     - metatag
     - paragraphs
-    - path
     - readonly_field_widget
 _core:
-  default_config_hash: b70I64wAPD0WZ3wuu-aZdaNG4PYN8JbDMToKxTo6LIw
+  default_config_hash: j4fQZ7YeH2r65TX6bXHaXO47nR3aWT1YcpoSVRzAXs8
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit

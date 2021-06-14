@@ -10,10 +10,9 @@ dependencies:
     - helfi_tpr
     - metatag
     - paragraphs
-    - path
     - readonly_field_widget
 _core:
-  default_config_hash: qtsqy8LzhHO5UeLwFGm1nnadsRT7qRTYYSm2DtCro_8
+  default_config_hash: c0qwpyeWW-D40NX_7qhQK7mm9DW8qoUTuzr4Y1nA_RY
 id: tpr_service.tpr_service.default
 targetEntityType: tpr_service
 bundle: tpr_service
