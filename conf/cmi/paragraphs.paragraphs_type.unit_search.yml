@@ -1,9 +1,14 @@
 uuid: f26c7cf3-c5d0-4862-9332-13b4dc5053d3
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 _core:
-  default_config_hash: Zh-XZOh0Hp20t0T2wHDDRfbooFKJg1NWFdOIUWbh5Dk
+  default_config_hash: ORRlASbCXewTftLW-r158X1hz6O9rmwXly3uqDLI2o8
 id: unit_search
 label: 'Unit search'
 icon_uuid: null

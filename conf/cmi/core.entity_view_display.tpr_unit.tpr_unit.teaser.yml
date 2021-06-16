@@ -12,7 +12,7 @@ dependencies:
     - helfi_tpr
     - telephone
 _core:
-  default_config_hash: irvyExem4DI2Hbdhq_BQhxBgwScqwbyFRzDaGBkYB8c
+  default_config_hash: AXRbU5CCilR4nQTh02P8e4XLOUGudpM30w32hrODeSU
 id: tpr_unit.tpr_unit.teaser
 targetEntityType: tpr_unit
 bundle: tpr_unit
