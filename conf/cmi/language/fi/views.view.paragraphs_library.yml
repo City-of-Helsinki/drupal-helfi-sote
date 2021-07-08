@@ -21,7 +21,7 @@ display:
             offset_label: Offset
       fields:
         label:
-          label: Label
+          label: Otsikko
           separator: ', '
         type:
           label: Tyyppi
@@ -43,9 +43,9 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Otsikko
           group_info:
-            label: Label
+            label: Otsikko
         type:
           expose:
             label: Tyyppi
