@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Verkställ
+          submit_button: Filtera
           reset_button_label: Återställ
           exposed_sorts_label: 'Sortera efter'
           sort_asc_label: Stigande
@@ -21,7 +21,9 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        tpr_service_bulk_form:
+        content_translation_changed:
+          label: Uppdaterad
+        tpr_unit_bulk_form:
           label: Massuppdatera
           action_title: Åtgärd
         id:
@@ -38,9 +40,6 @@ display:
           settings:
             format_custom_true: Publicerad
             format_custom_false: 'Ej publicerad'
-          separator: ', '
-        changed:
-          label: Uppdaterad
           separator: ', '
         operations:
           label: Funktioner
