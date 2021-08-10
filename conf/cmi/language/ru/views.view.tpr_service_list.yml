@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Применить
+          submit_button: фильтр
           reset_button_label: Сбросить
           exposed_sorts_label: 'Сортировать по'
           sort_asc_label: 'По возрастанию'
@@ -39,9 +39,8 @@ display:
             format_custom_true: Опубликовано
             format_custom_false: 'Снято с публикации'
           separator: ', '
-        changed:
+        content_translation_changed:
           label: Обновлено
-          separator: ', '
         operations:
           label: Операции
       filters:
