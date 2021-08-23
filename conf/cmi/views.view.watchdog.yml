@@ -1,4 +1,4 @@
-uuid: 7c1ae89e-2eb6-4fb3-9d2b-0aa419efbafa
+uuid: a7445ba7-82c6-41d1-9ead-5e9403fcdd6b
 langcode: en
 status: true
 dependencies:
@@ -86,6 +86,8 @@ display:
             link: link
           info:
             nothing:
+              sortable: false
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -387,7 +389,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          date_format: short
+          date_format: long
           custom_date_format: ''
           timezone: ''
           plugin_id: date

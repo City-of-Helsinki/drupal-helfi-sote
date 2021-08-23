@@ -1,0 +1,21 @@
+uuid: 17e78e7b-0d16-47fb-a2af-5214107e434b
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+    - metatag
+_core:
+  default_config_hash: mVADVgTFJPJZNfGyMuaApvJ1wtSfXfFbbLZbll7w_b4
+id: tpr_service.field_metatags
+field_name: field_metatags
+entity_type: tpr_service
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
