@@ -16,7 +16,7 @@ dependencies:
     - entity_reference_revisions
     - helfi_tpr
 _core:
-  default_config_hash: a98XY7Blgzudd5smfYINOCfpxxeJ286QNd8a5tUwZUU
+  default_config_hash: nD8QC6Ca3OaIGPx9uKKwbMHflYfmsWfYG2N-uCUMAzQ
 id: tpr_unit.tpr_unit.field_lower_content
 field_name: field_lower_content
 entity_type: tpr_unit
