@@ -32,6 +32,8 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  flysystem: 0
+  flysystem_azure: 0
   focal_point: 0
   gin_toolbar: 0
   hal: 0
@@ -42,6 +44,7 @@ module:
   hdbt_hyphenopoly: 0
   helfi_ahjo: 0
   helfi_api_base: 0
+  helfi_azure_fs: 0
   helfi_base_config: 0
   helfi_content: 0
   helfi_example_content: 0
@@ -51,6 +54,7 @@ module:
   helfi_media: 0
   helfi_media_map: 0
   helfi_platform_config: 0
+  helfi_proxy: 0
   helfi_tpr: 0
   helfi_tunnistamo: 0
   image: 0

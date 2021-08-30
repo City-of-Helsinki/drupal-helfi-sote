@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5466ca5ba3b6f8a52f6ef4a3c3ff1dbc",
+    "content-hash": "2618fbedbd3753e7c4be6a810ae4ce29",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3996,6 +3996,41 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
             "time": "2021-08-27T07:45:18+00:00"
+        },
+        {
+            "name": "drupal/helfi_proxy",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy.git",
+                "reference": "5583b019e5bb1b0e4377a003b0525f3be4b12b3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/5583b019e5bb1b0e4377a003b0525f3be4b12b3b",
+                "reference": "5583b019e5bb1b0e4377a003b0525f3be4b12b3b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "league/uri": "^6.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3",
+                "phpspec/prophecy-phpunit": "^2"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Provides various fixes so we can serve multiple Drupal instances in one domain.",
+            "support": {
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/1.0.3",
+                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/issues"
+            },
+            "time": "2021-08-27T10:29:03+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
