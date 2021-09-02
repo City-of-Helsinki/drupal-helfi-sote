@@ -26,6 +26,10 @@ settings:
       value: ''
       format: full_html
 visibility:
+  request_path:
+    id: request_path
+    pages: /node/1
+    negate: false
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
@@ -33,7 +37,3 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: /node/1
-    negate: false
