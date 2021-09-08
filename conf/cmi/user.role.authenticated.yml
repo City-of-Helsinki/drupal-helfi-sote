@@ -17,3 +17,6 @@ permissions:
   - 'view remote entities'
   - 'view tpr_service'
   - 'view tpr_unit'
+  - 'view media'
+  - 'display eu cookie compliance popup'
+  - 'access content'
