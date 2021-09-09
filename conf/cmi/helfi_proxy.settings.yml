@@ -2,7 +2,7 @@ dependencies:
   module:
     - helfi_proxy
 prefixes:
-  en: social-health
+  en: health-and-social-services
   fi: sosiaali-ja-terveyspalvelut
-  sv: social-och-halso
-  ru: social-and-health
+  sv: social-och-halsovardstjanster
+  ru: health-and-social-services
