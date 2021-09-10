@@ -1,4 +1,4 @@
-uuid: 83dc0940-47e3-46db-9c44-ef1ebf34f74e
+uuid: 447d79bb-46ed-4e11-bfe9-74f67a190c46
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - helfi_tpr
     - link
     - text
-_core:
-  default_config_hash: pOnMjC5trdPj5SmtHy4P4Fo7dGt1JC-wgpMVFi1ox-Y
 id: tpr_errand_service.tpr_errand_service.default
 targetEntityType: tpr_errand_service
 bundle: tpr_errand_service

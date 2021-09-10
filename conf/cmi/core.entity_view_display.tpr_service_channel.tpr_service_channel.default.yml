@@ -1,4 +1,4 @@
-uuid: 024d9d42-b355-4d57-8b50-2b8fab4f7150
+uuid: efb9cf72-fff5-41a8-a684-0adbfc8047b5
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,6 @@ dependencies:
     - link
     - telephone
     - text
-_core:
-  default_config_hash: RNmH-teVvoDkhsySVwhXTh1KpvqXLk_xgduxgztPKF0
 id: tpr_service_channel.tpr_service_channel.default
 targetEntityType: tpr_service_channel
 bundle: tpr_service_channel
