@@ -13,11 +13,14 @@ services:
       context: ./docker/local
     environment:
       APP_ENV: "${APP_ENV:-dev}"
-      DRUPAL_ROUTES: "https://varnish-${DRUPAL_HOSTNAME}"
+      DRUPAL_ROUTES: "https://varnish-${DRUPAL_HOSTNAME},https://helfi-proxy.docker.so,http://helfi-sote-varnish"
       DRUSH_OPTIONS_URI: "https://${DRUPAL_HOSTNAME}"
+      DRUPAL_REVERSE_PROXY_ADDRESS: helfi-proxy.docker.so
       #XDEBUG_ENABLE: "true"
       SIMPLETEST_BASE_URL: "http://127.0.0.1:8888"
       SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     networks:
       - internal
       - stonehenge-network

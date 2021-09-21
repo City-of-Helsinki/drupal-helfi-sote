@@ -35,6 +35,8 @@ if ($ssl_ca_path = getenv('AZURE_SQL_SSL_CA_PATH')) {
   $settings['php_storage']['twig']['secret'] = $settings['hash_salt'];
   $settings['file_chmod_directory'] = 16895;
   $settings['file_chmod_file'] = 16895;
+
+  $config['system.performance']['cache']['page']['max_age'] = 86400;
 }
 
 // Only in Wodby environment.
@@ -76,6 +78,7 @@ if ($reverse_proxy_address = getenv('DRUPAL_REVERSE_PROXY_ADDRESS')) {
   $settings['reverse_proxy'] = TRUE;
   $settings['reverse_proxy_addresses'] = $reverse_proxy_address;
   $settings['reverse_proxy_trusted_headers'] = \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_ALL;
+  $settings['reverse_proxy_host_header'] = 'X_FORWARDED_HOST';
 }
 
 if ($env = getenv('APP_ENV')) {
@@ -94,5 +97,23 @@ if ($env = getenv('APP_ENV')) {
   if (file_exists(__DIR__ . '/local.settings.php')) {
     include __DIR__ . '/local.settings.php';
   }
+}
+
+if ($blob_storage_name = getenv('AZURE_BLOB_STORAGE_NAME')) {
+  $schemes = [
+    'azure' => [
+      'driver' => 'helfi_azure',
+      'config' => [
+        'name' => $blob_storage_name,
+        'key' => getenv('AZURE_BLOB_STORAGE_KEY'),
+        'container' => getenv('AZURE_BLOB_STORAGE_CONTAINER'),
+        'endpointSuffix' => 'core.windows.net',
+        'protocol' => 'https',
+      ],
+      'cache' => TRUE,
+    ],
+  ];
+  $config['helfi_azure_fs.settings']['use_blob_storage'] = TRUE;
+  $settings['flysystem'] = $schemes;
 }
 
