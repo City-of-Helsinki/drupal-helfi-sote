@@ -1,5 +1,3 @@
-label: 'Ajastettu sisältö'
-description: 'Etsi ja ylläpidä ajastettua sisältöä.'
 display:
   default:
     display_options:
