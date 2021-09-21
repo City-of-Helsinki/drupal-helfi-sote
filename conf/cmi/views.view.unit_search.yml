@@ -473,6 +473,51 @@ display:
           entity_type: tpr_unit
           entity_field: langcode
           plugin_id: language
+        provided_languages_value:
+          id: provided_languages_value
+          table: tpr_unit__provided_languages
+          field: provided_languages_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: provided_languages_value_op
+            label: 'Provided languages'
+            description: null
+            use_operator: false
+            operator: provided_languages_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: provided_languages_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+          is_grouped: true
+          group_info:
+            label: ''
+            description: ''
+            identifier: provided_languages_value
+            optional: true
+            widget: select
+            multiple: true
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Show units that provide service in Swedish'
+                operator: '='
+                value: sv
+          entity_type: tpr_unit
+          entity_field: provided_languages
+          plugin_id: string
       sorts:
         name:
           id: name
