@@ -63,10 +63,6 @@ display:
         langcode:
           expose:
             label: Kieli
-      title: 'Ajastettu sisältö'
-      empty:
-        area_text_custom:
-          content: 'Ei vielä ajastettua sisältöä.'
     display_title: Isäntä
   overview:
     display_options:
@@ -74,8 +70,6 @@ display:
         title: Ajastettu
       tab_options:
         title: Sisältö
-      display_description: 'Yleiskatsaus koko ajoitetusta sisällöstä.'
-    display_title: Sisältö
   user_page:
     display_options:
       menu:
@@ -86,7 +80,3 @@ display:
         uid:
           exception:
             title: Kaikki
-      empty:
-        area_text_custom:
-          content: '{{ arguments.uid }} käyttäjä ei ole ajastanut sisältöä.'
-    display_title: Käyttäjäprofiili
