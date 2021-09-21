@@ -12,8 +12,6 @@ public/sites/default/local.settings.php
 # Ignore the folder created by PhpStorm
 .idea/*
 
-# Ignore themes with own git repositories
-public/themes/custom/hdbt*
 # Ignore modules with own repositories
 public/modules/custom/helfi_*
 
