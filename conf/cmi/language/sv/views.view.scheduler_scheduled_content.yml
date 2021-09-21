@@ -61,7 +61,7 @@ display:
         langcode:
           expose:
             label: Språk
-    display_title: Huvud
+    display_title: Förvald
   overview:
     display_options:
       menu:
