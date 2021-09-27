@@ -1,7 +1,7 @@
 langcode: en
 site_settings:
   theme_color: coat-of-arms
-  default_icon: group
+  default_icon: heart-fill
   koro: pulse
 footer_settings:
   footer_color: dark

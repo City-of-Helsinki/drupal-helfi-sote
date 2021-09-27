@@ -19,7 +19,6 @@ module:
   datetime: 0
   dblog: 0
   diff: 0
-  dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
   entity: 0
@@ -48,6 +47,7 @@ module:
   helfi_content: 0
   helfi_gdpr_compliance: 0
   helfi_hauki: 0
+  helfi_helsinki_neighbourhoods: 0
   helfi_languages: 0
   helfi_media: 0
   helfi_media_map: 0
@@ -55,6 +55,7 @@ module:
   helfi_platform_config: 0
   helfi_proxy: 0
   helfi_tpr: 0
+  helfi_tpr_unit_districts: 0
   helfi_tpr_config: 0
   helfi_tunnistamo: 0
   image: 0
@@ -87,6 +88,12 @@ module:
   paragraphs_library: 0
   path: 0
   path_alias: 0
+  purge: 0
+  purge_drush: 0
+  purge_processor_cron: 0
+  purge_queuer_coretags: 0
+  purge_tokens: 0
+  raven: 0
   rdf: 0
   readonly_field_widget: 0
   redirect: 0
@@ -109,6 +116,8 @@ module:
   update: 0
   update_helper: 0
   user: 0
+  varnish_purge_tags: 0
+  varnish_purger: 0
   views_infinite_scroll: 0
   views_ui: 0
   pathauto: 1
@@ -123,6 +132,7 @@ theme:
   hdbt: 0
   gin: 0
   hdbt_admin: 0
+  hdbt_subtheme: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

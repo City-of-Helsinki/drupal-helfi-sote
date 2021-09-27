@@ -1,0 +1,22 @@
+uuid: ec48b10a-32de-4462-a8df-969a463995ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - hdbt_content
+  theme:
+    - hdbt_subtheme
+_core:
+  default_config_hash: tNA-kZeJYbWgoVL9w2tJxX5TkbOqzXQVOVardatKtk8
+id: hdbt_subtheme_lowercontentblock
+theme: hdbt_subtheme
+region: after_content
+weight: -10
+provider: null
+plugin: lower_content_block
+settings:
+  id: lower_content_block
+  label: 'Lower content block'
+  provider: hdbt_content
+  label_display: '0'
+visibility: {  }
