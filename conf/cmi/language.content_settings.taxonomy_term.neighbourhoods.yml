@@ -1,0 +1,18 @@
+uuid: d458dd80-96ee-41d8-9d9e-2d5dc692bae4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.neighbourhoods
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: w5RyZqz3zZimQ6z17YPMqRb_XCt_4aRNlGe4tZLtgZM
+id: taxonomy_term.neighbourhoods
+target_entity_type_id: taxonomy_term
+target_bundle: neighbourhoods
+default_langcode: fi
+language_alterable: false

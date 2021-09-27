@@ -138,7 +138,7 @@ display:
           click_sort_column: value
           type: string
           settings: {  }
-          group_column: value
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -199,7 +199,7 @@ display:
           click_sort_column: langcode
           type: address_default
           settings: {  }
-          group_column: ''
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -263,7 +263,7 @@ display:
           click_sort_column: langcode
           type: address_default
           settings: {  }
-          group_column: ''
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -327,7 +327,7 @@ display:
           click_sort_column: langcode
           type: address_default
           settings: {  }
-          group_column: ''
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -340,6 +340,138 @@ display:
           entity_type: tpr_unit
           entity_field: address
           plugin_id: field
+        id:
+          admin_label: ''
+          alter:
+            absolute: false
+            alt: ''
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ''
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ''
+            more_link_text: ''
+            nl2br: false
+            path: ''
+            path_case: none
+            prefix: ''
+            preserve_tags: ''
+            rel: ''
+            replace_spaces: false
+            strip_tags: false
+            suffix: ''
+            target: ''
+            text: ''
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ''
+          element_default_classes: true
+          element_label_class: ''
+          element_label_colon: false
+          element_label_type: ''
+          element_type: ''
+          element_wrapper_class: ''
+          element_wrapper_type: ''
+          empty: ''
+          empty_zero: false
+          entity_field: id
+          entity_type: tpr_unit
+          exclude: true
+          field: id
+          field_api_classes: false
+          group_column: entity_id
+          group_columns:
+            entity_id: entity_id
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: id
+          label: ''
+          multi_type: separator
+          plugin_id: field
+          relationship: none
+          separator: ', '
+          settings:
+            link_to_entity: false
+          table: tpr_unit_field_data
+          type: string
+        name_1:
+          admin_label: ''
+          alter:
+            absolute: false
+            alt: ''
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ''
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ''
+            more_link_text: ''
+            nl2br: false
+            path: ''
+            path_case: none
+            prefix: ''
+            preserve_tags: ''
+            rel: ''
+            replace_spaces: false
+            strip_tags: false
+            suffix: ''
+            target: ''
+            text: ''
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: value
+          convert_spaces: false
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ''
+          element_default_classes: true
+          element_label_class: ''
+          element_label_colon: false
+          element_label_type: ''
+          element_type: ''
+          element_wrapper_class: ''
+          element_wrapper_type: ''
+          empty: ''
+          empty_zero: false
+          entity_field: name
+          entity_type: taxonomy_term
+          exclude: true
+          field: name
+          field_api_classes: false
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: name_1
+          label: ''
+          multi_type: separator
+          plugin_id: term_name
+          relationship: field_districts
+          separator: ', '
+          settings:
+            link_to_entity: false
+          table: taxonomy_term_field_data
+          type: string
       filters:
         combine:
           id: combine
@@ -390,6 +522,7 @@ display:
             address__postal_code: address__postal_code
             address__address_line1: address__address_line1
             address__address_line2: address__address_line2
+            name_1: name_1
           plugin_id: combine
         content_translation_status:
           id: content_translation_status
@@ -473,6 +606,93 @@ display:
           entity_type: tpr_unit
           entity_field: langcode
           plugin_id: language
+        field_districts_target_id:
+          admin_label: ''
+          error_message: true
+          expose:
+            description: ''
+            identifier: ''
+            label: ''
+            multiple: false
+            operator: ''
+            operator_id: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            reduce: false
+            remember: false
+            remember_roles:
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: false
+          field: field_districts_target_id
+          group: 2
+          group_info:
+            default_group: All
+            default_group_multiple: {  }
+            description: ''
+            group_items: {  }
+            identifier: ''
+            label: ''
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          hierarchy: false
+          id: field_districts_target_id
+          is_grouped: false
+          limit: true
+          operator: empty
+          plugin_id: taxonomy_index_tid
+          reduce_duplicates: false
+          relationship: none
+          table: tpr_unit__field_districts
+          type: select
+          value: {  }
+          vid: neighbourhoods
+        langcode_1:
+          admin_label: ''
+          entity_field: langcode
+          entity_type: taxonomy_term
+          expose:
+            description: ''
+            identifier: ''
+            label: ''
+            multiple: false
+            operator: ''
+            operator_id: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            reduce: false
+            remember: false
+            remember_roles:
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: false
+          field: langcode
+          group: 2
+          group_info:
+            default_group: All
+            default_group_multiple: {  }
+            description: ''
+            group_items: {  }
+            identifier: ''
+            label: ''
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: langcode_1
+          is_grouped: false
+          operator: in
+          plugin_id: language
+          relationship: field_districts
+          table: taxonomy_term_field_data
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
       sorts:
         name:
           id: name
@@ -519,7 +739,16 @@ display:
             value: 'No results'
             format: full_html
           plugin_id: text
-      relationships: {  }
+      relationships:
+        field_districts:
+          admin_label: 'field_districts: Taxonomy term'
+          field: field_districts
+          group_type: group
+          id: field_districts
+          plugin_id: standard
+          relationship: none
+          required: false
+          table: tpr_unit__field_districts
       arguments:
         id:
           id: id
@@ -567,6 +796,12 @@ display:
           plugin_id: string
       display_extenders: {  }
       use_ajax: true
+      filter_groups:
+        groups:
+          1: AND
+          2: OR
+        operator: AND
+      group_by: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -575,6 +810,7 @@ display:
         - url
         - url.query_args
         - user.permissions
+        - user
       tags: {  }
   block:
     display_plugin: block
@@ -593,6 +829,7 @@ display:
         - url
         - url.query_args
         - user.permissions
+        - user
       tags: {  }
   entity_reference:
     display_plugin: entity_reference
@@ -803,6 +1040,7 @@ display:
         filters: false
         filter_groups: false
         arguments: false
+        relationships: false
       filters:
         content_translation_status:
           id: content_translation_status
@@ -903,6 +1141,7 @@ display:
         options:
           items_per_page: 40
           offset: 0
+      relationships: {  }
     cache_metadata:
       max-age: -1
       contexts:
