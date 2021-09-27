@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Template for a TPR Service Channel entity.
+ */
+#}
+
+{%
+  set classes = [
+  'errand-service',
+  view_mode ? 'errand-service--' ~ view_mode|clean_class,
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+
+  <div class="errand-service__container container">
+    {% if content.channels|render %}
+      <div class="errand-service__channels">
+        {{ content.channels }}
+      </div>
+    {% endif %}
+  </div>
+
+</article>
