@@ -1,0 +1,20 @@
+uuid: 7b6f839b-1b81-4eda-92c5-87e116686a03
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_platform_config
+  theme:
+    - hdbt_subtheme
+id: hdbt_subtheme_kuurahealthchat
+theme: hdbt_subtheme
+region: attachments
+weight: -10
+provider: null
+plugin: kuura_health_chat
+settings:
+  id: kuura_health_chat
+  label: 'Kuura Health Chat'
+  provider: helfi_platform_config
+  label_display: '0'
+visibility: {  }

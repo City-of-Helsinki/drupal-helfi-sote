@@ -46,6 +46,7 @@ module:
   helfi_content: 0
   helfi_gdpr_compliance: 0
   helfi_hauki: 0
+  helfi_helsinki_neighbourhoods: 0
   helfi_languages: 0
   helfi_media: 0
   helfi_media_map: 0
@@ -53,6 +54,7 @@ module:
   helfi_platform_config: 0
   helfi_proxy: 0
   helfi_tpr: 0
+  helfi_tpr_unit_districts: 0
   helfi_tpr_config: 0
   helfi_tunnistamo: 0
   image: 0
@@ -129,6 +131,7 @@ theme:
   hdbt: 0
   gin: 0
   hdbt_admin: 0
+  hdbt_subtheme: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
