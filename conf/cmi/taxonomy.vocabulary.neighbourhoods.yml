@@ -1,0 +1,10 @@
+uuid: cfbba470-8f25-4bff-9a1e-0af7efcb2c7f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eRNj9UxvcwSz_J3BVlcb90iWB7jcczqNQ0lz2lFImdM
+name: Neighbourhoods
+vid: neighbourhoods
+description: ''
+weight: 0
