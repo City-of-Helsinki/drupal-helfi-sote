@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b1cfe1e937d3b18cf7d85ba67bac627",
+    "content-hash": "27253a165d446f58ec21fc4d8f1813d2",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -1635,16 +1635,16 @@
         },
         {
             "name": "druidfi/omen",
-            "version": "0.2.1",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/druidfi/omen.git",
-                "reference": "914745b5251689ea0fdbdb62f3f47bf0fbd28c1b"
+                "reference": "3b20fa04a46ea3d08339f85ca13f0231604cd482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/druidfi/omen/zipball/914745b5251689ea0fdbdb62f3f47bf0fbd28c1b",
-                "reference": "914745b5251689ea0fdbdb62f3f47bf0fbd28c1b",
+                "url": "https://api.github.com/repos/druidfi/omen/zipball/3b20fa04a46ea3d08339f85ca13f0231604cd482",
+                "reference": "3b20fa04a46ea3d08339f85ca13f0231604cd482",
                 "shasum": ""
             },
             "require": {
@@ -1672,9 +1672,9 @@
             ],
             "support": {
                 "issues": "https://github.com/druidfi/omen/issues",
-                "source": "https://github.com/druidfi/omen/tree/0.2.1"
+                "source": "https://github.com/druidfi/omen/tree/0.3.2"
             },
-            "time": "2020-12-19T16:14:47+00:00"
+            "time": "2021-06-28T12:12:47+00:00"
         },
         {
             "name": "drupal/address",
