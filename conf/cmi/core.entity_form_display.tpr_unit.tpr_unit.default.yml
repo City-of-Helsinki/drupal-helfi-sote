@@ -120,6 +120,16 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
     region: content
+  field_districts:
+    region: content
+    settings:
+      autocomplete: false
+      match_limit: 10
+      match_operator: STARTS_WITH
+      width: 100%
+    third_party_settings: {  }
+    type: select2_entity_reference
+    weight: 29
   field_lower_content:
     type: paragraphs
     weight: 28
@@ -224,6 +234,16 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+  provided_languages:
+    type: readonly_field_widget
+    region: content
+    weight: 30
+    settings:
+      label: above
+      formatter_type: null
+      formatter_settings: null
+      show_description: false
+    third_party_settings: {  }
   service_map_embed:
     type: readonly_field_widget
     region: content
@@ -269,15 +289,5 @@ content:
       formatter_settings: null
       show_description: false
     third_party_settings: {  }
-  field_districts:
-    region: content
-    settings:
-      autocomplete: false
-      match_limit: 10
-      match_operator: STARTS_WITH
-      width: 100%
-    third_party_settings: {  }
-    type: select2_entity_reference
-    weight: 29
 hidden:
   created: true
