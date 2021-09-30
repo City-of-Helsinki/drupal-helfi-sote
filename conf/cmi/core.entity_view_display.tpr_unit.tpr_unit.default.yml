@@ -169,6 +169,14 @@ content:
       view_mode: image
       link: false
     third_party_settings: {  }
+  provided_languages:
+    type: string
+    weight: 21
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   service_map_embed:
     label: hidden
     type: service_map_embed
