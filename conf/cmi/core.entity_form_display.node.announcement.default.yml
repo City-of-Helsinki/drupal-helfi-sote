@@ -51,10 +51,10 @@ content:
   field_announcement_content_pages:
     weight: 12
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      autocomplete: false
       width: 100%
+      autocomplete: true
+      match_operator: CONTAINS
+      match_limit: 20
     third_party_settings: {  }
     type: select2_entity_reference
     region: content
@@ -69,10 +69,10 @@ content:
   field_announcement_service_pages:
     weight: 14
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      autocomplete: false
       width: 100%
+      autocomplete: true
+      match_operator: CONTAINS
+      match_limit: 20
     third_party_settings: {  }
     type: select2_entity_reference
     region: content
@@ -86,10 +86,10 @@ content:
   field_announcement_unit_pages:
     weight: 13
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      autocomplete: false
       width: 100%
+      autocomplete: true
+      match_operator: CONTAINS
+      match_limit: 20
     third_party_settings: {  }
     type: select2_entity_reference
     region: content
