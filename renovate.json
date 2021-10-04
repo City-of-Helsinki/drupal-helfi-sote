@@ -2,6 +2,7 @@
   "extends": [
     "config:base",
     ":disableRateLimiting",
+    ":preserveSemverRanges",
     "github>druidfi/renovate-config:drupal",
     "github>druidfi/renovate-config:js"
   ],
