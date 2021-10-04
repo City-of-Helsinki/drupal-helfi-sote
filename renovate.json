@@ -1,7 +1,9 @@
 {
   "extends": [
     "config:base",
-    ":disableRateLimiting"
+    ":disableRateLimiting",
+    "github>druidfi/renovate-config:drupal",
+    "github>druidfi/renovate-config:js"
   ],
   "dependencyDashboard": true,
   "prConcurrentLimit": 10,
