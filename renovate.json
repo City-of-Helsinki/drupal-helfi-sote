@@ -4,6 +4,7 @@
     ":disableRateLimiting"
   ],
   "dependencyDashboard": true,
+  "prConcurrentLimit": 10,
   "packageRules": [
     {
       "matchLanguages": ["php"],
