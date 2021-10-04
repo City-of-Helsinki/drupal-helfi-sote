@@ -27,7 +27,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^6.4.1",
     "css-declaration-sorter": "^6.0.3",
-    "css-loader": "^5.2.6",
+    "css-loader": "6.3.0",
     "es6-promise": "^4.1.1",
     "eslint": "5.7.0",
     "eslint-config-drupal-bundle": "^1.0.2",
