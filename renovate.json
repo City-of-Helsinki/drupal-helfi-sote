@@ -1,7 +1,9 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":disableRateLimiting"
   ],
+  "dependencyDashboard": true,
   "packageRules": [
     {
       "matchLanguages": ["php"],
