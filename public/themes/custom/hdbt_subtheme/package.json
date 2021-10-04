@@ -29,7 +29,7 @@
     "css-declaration-sorter": "^6.0.3",
     "css-loader": "^5.2.6",
     "es6-promise": "^4.1.1",
-    "eslint": "5.7.0",
+    "eslint": "7.32.0",
     "eslint-config-drupal-bundle": "^1.0.2",
     "eslint-import-resolver-webpack": "0.10.1",
     "eslint-plugin-import": "^2.23.4",
