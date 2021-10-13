@@ -8,12 +8,10 @@ public/themes/contrib
 public/sites/default/files
 vendor
 public/sites/default/local.settings.php
+helfi-test-automation-python/
 
 # Ignore the folder created by PhpStorm
 .idea/*
-
-# Ignore modules with own repositories
-public/modules/custom/helfi_*
 
 # Ignore OSX generated files
 ._*
