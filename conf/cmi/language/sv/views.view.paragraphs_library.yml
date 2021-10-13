@@ -23,7 +23,7 @@ display:
           label: Label
           separator: ', '
         type:
-          label: Typ
+          label: Type
           separator: ', '
         paragraphs__target_id:
           separator: ', '
@@ -46,6 +46,6 @@ display:
             label: Label
         type:
           expose:
-            label: Typ
+            label: Type
   page_1:
     display_title: Sida

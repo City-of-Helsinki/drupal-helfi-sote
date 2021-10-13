@@ -1,8 +1,17 @@
-label: Toimipistehaku
 display:
   default:
-    display_title: Oletus
     display_options:
+      filters:
+        provided_languages_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Näytä terveysasemat, joilta saan palvelua ruotsiksi'
+        combine:
+          expose:
+            label: Etsi
+          group_info:
+            label: 'Kentät yhdistävä suodatin'
       pager:
         options:
           tags:
@@ -23,12 +32,6 @@ display:
           separator: ', '
         address__address_line2:
           separator: ', '
-      filters:
-        combine:
-          expose:
-            label: Etsi
-          group_info:
-            label: 'Kentät yhdistävä suodatin'
       empty:
         area:
           content:
@@ -37,6 +40,7 @@ display:
         id:
           exception:
             title: Kaikki
+    display_title: Oletus
   block:
     display_title: Lohko
   entity_reference:
@@ -49,3 +53,4 @@ display:
           separator: ', '
         name:
           separator: ', '
+label: Toimipistehaku
