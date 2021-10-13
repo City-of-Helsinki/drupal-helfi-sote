@@ -29,6 +29,11 @@ display:
             label: Etsi
           group_info:
             label: 'Kentät yhdistävä suodatin'
+        provided_languages_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Näytä terveysasemat, joilta saan palvelua ruotsiksi'
       empty:
         area:
           content:

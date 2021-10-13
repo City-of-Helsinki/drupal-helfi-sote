@@ -26,6 +26,11 @@ display:
             label: Sök
           group_info:
             label: 'Combine fields filter'
+        provided_languages_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Visa hälsostationer som erbjuder service på svenska'
       empty:
         area:
           content:
