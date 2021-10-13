@@ -1,7 +1,17 @@
 display:
   default:
-    display_title: Förvald
     display_options:
+      filters:
+        provided_languages_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Visa hälsostationer som erbjuder service på svenska'
+        combine:
+          expose:
+            label: Sök
+          group_info:
+            label: 'Combine fields filter'
       pager:
         options:
           tags:
@@ -20,17 +30,6 @@ display:
           separator: ', '
         address__address_line2:
           separator: ', '
-      filters:
-        combine:
-          expose:
-            label: Sök
-          group_info:
-            label: 'Combine fields filter'
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Visa hälsostationer som erbjuder service på svenska'
       empty:
         area:
           content:
@@ -39,6 +38,7 @@ display:
         id:
           exception:
             title: Alla
+    display_title: Förvald
   block:
     display_title: Block
   entity_reference:
