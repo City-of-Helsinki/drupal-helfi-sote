@@ -4220,22 +4220,23 @@
         },
         {
             "name": "drupal/helfi_proxy",
-            "version": "1.1.5",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy.git",
-                "reference": "3e7a1ec66104f8791fe7cc2aeffb78d1d248bcec"
+                "reference": "bf53182822ad951681fac8a51f18b0ef00ac96ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/3e7a1ec66104f8791fe7cc2aeffb78d1d248bcec",
-                "reference": "3e7a1ec66104f8791fe7cc2aeffb78d1d248bcec",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/bf53182822ad951681fac8a51f18b0ef00ac96ee",
+                "reference": "bf53182822ad951681fac8a51f18b0ef00ac96ee",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "league/uri": "^6.0",
+                "php": "^8.0",
                 "symfony/dom-crawler": "^4.0",
                 "wa72/htmlpagedom": "dev-master"
             },
@@ -4250,23 +4251,23 @@
             ],
             "description": "Provides various fixes so we can serve multiple Drupal instances in one domain.",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/1.1.5",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/1.1.8",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/issues"
             },
-            "time": "2021-10-06T06:38:18+00:00"
+            "time": "2021-10-14T08:44:02+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "57e63e7eabe0dc6ae1f07a87165050058146d6dd"
+                "reference": "54feebeaff443a90a5abb78680d9f914d9871e65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/57e63e7eabe0dc6ae1f07a87165050058146d6dd",
-                "reference": "57e63e7eabe0dc6ae1f07a87165050058146d6dd",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/54feebeaff443a90a5abb78680d9f914d9871e65",
+                "reference": "54feebeaff443a90a5abb78680d9f914d9871e65",
                 "shasum": ""
             },
             "require": {
@@ -4287,10 +4288,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.4.5",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.4.6",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-10-12T06:27:16+00:00"
+            "time": "2021-10-14T06:56:33+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -16525,5 +16526,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
