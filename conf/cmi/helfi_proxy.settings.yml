@@ -1,6 +1,4 @@
-dependencies:
-  module:
-    - helfi_proxy
+asset_path: 'terveys-assets'
 prefixes:
   en: health-and-social-services
   fi: sosiaali-ja-terveyspalvelut
