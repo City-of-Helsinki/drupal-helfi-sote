@@ -645,7 +645,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Show units that provide service in Swedish'
+                title: 'Show heath stations that provide service in Swedish'
                 operator: '='
                 value: sv
           entity_type: tpr_unit

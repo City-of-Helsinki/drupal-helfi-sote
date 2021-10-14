@@ -32,7 +32,7 @@ display:
           label: Medianamn
           separator: ', '
         bundle:
-          label: Typ
+          label: Type
           separator: ', '
         uid:
           label: Författare
@@ -54,7 +54,7 @@ display:
             label: Medianamn
         bundle:
           expose:
-            label: Typ
+            label: Type
         status:
           expose:
             label: Sant
