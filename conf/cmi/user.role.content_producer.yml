@@ -66,3 +66,5 @@ permissions:
   - 'create hel_map media'
   - 'delete own hel_map media'
   - 'edit own hel_map media'
+  - 'use siteimprove'
+  - 'use siteimprove prepublish'
