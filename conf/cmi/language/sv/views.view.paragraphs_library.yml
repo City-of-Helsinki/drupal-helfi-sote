@@ -20,10 +20,10 @@ display:
             offset_label: Kompensera
       fields:
         label:
-          label: Label
+          label: Etikett
           separator: ', '
         type:
-          label: Type
+          label: Typ
           separator: ', '
         paragraphs__target_id:
           separator: ', '
@@ -41,11 +41,11 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Etikett
           group_info:
-            label: Label
+            label: Etikett
         type:
           expose:
-            label: Type
+            label: Typ
   page_1:
     display_title: Sida

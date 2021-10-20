@@ -1,5 +1,3 @@
-label: 'Nyligen uppdaterat innehåll'
-description: 'Nytt innehåll.'
 display:
   default:
     display_title: Förvald
@@ -12,12 +10,7 @@ display:
           sort_asc_label: Stigande
           sort_desc_label: Fallande
       fields:
-        changed:
+        name:
           separator: ', '
-      title: 'Nyligen uppdaterat innehåll'
-      empty:
-        area_text_custom:
-          content: 'Inget innehåll tillgängligt.'
-      use_more_text: Mer
-  block_1:
-    display_title: Block
+  entity_reference_1:
+    display_title: Objektsreferens
