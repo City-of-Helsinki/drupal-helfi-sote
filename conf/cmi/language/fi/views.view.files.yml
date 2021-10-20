@@ -6,7 +6,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Suodatus
+          submit_button: Suodata
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           sort_asc_label: Nousevasti
@@ -56,6 +56,7 @@ display:
         area_text_custom:
           content: 'Tiedostoja ei ole saatavilla.'
   page_1:
+    display_title: Tiedostot
     display_options:
       menu:
         title: Tiedostot
@@ -85,3 +86,4 @@ display:
         fid:
           exception:
             title: Kaikki
+          title: Kaikki
