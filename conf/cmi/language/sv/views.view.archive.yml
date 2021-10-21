@@ -7,7 +7,7 @@ display:
       title: 'Månatligt arkiv'
       exposed_form:
         options:
-          submit_button: Apply
+          submit_button: Verkställ
           reset_button_label: Återställ
           exposed_sorts_label: 'Sortera efter'
           sort_asc_label: Stigande
