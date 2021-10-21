@@ -48,11 +48,13 @@ module:
   helfi_hauki: 0
   helfi_helsinki_neighbourhoods: 0
   helfi_languages: 0
+  helfi_matomo_config: 0
   helfi_media: 0
   helfi_media_map: 0
   helfi_media_map_config: 0
   helfi_platform_config: 0
   helfi_proxy: 0
+  helfi_siteimprove_config: 0
   helfi_tpr: 0
   helfi_tpr_config: 0
   helfi_tpr_unit_districts: 0
@@ -66,6 +68,8 @@ module:
   link: 0
   linkit: 0
   locale: 0
+  matomo: 0
+  matomo_reports: 0
   media: 0
   media_entity_soundcloud: 0
   media_library: 0
@@ -102,6 +106,7 @@ module:
   select2_icon: 0
   serialization: 0
   simple_sitemap: 0
+  siteimprove: 0
   social_media: 0
   syslog: 0
   system: 0
