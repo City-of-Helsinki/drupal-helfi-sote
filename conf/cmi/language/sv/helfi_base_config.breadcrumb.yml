@@ -1,0 +1,7 @@
+breadcrumb_base_links:
+  -
+    text: 'Framsida'
+    url: 'https://www.hel.fi/helsinki/sv'
+  -
+    text: 'Social- och hälsovård'
+    url: 'https://hel.fi/helsinki/sv/social-och-halso'
