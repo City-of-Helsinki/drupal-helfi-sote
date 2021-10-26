@@ -1,4 +1,6 @@
+langcode: en
 asset_path: terveys-assets
+front_page_title: Healthcare
 prefixes:
   en: health-and-social-services
   fi: sosiaali-ja-terveyspalvelut
