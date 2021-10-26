@@ -1,8 +1,8 @@
 langcode: en
 breadcrumb_base_links:
   -
-    text: 'Frontpage'
+    text: Frontpage
     url: 'https://www.hel.fi/helsinki/en'
   -
-    text: 'Social services and Healthcare'
-    url: 'https://hel.fi/helsinki/en/socia-health'
+    text: 'Health and Social Services'
+    url: 'https://hel.fi/helsinki/en/socia-health/'
