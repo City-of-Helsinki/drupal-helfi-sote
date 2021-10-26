@@ -3806,26 +3806,26 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta19",
+            "version": "1.0.0-beta20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta19"
+                "reference": "8.x-1.0-beta20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta19.zip",
-                "reference": "8.x-1.0-beta19",
-                "shasum": "97240fb165600cc32994e7a1cfbc415cfcf28e70"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta20.zip",
+                "reference": "8.x-1.0-beta20",
+                "shasum": "770d6945de7ae001e3981db83daace610d4db5c4"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta19",
-                    "datestamp": "1626682027",
+                    "version": "8.x-1.0-beta20",
+                    "datestamp": "1635149590",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4127,16 +4127,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.0.21",
+            "version": "2.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "068aab527adf978e32c967ced8ade9df5d48fdb8"
+                "reference": "998fe5e568b193e08a2396d353f7845817bd5f85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/068aab527adf978e32c967ced8ade9df5d48fdb8",
-                "reference": "068aab527adf978e32c967ced8ade9df5d48fdb8",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/998fe5e568b193e08a2396d353f7845817bd5f85",
+                "reference": "998fe5e568b193e08a2396d353f7845817bd5f85",
                 "shasum": ""
             },
             "require": {
@@ -4220,7 +4220,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-10-22T12:46:35+00:00"
+            "time": "2021-10-25T11:42:03+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -5501,7 +5501,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.11",
-                    "datestamp": "1634343986",
+                    "datestamp": "1634344305",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9409,12 +9409,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "702427b6775c7e2fe6942f3fdb0140f72cbbe56d"
+                "reference": "732ccf3874c4b77861c88ce0f1e92bc40cf4e119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/702427b6775c7e2fe6942f3fdb0140f72cbbe56d",
-                "reference": "702427b6775c7e2fe6942f3fdb0140f72cbbe56d",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/732ccf3874c4b77861c88ce0f1e92bc40cf4e119",
+                "reference": "732ccf3874c4b77861c88ce0f1e92bc40cf4e119",
                 "shasum": ""
             },
             "require": {
@@ -9470,7 +9470,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2021-10-21T14:08:54+00:00"
+            "time": "2021-10-25T14:16:19+00:00"
         },
         {
             "name": "sentry/sdk",
@@ -16579,5 +16579,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
