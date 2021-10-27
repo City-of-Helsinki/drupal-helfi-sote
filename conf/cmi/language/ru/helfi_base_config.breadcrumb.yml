@@ -1,0 +1,7 @@
+breadcrumb_base_links:
+  -
+    text: глaвнaя
+    url: 'https://www.hel.fi/helsinki/ru'
+  -
+    text: 'Социальные услуги и здравоохранение'
+    url: 'https://hel.fi/helsinki/ru/social-and-health'

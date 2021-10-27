@@ -1,11 +1,11 @@
 uuid: 60950f0a-3a1f-44b8-9480-e0a4df36cfa5
-name: 'Health and social services'
+name: 'Health and Social Services'
 mail: drupal@hel.fi
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /front
+  front: /node/8
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
