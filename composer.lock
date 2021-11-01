@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "229ce0b5d1bf0b7fccd28f7ead3b9cff",
+    "content-hash": "187117313a775a636ff329935ac4728c",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3896,16 +3896,16 @@
         },
         {
             "name": "drupal/hdbt_admin",
-            "version": "1.3.14",
+            "version": "1.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "0571233f7fcfd8ea94d70a7c6f42776535f7fbad"
+                "reference": "e802f7d35e718832e5f4a67a51bfd53868a99127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/0571233f7fcfd8ea94d70a7c6f42776535f7fbad",
-                "reference": "0571233f7fcfd8ea94d70a7c6f42776535f7fbad",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/e802f7d35e718832e5f4a67a51bfd53868a99127",
+                "reference": "e802f7d35e718832e5f4a67a51bfd53868a99127",
                 "shasum": ""
             },
             "require": {
@@ -3921,10 +3921,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/latest",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/1.3.15",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2021-10-29T07:32:17+00:00"
+            "time": "2021-11-01T12:08:45+00:00"
         },
         {
             "name": "drupal/helfi_ahjo",
