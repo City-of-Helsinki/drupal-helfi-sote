@@ -5,21 +5,4 @@
  */
 #}
 
-{%
-  set classes = [
-  'errand-service',
-  view_mode ? 'errand-service--' ~ view_mode|clean_class,
-]
-%}
-
-<article{{ attributes.addClass(classes) }}>
-
-  <div class="errand-service__container container">
-    {% if content.channels|render %}
-      <div class="errand-service__channels">
-        {{ content.channels }}
-      </div>
-    {% endif %}
-  </div>
-
-</article>
+{% include '@hdbt/content/tpr-errand-service.html.twig' ignore missing with { errand_service_simple_mode: true } %}
