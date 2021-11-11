@@ -54,6 +54,7 @@ module:
   helfi_platform_config: 0
   helfi_proxy: 0
   helfi_siteimprove_config: 0
+  helfi_toc: 0
   helfi_tpr: 0
   helfi_tpr_config: 0
   helfi_tpr_unit_districts: 0
