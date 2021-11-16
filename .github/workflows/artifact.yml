@@ -11,15 +11,28 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    container:
+      image: ghcr.io/city-of-helsinki/drupal-php-docker:8.0
+
+    services:
+      db:
+        image: druidfi/db:mysql5.7-drupal
+        ports:
+          - 3306:3306
+
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
 
       - name: Build project
+        run: composer install
+
+      - name: Build project
         run: |
-          make setup-robo
-          make save-dump
+          drush si -y && drush cr && drush si --existing-config -y && drush cim -y
+          drush sql-dump --result-file=latest.sql
 
       - name: Save latest database dump for robo tests
         uses: actions/upload-artifact@v2
