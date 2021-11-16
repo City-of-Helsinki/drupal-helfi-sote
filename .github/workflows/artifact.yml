@@ -5,7 +5,7 @@ on:
     - cron:  '0 0 * * 0'
 name: Build artifacts
 env:
-  COMPOSE_PROJECT_NAME: kymp
+  COMPOSE_PROJECT_NAME: helfi-sote
   DRUPAL_BUILD_FROM_SCRATCH: true
 jobs:
   build:
