@@ -1,0 +1,26 @@
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
+name: Build artifacts
+env:
+  COMPOSE_PROJECT_NAME: kymp
+  DRUPAL_BUILD_FROM_SCRATCH: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Build project
+        run: |
+          make setup-robo
+          make save-dump
+
+      - name: Save latest database dump for robo tests
+        uses: actions/upload-artifact@v2
+        with:
+          name: latest.sql
+          path: latest.sql
+          retention-days: 10
