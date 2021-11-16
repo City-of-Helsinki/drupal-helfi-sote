@@ -40,5 +40,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: latest.sql
-          path: ${GITHUB_WORKSPACE}/latest.sql
+          path: latest.sql
           retention-days: 10
