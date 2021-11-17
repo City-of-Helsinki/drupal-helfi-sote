@@ -5,35 +5,4 @@
  */
 #}
 
-{% if drupal_entity('block', 'hdbt_subtheme_main_navigation_level_2', check_access=false)|render|striptags|trim is not empty %}
-  {% set in_menu =  TRUE %}
-{% endif %}
-
-{% embed '@helfi_tpr/tpr-unit.html.twig' with {in_menu: in_menu} %}
-  {% block sidebar_block %}
-    {{ drupal_entity('block', 'hdbt_subtheme_main_navigation_level_2', check_access=false) }}
-  {% endblock sidebar_block %}
-
-  {% block main_content %}
-    <div class="enriched-content has-sidebar">
-      {{ content.field_content }}
-    </div>
-  {% endblock main_content %}
-
-  {% block accessibility_sentences_block %}
-    {% if content.accessibility_sentences|render %}
-      <div class="unit__accessibility_sentences accordion accordion--grey">
-        {% embed "@hdbt/misc/container.twig" ignore missing with {container_element: 'accordion'} %}
-          {% block container_content %}
-            {% include '@hdbt/component/accordion.twig' ignore missing with {
-              heading_level: 'h2',
-              heading_icon: 'person-wheelchair',
-              heading: 'Accessibility information'|t,
-              content: content.accessibility_sentences,
-            } %}
-          {% endblock %}
-        {% endembed %}
-      </div>
-    {% endif %}
-  {% endblock accessibility_sentences_block %}
-{% endembed %}
+{% include '@hdbt/content/tpr-unit.html.twig' ignore missing with { block_name: 'hdbt_subtheme_main_navigation_level_2' } %}
