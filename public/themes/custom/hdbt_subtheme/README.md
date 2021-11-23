@@ -60,7 +60,12 @@ hdbt_subtheme
 │   └───scss
 │   │   │   styles.scss
 │   │   └───base
+│   │   │   └───__index.scss
+│   │   │   └───_base.scss
+│   │   │   └───...
 │   │   └───components
+│   │   │   └───__index.scss
+│   │   │   └───...
 │   │   └───...
 │   └───js
 │   │   │   common.js
