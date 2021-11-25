@@ -39,28 +39,21 @@
 {%
   set title_classes = [
     'label',
-    label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
 
 {% if label_hidden %}
   {% for item in items %}
 
-    {% if item.content['#type'] and item.content['#type'] == 'link' and 'external' in item.content['#options']%}
-
-      {% set explain_external_icon %} <span class="explain-external-icon">({{ 'Link leads to external service'|t({}, {'context': 'Explanation for screen-reader software that the icon visible next to this link means that the link leads to an external service.'}) }})</span>{% endset %}
-      {% set link_title %}{{ item.content['#title'] }} ({{ 'Opens in a new window'|t({}, {'context': 'Context for translator'}) }}){{ explain_external_icon }}{% endset %}
+    {% if item.content['#type'] and item.content['#type'] == 'link' %}
 
       {# Sote wants to open these links in a new window #}
-      {{ link(link_title, item.content['#url'], { target: '_blank' }) }}
-
-      {% include '@hdbt/button/button.html.twig' with {type: 'primary', icon_last: true, icon_last_type: 'link-external', disabled: false, label: link_title } %}
       {% include '@hdbt/button/link-button.html.twig' with {
         type: 'primary',
         label: item.content['#title'],
         url: item.content['#url'],
-        class: 'service-channel__link--external',
-        is_external: true,
+        class: 'service-channel__link',
+        is_external: false, //TODO: Add logic for handling external/internal links here once we have it working
         open_in_a_new_window: true,
       } %}
 
