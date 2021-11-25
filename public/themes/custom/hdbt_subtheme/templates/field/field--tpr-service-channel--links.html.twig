@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set title_classes = [
+    'label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+{% if label_hidden %}
+  {% for item in items %}
+
+    {% if item.content['#type'] and item.content['#type'] == 'link' and 'external' in item.content['#options']%}
+
+      {% set explain_external_icon %} <span class="explain-external-icon">({{ 'Link leads to external service'|t({}, {'context': 'Explanation for screen-reader software that the icon visible next to this link means that the link leads to an external service.'}) }})</span>{% endset %}
+      {% set link_title %}{{ item.content['#title'] }} ({{ 'Opens in a new window'|t({}, {'context': 'Context for translator'}) }}){{ explain_external_icon }}{% endset %}
+
+      {# Sote wants to open these links in a new window #}
+      {{ link(link_title, item.content['#url'], { target: '_blank' }) }}
+
+      {% include '@hdbt/button/button.html.twig' with {type: 'primary', icon_last: true, icon_last_type: 'link-external', disabled: false, label: link_title } %}
+      {% include '@hdbt/button/link-button.html.twig' with {
+        type: 'primary',
+        label: item.content['#title'],
+        url: item.content['#url'],
+        class: 'service-channel__link--external',
+        is_external: true,
+        open_in_a_new_window: true,
+      } %}
+
+    {% else %}
+      {{ item.content }}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <div{{ title_attributes.addClass(title_classes) }}>{{ label }}: </div>
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+{% endif %}
