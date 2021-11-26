@@ -32,5 +32,5 @@ image_style_mappings:
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: 3_2_xxs_2x
-breakpoint_group: hdbt
+breakpoint_group: hdbt_subtheme
 fallback_image_style: 3_2_xs
