@@ -7,6 +7,8 @@ dependencies:
     - image.style.1_1_s_2x
     - image.style.1_1_xs
     - image.style.1_1_xs_2x
+  theme:
+    - hdbt
 _core:
   default_config_hash: NuriQB70Hu9_irYO0uyCTx6ChH38pAdEoZn48rmtfqo
 id: list_of_links__thumbnail
@@ -42,5 +44,5 @@ image_style_mappings:
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: 1_1_xs_2x
-breakpoint_group: hdbt_subtheme
+breakpoint_group: hdbt
 fallback_image_style: 1_1_s

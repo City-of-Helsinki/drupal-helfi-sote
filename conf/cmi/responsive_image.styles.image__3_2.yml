@@ -13,6 +13,8 @@ dependencies:
     - image.style.3_2_xs_2x
     - image.style.3_2_xxs
     - image.style.3_2_xxs_2x
+  theme:
+    - hdbt
 _core:
   default_config_hash: kLqFW8YkiSheLplOEONalLhJszKWnEySuu_JefXuraM
 id: image__3_2
@@ -68,5 +70,5 @@ image_style_mappings:
     multiplier: 2x
     image_mapping_type: image_style
     image_mapping: 3_2_xxs_2x
-breakpoint_group: hdbt_subtheme
+breakpoint_group: hdbt
 fallback_image_style: 3_2_m
