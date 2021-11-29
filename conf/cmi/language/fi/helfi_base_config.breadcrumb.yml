@@ -2,6 +2,3 @@ breadcrumb_base_links:
   -
     text: Etusivu
     url: 'https://www.hel.fi/helsinki/fi'
-  -
-    text: 'Sosiaali- ja terveyspalvelut'
-    url: 'https://www.hel.fi/helsinki/fi/sosiaali-ja-terveyspalvelut/'
