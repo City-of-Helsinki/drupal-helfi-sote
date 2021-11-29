@@ -23,6 +23,8 @@ $databases['default']['default'] = [
   'port' => getenv('DRUPAL_DB_PORT') ?: 3306,
   'namespace' => 'Drupal\Core\Database\Driver\mysql',
   'driver' => 'mysql',
+  'charset' => 'utf8mb4',
+  'collation' => 'utf8mb4_swedish_ci',
 ];
 
 $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: '000';
@@ -91,6 +93,10 @@ if ($reverse_proxy_address = getenv('DRUPAL_REVERSE_PROXY_ADDRESS')) {
   $settings['reverse_proxy_host_header'] = 'X_FORWARDED_HOST';
 }
 
+if (file_exists(__DIR__ . '/all.settings.php')) {
+  include __DIR__ . '/all.settings.php';
+}
+
 if ($env = getenv('APP_ENV')) {
   if (file_exists(__DIR__ . '/' . $env . '.settings.php')) {
     include __DIR__ . '/' . $env . '.settings.php';
@@ -131,6 +137,10 @@ if ($blob_storage_name = getenv('AZURE_BLOB_STORAGE_NAME')) {
 if ($varnish_host = getenv('DRUPAL_VARNISH_HOST')) {
   $config['varnish_purger.settings.default']['hostname'] = $varnish_host;
   $config['varnish_purger.settings.varnish_purge_all']['hostname'] = $varnish_host;
+
+  if (!isset($config['system.performance']['cache']['page']['max_age'])) {
+    $config['system.performance']['cache']['page']['max_age'] = 86400;
+  }
 }
 
 if ($varnish_port = getenv('DRUPAL_VARNISH_PORT')) {
@@ -166,4 +176,11 @@ if ($varnish_purge_key = getenv('VARNISH_PURGE_KEY')) {
     'field' => 'X-VC-Purge-Key',
     'value' => $varnish_purge_key,
   ];
+}
+
+if ($stage_file_proxy_origin = getenv('STAGE_FILE_PROXY_ORIGIN')) {
+  $config['stage_file_proxy.settings']['origin'] = $stage_file_proxy_origin;
+  $config['stage_file_proxy.settings']['origin_dir'] = getenv('STAGE_FILE_PROXY_ORIGIN_DIR') ?: 'test';
+  $config['stage_file_proxy.settings']['hotlink'] = FALSE;
+  $config['stage_file_proxy.settings']['use_imagecache_root'] = FALSE;
 }

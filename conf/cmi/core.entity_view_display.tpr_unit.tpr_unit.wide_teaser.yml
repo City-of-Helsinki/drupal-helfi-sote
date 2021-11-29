@@ -84,11 +84,13 @@ hidden:
   description: true
   email: true
   field_content: true
+  field_districts: true
   field_lower_content: true
   field_metatags: true
   langcode: true
   latitude: true
   longitude: true
+  provided_languages: true
   service_map_embed: true
   services: true
   streetview_entrance_url: true

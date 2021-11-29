@@ -1,6 +1,6 @@
 langcode: en
 asset_path: terveys-assets
-front_page_title: Healthcare
+front_page_title: 'Health and Social Services'
 prefixes:
   en: health-and-social-services
   fi: sosiaali-ja-terveyspalvelut

@@ -2,9 +2,8 @@ const isDev = (process.env.NODE_ENV !== 'production');
 
 const path = require('path');
 const glob = require('glob');
-const globImporter = require('node-sass-glob-importer');
 
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('@nuxt/friendly-errors-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
@@ -70,6 +69,7 @@ module.exports = {
             options: {
               sourceMap: isDev,
               importLoaders: 2,
+              esModule: false,
             },
           },
           {
@@ -85,9 +85,6 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sourceMap: isDev,
-              sassOptions: {
-                importer: globImporter()
-              },
             },
           },
         ],
@@ -104,8 +101,8 @@ module.exports = {
   plugins: [
     new FriendlyErrorsWebpackPlugin(),
     new RemoveEmptyScriptsPlugin(),
-    new CleanWebpackPlugin(['dist'], {
-      root: path.resolve(__dirname),
+    new CleanWebpackPlugin({
+      cleanAfterEveryBuildPatterns: ['dist']
     }),
     new SVGSpritemapPlugin([
       path.resolve(__dirname, 'src/icons/**/*.svg'),
