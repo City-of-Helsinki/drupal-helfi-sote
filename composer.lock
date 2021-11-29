@@ -4089,16 +4089,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.1.6",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "1a1cd65fe095da4cf81b8511f73bf98be8adfa73"
+                "reference": "9d18e756e4bfed9528c19fb84209476f8a9a3fab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/1a1cd65fe095da4cf81b8511f73bf98be8adfa73",
-                "reference": "1a1cd65fe095da4cf81b8511f73bf98be8adfa73",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/9d18e756e4bfed9528c19fb84209476f8a9a3fab",
+                "reference": "9d18e756e4bfed9528c19fb84209476f8a9a3fab",
                 "shasum": ""
             },
             "require": {
@@ -4182,10 +4182,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.1.6",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.1.8",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-11-22T12:33:50+00:00"
+            "time": "2021-11-26T14:07:36+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -9555,12 +9555,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "10fd6386c1ffc0c63e1d75bb80b4c1c1dbee3cba"
+                "reference": "a0d9d206fca7c8eb4e080de12bfca9fe31382c23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/10fd6386c1ffc0c63e1d75bb80b4c1c1dbee3cba",
-                "reference": "10fd6386c1ffc0c63e1d75bb80b4c1c1dbee3cba",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/a0d9d206fca7c8eb4e080de12bfca9fe31382c23",
+                "reference": "a0d9d206fca7c8eb4e080de12bfca9fe31382c23",
                 "shasum": ""
             },
             "require": {
@@ -9616,7 +9616,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2021-11-25T11:45:45+00:00"
+            "time": "2021-11-27T07:56:07+00:00"
         },
         {
             "name": "sentry/sdk",
