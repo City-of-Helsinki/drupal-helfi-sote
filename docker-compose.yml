@@ -5,6 +5,7 @@ services:
   app:
     hostname: "${DRUPAL_HOSTNAME}"
     container_name: "${COMPOSE_PROJECT_NAME}-app"
+    image: "${DRUPAL_IMAGE}"
     volumes:
       - .:/app:delegated
     depends_on:
@@ -16,7 +17,7 @@ services:
       DRUPAL_ROUTES: "https://varnish-${DRUPAL_HOSTNAME},https://helfi-proxy.docker.so,http://${COMPOSE_PROJECT_NAME}-varnish"
       DRUPAL_REVERSE_PROXY_ADDRESS: helfi-proxy.docker.so
       DRUSH_OPTIONS_URI: "https://${DRUPAL_HOSTNAME}"
-      XDEBUG_ENABLE: "true"
+      # XDEBUG_ENABLE: "true"
       # DOCKERHOST: host.docker.internal
       # Use drush server to run functional tests so we don't have to care about
       # permission issues.
@@ -24,7 +25,6 @@ services:
       SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
       DRUPAL_VARNISH_HOST: "${COMPOSE_PROJECT_NAME}-varnish"
       DRUPAL_VARNISH_PORT: 6081
-      STAGE_FILE_PROXY_ORIGIN: "https://helfisote.blob.core.windows.net"
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "${DRUPAL_HOSTNAME}:host-gateway"
