@@ -3,6 +3,3 @@ breadcrumb_base_links:
   -
     text: Frontpage
     url: 'https://www.hel.fi/helsinki/en'
-  -
-    text: 'Health and Social Services'
-    url: 'https://hel.fi/helsinki/en/socia-health/'

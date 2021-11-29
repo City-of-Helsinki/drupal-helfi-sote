@@ -1,0 +1,25 @@
+uuid: 8650785d-0208-4dbb-94a1-02deb1742a3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_hotjar
+    - system
+  theme:
+    - hdbt_subtheme
+id: hotjar
+theme: hdbt_subtheme
+region: attachments
+weight: 5
+provider: null
+plugin: hotjar
+settings:
+  id: hotjar
+  label: Hotjar
+  provider: helfi_hotjar
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*\r\n/halsovard/halsostationer\r\n/halsovard/halsostationer/*\r\n/health-care/health-stations\r\n/health-care/health-stations/*"
+    negate: false
