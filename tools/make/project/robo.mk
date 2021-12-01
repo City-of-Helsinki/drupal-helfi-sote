@@ -83,7 +83,7 @@ robo-down:
 
 PHONY += robo-shell
 robo-shell:
-	@docker compose $(DOCKER_COMPOSE_FILES) exec robo bash
+	@docker compose $(DOCKER_COMPOSE_FILES) exec robo sh
 
 PHONY += set-permissions
 set-permissions:
@@ -95,7 +95,7 @@ fix-files-permission:
 	mkdir $(PROJECT_DIR)public/sites/default/files -p && chmod 777 -R $(PROJECT_DIR)public/sites/default/files
 
 define docker_run_ci
-	docker compose $(DOCKER_COMPOSE_FILES) exec $(1) bash -c "$(2)"
+	docker compose $(DOCKER_COMPOSE_FILES) exec $(1) sh -c "$(2)"
 endef
 
 PHONY += setup-robo
