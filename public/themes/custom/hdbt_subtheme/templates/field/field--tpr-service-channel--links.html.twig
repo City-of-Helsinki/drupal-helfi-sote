@@ -47,13 +47,14 @@
 
     {% if item.content['#type'] and item.content['#type'] == 'link' %}
 
-      {# Sote wants to open these links in a new window #}
+      <span class="service-channel__link-explanation">{{ 'The link opens in a new tab'|t({}, {'context': 'Help text above a link that opens in a new tab'}) }}</span>
+      {# Sote wants to open these links in a new tab as they require instructions to stay open on this page #}
       {% include '@hdbt/button/link-button.html.twig' with {
         type: 'primary',
         label: item.content['#title'],
         url: item.content['#url'],
         class: 'service-channel__link',
-        is_external: false,
+        is_external: true,
         open_in_a_new_window: true,
       } %}
 
