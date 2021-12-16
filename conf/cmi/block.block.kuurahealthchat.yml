@@ -15,6 +15,6 @@ plugin: kuura_health_chat
 settings:
   id: kuura_health_chat
   label: 'Kuura Health Chat'
-  provider: helfi_platform_config
   label_display: '0'
+  provider: helfi_platform_config
 visibility: {  }

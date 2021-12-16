@@ -1,7 +1,43 @@
 uuid: a3a962e8-ff9e-4150-b92e-e1a423c7a67d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.file
+    - media.type.hel_map
+    - media.type.image
+    - media.type.remote_video
+    - media.type.soundcloud
+    - node.type.announcement
+    - node.type.landing_page
+    - node.type.page
+    - taxonomy.vocabulary.keywords
+    - taxonomy.vocabulary.neighbourhoods
+  module:
+    - block
+    - config_translation
+    - content_translation
+    - eu_cookie_compliance
+    - file
+    - helfi_api_base
+    - helfi_hotjar
+    - helfi_tpr
+    - locale
+    - media
+    - menu_link_content
+    - node
+    - paragraphs
+    - paragraphs_library
+    - path
+    - pathauto
+    - redirect
+    - scheduler
+    - simple_sitemap
+    - siteimprove
+    - system
+    - taxonomy
+    - toolbar
+    - view_unpublished
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
@@ -30,6 +66,7 @@ permissions:
   - 'administer paragraphs library'
   - 'administer pathauto'
   - 'administer redirects'
+  - 'administer siteimprove'
   - 'administer sitemap settings'
   - 'administer tpr_service'
   - 'administer tpr_unit'
@@ -110,7 +147,6 @@ permissions:
   - 'translate configuration'
   - 'translate editable entities'
   - 'translate file media'
-  - 'translate hauki_resource'
   - 'translate image media'
   - 'translate interface'
   - 'translate keywords taxonomy_term'
@@ -131,13 +167,15 @@ permissions:
   - 'update media'
   - 'update own tpr_service'
   - 'update own tpr_unit'
-  - 'update tpr_service'
-  - 'update tpr_unit'
+  - 'use siteimprove'
+  - 'use siteimprove prepublish'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view all tpr_service revisions'
   - 'view all tpr_unit revisions'
   - 'view announcement revisions'
+  - 'view any unpublished content'
+  - 'view any unpublished content'
   - 'view landing_page revisions'
   - 'view media'
   - 'view own unpublished content'
@@ -149,7 +187,7 @@ permissions:
   - 'view tpr_service'
   - 'view tpr_unit'
   - 'view unpublished paragraphs'
-  - 'use siteimprove'
-  - 'administer siteimprove'
-  - 'use siteimprove prepublish'
-  - 'view any unpublished content'
+  - 'view unpublished tpr_errand_service'
+  - 'view unpublished tpr_service'
+  - 'view unpublished tpr_service_channel'
+  - 'view unpublished tpr_unit'

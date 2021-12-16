@@ -1,7 +1,32 @@
 uuid: 2774f474-839a-417c-9ccd-1bea93bf9438
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.file
+    - media.type.hel_map
+    - media.type.image
+    - media.type.remote_video
+    - media.type.soundcloud
+    - node.type.announcement
+    - node.type.landing_page
+    - node.type.page
+    - taxonomy.vocabulary.keywords
+    - taxonomy.vocabulary.neighbourhoods
+  module:
+    - content_translation
+    - file
+    - helfi_api_base
+    - helfi_tpr
+    - media
+    - node
+    - paragraphs
+    - scheduler
+    - siteimprove
+    - system
+    - taxonomy
+    - toolbar
+    - view_unpublished
 id: content_producer
 label: 'Content producer'
 weight: 3
@@ -20,6 +45,7 @@ permissions:
   - 'change own username'
   - 'create announcement content'
   - 'create file media'
+  - 'create hel_map media'
   - 'create image media'
   - 'create landing_page content'
   - 'create media'
@@ -31,6 +57,7 @@ permissions:
   - 'delete media'
   - 'delete own announcement content'
   - 'delete own file media'
+  - 'delete own hel_map media'
   - 'delete own image media'
   - 'delete own landing_page content'
   - 'delete own page content'
@@ -38,6 +65,7 @@ permissions:
   - 'delete own soundcloud media'
   - 'edit own announcement content'
   - 'edit own file media'
+  - 'edit own hel_map media'
   - 'edit own image media'
   - 'edit own landing_page content'
   - 'edit own page content'
@@ -52,9 +80,13 @@ permissions:
   - 'translate editable entities'
   - 'translate neighbourhoods taxonomy_term'
   - 'update media'
+  - 'use siteimprove'
+  - 'use siteimprove prepublish'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view announcement revisions'
+  - 'view any unpublished landing_page content'
+  - 'view any unpublished page content'
   - 'view landing_page revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
@@ -63,8 +95,7 @@ permissions:
   - 'view scheduled content'
   - 'view the administration theme'
   - 'view unpublished paragraphs'
-  - 'create hel_map media'
-  - 'delete own hel_map media'
-  - 'edit own hel_map media'
-  - 'use siteimprove'
-  - 'use siteimprove prepublish'
+  - 'view unpublished tpr_errand_service'
+  - 'view unpublished tpr_service'
+  - 'view unpublished tpr_service_channel'
+  - 'view unpublished tpr_unit'
