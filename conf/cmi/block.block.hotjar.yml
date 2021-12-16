@@ -16,10 +16,10 @@ plugin: hotjar
 settings:
   id: hotjar
   label: Hotjar
-  provider: helfi_hotjar
   label_display: '0'
+  provider: helfi_hotjar
 visibility:
   request_path:
     id: request_path
-    pages: "/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*\r\n/halsovard/halsostationer\r\n/halsovard/halsostationer/*\r\n/health-care/health-stations\r\n/health-care/health-stations/*"
     negate: false
+    pages: "/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*\r\n/halsovard/halsostationer\r\n/halsovard/halsostationer/*\r\n/health-care/health-stations\r\n/health-care/health-stations/*"
