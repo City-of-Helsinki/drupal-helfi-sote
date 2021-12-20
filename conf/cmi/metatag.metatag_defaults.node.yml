@@ -11,7 +11,6 @@ tags:
   title: '[node:title] | [site:page-title-suffix]'
   article_modified_time: '[node:created:html_datetime]'
   article_published_time: '[node:created:html_datetime]'
-  og_site_name: '[site:name]'
   og_title: '[node:title]'
   og_updated_time: '[node:changed:html_datetime]'
   og_url: '[current-page:url:absolute]'
