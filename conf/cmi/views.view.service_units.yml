@@ -295,7 +295,7 @@ display:
         type: 'entity:tpr_unit'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: teaser_with_image
       query:
         type: views_query
         options:

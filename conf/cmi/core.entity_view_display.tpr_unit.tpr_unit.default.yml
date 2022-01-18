@@ -210,6 +210,7 @@ content:
 hidden:
   created: true
   field_districts: true
+  hide_description: true
   langcode: true
   latitude: true
   longitude: true
