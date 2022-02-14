@@ -214,4 +214,5 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
+  show_www: true
   streetview_entrance_url: true
