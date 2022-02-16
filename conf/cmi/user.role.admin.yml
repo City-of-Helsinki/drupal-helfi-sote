@@ -204,3 +204,8 @@ permissions:
   - 'update tpr_unit'
   - 'set announcement published on date'
   - 'break content lock'
+  - 'create helfi_chart media'
+  - 'delete any helfi_chart media'
+  - 'delete own helfi_chart media'
+  - 'edit any helfi_chart media'
+  - 'edit own helfi_chart media'
