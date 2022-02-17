@@ -4194,16 +4194,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.4.10",
+            "version": "2.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "be63ed656b4e777e6bd4deaa21733cbc56eaf15f"
+                "reference": "9069c12d6526f4656e04c66fe8e646c622552462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/be63ed656b4e777e6bd4deaa21733cbc56eaf15f",
-                "reference": "be63ed656b4e777e6bd4deaa21733cbc56eaf15f",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/9069c12d6526f4656e04c66fe8e646c622552462",
+                "reference": "9069c12d6526f4656e04c66fe8e646c622552462",
                 "shasum": ""
             },
             "require": {
@@ -4298,10 +4298,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.4.10",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.4.11",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2022-02-15T14:29:18+00:00"
+            "time": "2022-02-16T15:42:19+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -8444,12 +8444,12 @@
             },
             "type": "library",
             "autoload": {
-                "exclude-from-classmap": [
-                    "src/Tests/"
-                ],
                 "psr-4": {
                     "MakinaCorpus\\Lucene\\": "src/"
-                }
+                },
+                "exclude-from-classmap": [
+                    "src/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
