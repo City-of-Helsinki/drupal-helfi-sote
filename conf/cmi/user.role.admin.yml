@@ -39,6 +39,7 @@ dependencies:
     - toolbar
     - view_unpublished
     - content_lock
+    - content_lock
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
