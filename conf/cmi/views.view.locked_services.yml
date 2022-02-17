@@ -1,3 +1,4 @@
+uuid: 10aba7c6-871c-4f34-aa61-e09c4ae076e6
 langcode: en
 status: true
 dependencies:
@@ -513,7 +514,7 @@ display:
       filter_groups:
         operator: AND
         groups:
-          1: AND
+          - AND
       style:
         type: table
         options:
