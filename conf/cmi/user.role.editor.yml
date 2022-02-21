@@ -1,3 +1,4 @@
+uuid: 458e2105-302a-47c0-afe8-e06e31badf0a
 langcode: en
 status: true
 dependencies: {  }
@@ -88,6 +89,8 @@ permissions:
   - 'update content translations'
   - 'update media'
   - 'use menu link attributes'
+  - 'use text format full_html'
+  - 'use text format minimal'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any unpublished content'
@@ -133,3 +136,8 @@ permissions:
   - 'set announcement published on date'
   - 'translate announcement node'
   - 'view announcement revisions'
+  - 'create helfi_chart media'
+  - 'delete any helfi_chart media'
+  - 'delete own helfi_chart media'
+  - 'edit any helfi_chart media'
+  - 'edit own helfi_chart media'
