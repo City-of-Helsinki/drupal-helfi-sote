@@ -14,6 +14,7 @@ dependencies:
     - node.type.announcement
     - node.type.landing_page
     - node.type.page
+    - rest.resource.helfi_debug_data
     - taxonomy.vocabulary.keywords
     - taxonomy.vocabulary.neighbourhoods
   module:
@@ -37,6 +38,7 @@ dependencies:
     - path
     - pathauto
     - redirect
+    - rest
     - role_delegation
     - scheduler
     - simple_sitemap
@@ -45,7 +47,6 @@ dependencies:
     - taxonomy
     - toolbar
     - view_unpublished
-    - content_lock
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
@@ -152,6 +153,7 @@ permissions:
   - 'edit remote entities'
   - 'edit terms in keywords'
   - 'edit terms in neighbourhoods'
+  - 'restful get helfi_debug_data'
   - 'revert all revisions'
   - 'revert all tpr_service revisions'
   - 'revert all tpr_unit revisions'
