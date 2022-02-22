@@ -1,0 +1,25 @@
+uuid: ea4a6030-7b65-4d8f-8161-cb80a64372c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_platform_config
+    - system
+  theme:
+    - hdbt_subtheme
+id: genesyschatsuunte
+theme: hdbt_subtheme
+region: attachments
+weight: 0
+provider: null
+plugin: genesys_suunte
+settings:
+  id: genesys_suunte
+  label: 'Genesys Chat (SUUNTE)'
+  label_display: '0'
+  provider: helfi_platform_config
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/terveyspalvelut/hammashoito/*'
