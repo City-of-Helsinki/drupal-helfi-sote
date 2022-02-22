@@ -83,6 +83,7 @@ permissions:
   - 'administer users'
   - 'assign admin role'
   - 'assign content_producer role'
+  - 'assign editor role'
   - 'assign read_only role'
   - 'break content lock'
   - 'cancel account'
