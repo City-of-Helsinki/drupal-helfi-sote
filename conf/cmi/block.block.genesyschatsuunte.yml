@@ -22,4 +22,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/terveyspalvelut/hammashoito/*'
+    pages: "/terveydenhoito/hammashoito\r\n/terveydenhoito/hammashoito/*"
