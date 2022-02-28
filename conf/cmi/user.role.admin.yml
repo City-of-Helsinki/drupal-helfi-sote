@@ -45,7 +45,6 @@ dependencies:
     - taxonomy
     - toolbar
     - view_unpublished
-    - content_lock
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
@@ -82,6 +81,7 @@ permissions:
   - 'administer users'
   - 'assign admin role'
   - 'assign content_producer role'
+  - 'assign editor role'
   - 'assign read_only role'
   - 'break content lock'
   - 'cancel account'
