@@ -3847,17 +3847,17 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta21",
+            "version": "1.0.0-beta20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta21"
+                "reference": "8.x-1.0-beta20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta21.zip",
-                "reference": "8.x-1.0-beta21",
-                "shasum": "25522839cc22b25410cd478902096a649fd9ab61"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta20.zip",
+                "reference": "8.x-1.0-beta20",
+                "shasum": "770d6945de7ae001e3981db83daace610d4db5c4"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -3865,8 +3865,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta21",
-                    "datestamp": "1646929714",
+                    "version": "8.x-1.0-beta20",
+                    "datestamp": "1635149692",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4200,16 +4200,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.5.11",
+            "version": "2.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "538ff8206eb44d2aaad1cc45db1d6f2b0fb54f43"
+                "reference": "c695b9b935ac790c5552367c686b89ec5f63ccbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/538ff8206eb44d2aaad1cc45db1d6f2b0fb54f43",
-                "reference": "538ff8206eb44d2aaad1cc45db1d6f2b0fb54f43",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/c695b9b935ac790c5552367c686b89ec5f63ccbb",
+                "reference": "c695b9b935ac790c5552367c686b89ec5f63ccbb",
                 "shasum": ""
             },
             "require": {
@@ -4232,7 +4232,7 @@
                 "drupal/features": "^3.12",
                 "drupal/field_group": "^3.1",
                 "drupal/focal_point": "^1.5",
-                "drupal/gin_toolbar": "^1.0@beta",
+                "drupal/gin_toolbar": "1.0-beta20",
                 "drupal/helfi_api_base": "*",
                 "drupal/helfi_media_formtool": "*",
                 "drupal/helfi_media_map": "*",
@@ -4307,10 +4307,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.5.11",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.5.12",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2022-03-16T07:20:52+00:00"
+            "time": "2022-03-16T13:12:04+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
