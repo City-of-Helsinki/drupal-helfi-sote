@@ -1,4 +1,5 @@
 site_settings:
+  theme_color: coat-of-arms
   default_icon: heart-fill
   koro: pulse
 footer_settings:
