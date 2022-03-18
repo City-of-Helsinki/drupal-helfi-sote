@@ -1,0 +1,11 @@
+uuid: b2702f3e-8ee9-48a1-ba95-17f1290989df
+langcode: fi
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.default_hreflang
+id: default
+label: Default
+description: null
+type: default_hreflang
+weight: 0
