@@ -49,7 +49,7 @@
 
       <span class="service-channel__link-explanation">{{ 'The link opens in a new tab'|t({}, {'context': 'Explanation for users that the link opens in a new tab instead of the expected current tab'}) }}.</span>
       {# Sote wants to open these links in a new tab as they require instructions to stay open on this page #}
-      {% include '@hdbt/button/link-button.html.twig' with {
+      {% include '@hdbt/navigation/link-button.html.twig' with {
         type: 'primary',
         label: item.content['#title'],
         url: item.content['#url'],
