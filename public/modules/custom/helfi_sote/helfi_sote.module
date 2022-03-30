@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Contains helfi_sote.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function helfi_sote_preprocess_tpr_unit(array &$variables) {
+  // Get provided languages for the template.
+  $provided_languages = $variables['entity']->get('provided_languages')->getValue();
+
+  foreach ($provided_languages as $provided_language) {
+    $variables['provided_languages'][] = $provided_language['value'];
+  }
+}
