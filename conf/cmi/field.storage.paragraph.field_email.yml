@@ -1,0 +1,20 @@
+uuid: c7655552-05f5-4e89-9138-844fe6008b9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: wH9j0RJnfdNOEzdjEltVOVetWDDW6JTgR_cMyFcD8YY
+id: paragraph.field_email
+field_name: field_email
+entity_type: paragraph
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
