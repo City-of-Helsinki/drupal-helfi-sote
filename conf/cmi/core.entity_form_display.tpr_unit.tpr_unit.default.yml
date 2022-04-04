@@ -7,13 +7,16 @@ dependencies:
     - field.field.tpr_unit.tpr_unit.field_districts
     - field.field.tpr_unit.tpr_unit.field_lower_content
     - field.field.tpr_unit.tpr_unit.field_metatags
+    - field.field.tpr_unit.tpr_unit.field_unit_type
   module:
     - hdbt_admin_editorial
     - helfi_tpr
     - media_library
     - metatag
     - paragraphs
+    - path
     - readonly_field_widget
+    - select2
 _core:
   default_config_hash: g-ZdiLH0rHr8Mv6vni5A3v5v2UQGRdwiwPxs88WA93E
 id: tpr_unit.tpr_unit.default
@@ -155,6 +158,16 @@ content:
     region: content
     settings:
       sidebar: false
+    third_party_settings: {  }
+  field_unit_type:
+    type: entity_reference_autocomplete
+    weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
