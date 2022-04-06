@@ -52,9 +52,10 @@ $settings['siteimprove_id'] = getenv('SITEIMPROVE_ID');
 
 // Drupal route(s).
 $routes = (getenv('DRUPAL_ROUTES')) ? explode(',', getenv('DRUPAL_ROUTES')) : [];
+$routes[] = 'http://127.0.0.1';
 
 foreach ($routes as $route) {
-  $hosts[] = $host = parse_url($route)['host'];
+  $host = parse_url($route)['host'];
   $trusted_host = str_replace('.', '\.', $host);
   $settings['trusted_host_patterns'][] = '^' . $trusted_host . '$';
 }
@@ -161,6 +162,8 @@ if ($session_suffix = getenv('DRUPAL_SESSION_SUFFIX')) {
 if ($robots_header_enabled = getenv('DRUPAL_X_ROBOTS_TAG_HEADER')) {
   $config['helfi_proxy.settings']['robots_header_enabled'] = (bool) $robots_header_enabled;
 }
+
+$config['filelog.settings']['rotation']['schedule'] = 'never';
 
 if (
   ($redis_host = getenv('REDIS_HOST')) &&
