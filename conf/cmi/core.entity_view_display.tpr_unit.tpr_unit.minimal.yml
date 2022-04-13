@@ -1,3 +1,4 @@
+uuid: 0f023c25-891c-4641-90e7-0f107effc0e8
 langcode: en
 status: true
 dependencies:
@@ -49,6 +50,7 @@ hidden:
   description: true
   email: true
   field_content: true
+  field_districts: true
   field_lower_content: true
   field_metatags: true
   field_unit_type: true
