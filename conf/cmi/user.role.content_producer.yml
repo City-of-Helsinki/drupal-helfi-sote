@@ -18,6 +18,7 @@ dependencies:
     - taxonomy.vocabulary.neighbourhoods
   module:
     - content_translation
+    - editoria11y
     - file
     - filter
     - helfi_api_base
@@ -34,7 +35,7 @@ dependencies:
     - toolbar
     - view_unpublished
 id: content_producer
-label: 'Content producer'
+label: 'Sisällöntuottaja suppea'
 weight: 3
 is_admin: null
 permissions:
@@ -123,6 +124,7 @@ permissions:
   - 'view any unpublished content'
   - 'view any unpublished landing_page content'
   - 'view any unpublished page content'
+  - 'view editoria11y checker'
   - 'view landing_page revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
