@@ -35,7 +35,7 @@ dependencies:
     - toolbar
     - view_unpublished
 id: content_producer
-label: 'Sisällöntuottaja suppea'
+label: 'Content producer'
 weight: 3
 is_admin: null
 permissions:
