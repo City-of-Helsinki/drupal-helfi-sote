@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_content
     - node.type.landing_page
     - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.chart
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.content_cards
     - paragraphs.paragraphs_type.content_liftup
@@ -15,6 +16,7 @@ dependencies:
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.service_list
+    - paragraphs.paragraphs_type.unit_accessibility_information
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
@@ -43,9 +45,10 @@ settings:
       from_library: from_library
       remote_video: remote_video
       map: map
+      chart: chart
       unit_search: unit_search
       service_list: service_list
-      chart: chart
+      unit_accessibility_information: unit_accessibility_information
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -63,6 +66,12 @@ settings:
       columns:
         weight: -37
         enabled: true
+      contact_card:
+        weight: 31
+        enabled: false
+      contact_card_listing:
+        weight: 32
+        enabled: false
       content_cards:
         weight: -33
         enabled: true
@@ -102,9 +111,18 @@ settings:
       service_list:
         weight: 36
         enabled: true
+      sidebar_text:
+        weight: 46
+        enabled: false
+      social_media_link:
+        weight: 47
+        enabled: false
       text:
         weight: -24
         enabled: false
+      unit_accessibility_information:
+        weight: 49
+        enabled: true
       unit_search:
         weight: 28
         enabled: true
