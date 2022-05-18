@@ -69,6 +69,7 @@ module:
   helfi_tpr_config: 0
   helfi_tpr_unit_districts: 0
   helfi_tunnistamo: 0
+  helfi_unit_contact_card: 0
   image: 0
   image_style_quality: 0
   imagecache_external: 0

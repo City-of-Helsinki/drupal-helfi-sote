@@ -46,6 +46,7 @@ settings:
       unit_search: unit_search
       service_list: service_list
       chart: chart
+      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -105,6 +106,9 @@ settings:
       text:
         weight: -24
         enabled: false
+      unit_contact_card:
+        weight: 35
+        enabled: true
       unit_search:
         weight: 28
         enabled: true
