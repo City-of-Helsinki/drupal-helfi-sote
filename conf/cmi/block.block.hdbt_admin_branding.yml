@@ -10,8 +10,8 @@ _core:
   default_config_hash: pVV9f7DuTQim-To3zuf_935ToNXh_Nys6d_g2t2WsGI
 id: hdbt_admin_branding
 theme: hdbt_admin
-region: header
-weight: -4
+region: breadcrumb
+weight: -5
 provider: null
 plugin: system_branding_block
 settings:
