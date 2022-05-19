@@ -18,46 +18,20 @@ targetEntityType: paragraph
 bundle: unit_contact_card
 mode: default
 content:
-  field_unit_contact_title:
-    type: string
+  field_unit_contact_unit:
+    type: entity_reference_label
     label: hidden
     settings:
-      link_to_entity: false
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
-  field_unit_contact_unit:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: unit_contact_card
-      link: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_unit_contact_use_address:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_unit_contact_use_opening:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
+  field_unit_contact_title: true
+  field_unit_contact_use_address: true
   field_unit_contact_use_details: true
   field_unit_contact_use_link: true
+  field_unit_contact_use_opening: true
   field_unit_contact_use_phone: true
   field_unit_contact_use_picture: true
   field_unit_contact_use_postal: true
