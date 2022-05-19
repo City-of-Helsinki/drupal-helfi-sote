@@ -2179,6 +2179,10 @@
                     "homepage": "https://www.drupal.org/user/2103716"
                 },
                 {
+                    "name": "daniel.bosen",
+                    "homepage": "https://www.drupal.org/user/404865"
+                },
+                {
                     "name": "ergonlogic",
                     "homepage": "https://www.drupal.org/user/368613"
                 },
@@ -2189,6 +2193,10 @@
                 {
                     "name": "pandaski",
                     "homepage": "https://www.drupal.org/user/1987218"
+                },
+                {
+                    "name": "volkerk",
+                    "homepage": "https://www.drupal.org/user/57527"
                 }
             ],
             "description": "Prevents multiple users from trying to edit a content entity simultaneously to prevent edit conflicts.",
@@ -4256,12 +4264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-tools.git",
-                "reference": "6a24c7b6b9d2195401a3d3d5640de65af11de957"
+                "reference": "fe029d2669b2a03dc78bea919efc598492a36afd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-tools/zipball/6a24c7b6b9d2195401a3d3d5640de65af11de957",
-                "reference": "6a24c7b6b9d2195401a3d3d5640de65af11de957",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-tools/zipball/fe029d2669b2a03dc78bea919efc598492a36afd",
+                "reference": "fe029d2669b2a03dc78bea919efc598492a36afd",
                 "shasum": ""
             },
             "default-branch": true,
@@ -4274,7 +4282,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-tools/tree/main",
                 "issues": "https://github.com/City-of-Helsinki/drupal-tools/issues"
             },
-            "time": "2022-05-12T05:42:21+00:00"
+            "time": "2022-05-19T05:43:34+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
