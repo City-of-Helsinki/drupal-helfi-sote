@@ -31,6 +31,13 @@ $ make fresh
 
 NOTE: Change these according of the state of your project.
 
+## CSS-files not loading? 
+If stylesheets are not loading correctly, you need to give write access to 
+``public/sites/default/files``
+
+Run ``make drush-cr; drush-uli`` after this.
+
+
 ## Login to Drupal container
 
 This will log you inside the app container:
