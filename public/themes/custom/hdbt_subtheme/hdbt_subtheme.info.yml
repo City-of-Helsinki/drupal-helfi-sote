@@ -5,6 +5,8 @@ base theme: hdbt
 tags: sub-theme
 core_version_requirement: ^8 || ^9
 screenshot: hdbt_subtheme.png
+'interface translation project': hdbt_subtheme
+'interface translation server pattern': themes/custom/hdbt_subtheme/translations/%language.po
 
 # Regions
 regions:
@@ -25,6 +27,6 @@ regions:
   attachments: Attachments
 
 # Libraries
-# libraries:
-#  - hdbt_subtheme/global-styling
+libraries:
+  - hdbt_subtheme/global-styling
 #  - hdbt_subtheme/global-scripting

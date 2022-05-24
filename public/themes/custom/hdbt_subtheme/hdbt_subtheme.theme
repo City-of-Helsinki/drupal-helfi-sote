@@ -168,6 +168,26 @@ function hdbt_subtheme_preprocess_paragraph(array &$variables) {
       ) {
         $variables['unit_contact_card']['unit_url'] = !$unit_translation->isNew() ? $unit_translation->toUrl('canonical') : NULL;
       }
+
+      // Check if the highlight content is printed on left or right column of
+      // unit content card.
+      if (
+        ($paragraph->get('field_unit_contact_use_picture')->value === '1') &&
+        ($paragraph->get('field_unit_contact_use_address')->value === '1') &&
+        (empty($variables['unit_contact_card']['address_postal']) && empty($variables['unit_contact_card']['phone']) && empty($variables['unit_contact_card']['opening_hours']))
+      ) {
+        $variables['unit_contact_card']['details_on_left'] = true;
+      }
+
+      if (
+        empty($variables['unit_contact_card']['address']) &&
+        empty($variables['unit_contact_card']['address_postal']) &&
+        empty($variables['unit_contact_card']['phone']) &&
+        empty($variables['unit_contact_card']['opening_hours']) &&
+        empty($variables['unit_contact_card']['unit_url'])
+      ) {
+        $variables['unit_contact_card']['left_column_empty'] = true;
+      }
     }
   }
 }
