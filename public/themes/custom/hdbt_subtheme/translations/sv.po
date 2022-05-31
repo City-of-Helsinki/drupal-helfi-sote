@@ -1,0 +1,5 @@
+msgid "Unit homepage"
+msgstr "Enhetens hemsida"
+
+msgid "Additional details"
+msgstr "Ytterligare detaljer"

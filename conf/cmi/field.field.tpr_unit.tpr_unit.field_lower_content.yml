@@ -43,6 +43,7 @@ settings:
       remote_video: remote_video
       liftup_with_image: liftup_with_image
       contact_card_listing: contact_card_listing
+      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -102,6 +103,9 @@ settings:
       text:
         weight: -29
         enabled: false
+      unit_contact_card:
+        weight: 35
+        enabled: true
       unit_search:
         weight: -16
         enabled: false

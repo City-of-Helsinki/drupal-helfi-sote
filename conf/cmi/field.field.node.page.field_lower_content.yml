@@ -48,6 +48,7 @@ settings:
       remote_video: remote_video
       chart: chart
       contact_card_listing: contact_card_listing
+      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -112,6 +113,9 @@ settings:
         enabled: false
       text:
         weight: -29
+        enabled: true
+      unit_contact_card:
+        weight: 35
         enabled: true
       unit_search:
         weight: -16

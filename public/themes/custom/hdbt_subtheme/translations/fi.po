@@ -1,0 +1,5 @@
+msgid "Unit homepage"
+msgstr "Toimipisteen kotisivut"
+
+msgid "Additional details"
+msgstr "Lisätiedot"
