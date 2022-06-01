@@ -36,13 +36,13 @@ settings:
       columns: columns
       accordion: accordion
       image: image
-      gallery: gallery
       list_of_links: list_of_links
       content_cards: content_cards
       banner: banner
       from_library: from_library
       remote_video: remote_video
       liftup_with_image: liftup_with_image
+      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -65,7 +65,7 @@ settings:
         enabled: true
       gallery:
         weight: -25
-        enabled: true
+        enabled: false
       gallery_slide:
         weight: -20
         enabled: false
@@ -93,6 +93,9 @@ settings:
       text:
         weight: -29
         enabled: false
+      unit_contact_card:
+        weight: 35
+        enabled: true
       unit_search:
         weight: -16
         enabled: false

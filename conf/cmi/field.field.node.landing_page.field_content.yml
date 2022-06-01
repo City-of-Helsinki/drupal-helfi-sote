@@ -49,6 +49,8 @@ settings:
       unit_search: unit_search
       service_list: service_list
       unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
+      event_list: event_list
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -77,6 +79,9 @@ settings:
         enabled: true
       content_liftup:
         weight: -32
+        enabled: true
+      event_list:
+        weight: 30
         enabled: true
       from_library:
         weight: -23
@@ -122,6 +127,8 @@ settings:
         enabled: false
       unit_accessibility_information:
         weight: 49
+      unit_contact_card:
+        weight: 35
         enabled: true
       unit_search:
         weight: 28

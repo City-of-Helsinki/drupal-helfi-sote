@@ -121,6 +121,13 @@ content:
     third_party_settings: {  }
     weight: 17
     region: content
+  highlights:
+    type: tpr_connection
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 22
+    region: content
   name:
     type: string
     label: hidden
