@@ -49,6 +49,7 @@ settings:
       chart: chart
       contact_card_listing: contact_card_listing
       unit_contact_card: unit_contact_card
+      event_list: event_list
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -77,6 +78,9 @@ settings:
         enabled: true
       content_liftup:
         weight: 24
+        enabled: true
+      event_list:
+        weight: 30
         enabled: true
       from_library:
         weight: 21
