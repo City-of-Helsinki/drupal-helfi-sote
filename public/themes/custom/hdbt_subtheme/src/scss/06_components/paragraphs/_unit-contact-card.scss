@@ -8,6 +8,18 @@
   padding-bottom: 55px; // Leave enough room between the last card and footer.
 }
 
+// If the unit contact card is at the upper content area.
+.components--upper > .component--unit-contact-card .component__container {
+  padding-left: $spacing;
+  padding-right: $spacing;
+  @include breakpoint($breakpoint-m) {
+    padding-bottom: $spacing-double;
+    padding-top: $spacing-double;
+    padding-left: $spacing-double;
+    padding-right: $spacing-double;
+  }
+}
+
 .component--unit-contact-card .component__container {
   padding-bottom: $spacing-double;
   padding-top: $spacing-double;
