@@ -49,7 +49,7 @@ class svgToSprite {
                 stack: {
                   dest: "dist",
                   sprite: this.svgSpriteFilename,
-                  rootViewBox: false,
+                  rootviewbox: false,
                 }
               }
             });
@@ -115,7 +115,7 @@ class svgToSprite {
       let hdbtIconUrl = `.${this.themeName}-icon{` +
         `-webkit-mask-image:var(--url);` +
         `mask-image:var(--url)` +
-        `}`;
+      `}`;
 
       // Combine CSS variables and classes.
       let filelist = cssVariables + cssClasses + hdbtIconUrl;
