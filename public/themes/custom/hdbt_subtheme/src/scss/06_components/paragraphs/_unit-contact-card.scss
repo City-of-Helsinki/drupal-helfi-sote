@@ -9,19 +9,23 @@
 }
 
 // If the unit contact card is at the upper content area.
-.components--upper > .component--unit-contact-card .component__container {
-  padding-left: $spacing;
-  padding-right: $spacing;
-  @include breakpoint($breakpoint-m) {
-    padding-bottom: $spacing-triple;
-    padding-top: $spacing-triple;
-    padding-left: $spacing-double;
-    padding-right: $spacing-double;
-  }
+.components--upper,
+.components--unit,
+.components--service {
+  > .component--unit-contact-card .component__container {
+    padding-left: $spacing;
+    padding-right: $spacing;
+    @include breakpoint($breakpoint-m) {
+      padding-bottom: $spacing-triple;
+      padding-top: $spacing-triple;
+      padding-left: $spacing-double;
+      padding-right: $spacing-double;
+    }
 
-  .component__title + .component__content {
-    @include breakpoint($component-spacing-breakpoint) {
-      margin-top: 40px;
+    .component__title + .component__content {
+      @include breakpoint($component-spacing-breakpoint) {
+        margin-top: 40px;
+      }
     }
   }
 }
