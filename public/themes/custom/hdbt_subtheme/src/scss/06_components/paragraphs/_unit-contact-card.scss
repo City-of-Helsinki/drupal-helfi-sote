@@ -13,10 +13,16 @@
   padding-left: $spacing;
   padding-right: $spacing;
   @include breakpoint($breakpoint-m) {
-    padding-bottom: $spacing-double;
-    padding-top: $spacing-double;
+    padding-bottom: $spacing-triple;
+    padding-top: $spacing-triple;
     padding-left: $spacing-double;
     padding-right: $spacing-double;
+  }
+
+  .component__title + .component__content {
+    @include breakpoint($component-spacing-breakpoint) {
+      margin-top: 40px;
+    }
   }
 }
 
