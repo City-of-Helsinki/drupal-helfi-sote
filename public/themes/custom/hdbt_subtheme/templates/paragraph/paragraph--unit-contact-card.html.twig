@@ -1,3 +1,13 @@
+{# This is shown twice in DOM, to move it between mobile and desktop versions maintaining logical tabbing order #}
+{% set unit_contact_card_details %}
+  {% if unit_contact_card.details|render %}
+    <div class="unit-contact-card__info-row unit-contact-card__info-row--details">
+      <div class="unit-contact-card__info-row__title">{{ 'Additional details'|t }}:</div>
+      <div class="unit-contact-card__info-row__content">{{ unit_contact_card.details }}</div>
+    </div>
+  {% endif %}
+{% endset %}
+
 {% block paragraph %}
   {% embed "@hdbt/misc/component.twig" with
     {
@@ -33,12 +43,7 @@
               {% endif %}
             </div>
           {% endif %}
-          {% if unit_contact_card.details|render %}
-            <div class="unit-contact-card__info-row unit-contact-card__info-row--details">
-              <div class="unit-contact-card__info-row__title">{{ 'Additional details'|t }}:</div>
-              <div class="unit-contact-card__info-row__content">{{ unit_contact_card.details }}</div>
-            </div>
-          {% endif %}
+          {{ unit_contact_card_details }}
         </div>
       {% endif %}
 
@@ -63,12 +68,7 @@
         </div>
       {% endif %}
 
-      {% if unit_contact_card.details|render %}
-        <div class="unit-contact-card__info-row unit-contact-card__info-row--details">
-          <div class="unit-contact-card__info-row__title">{{ 'Additional details'|t }}:</div>
-          <div class="unit-contact-card__info-row__content">{{ unit_contact_card.details }}</div>
-        </div>
-      {% endif %}
+      {{ unit_contact_card_details }}
 
       {% if unit_contact_card.unit_url %}
         <div class="unit-contact-card__info-row unit-contact-card__link">
