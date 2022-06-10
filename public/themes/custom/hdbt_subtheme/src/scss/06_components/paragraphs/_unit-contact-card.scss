@@ -132,8 +132,7 @@
   }
 }
 
-.unit-contact-card__info-row__title,
-.unit__link {
+.unit-contact-card__info-row__title {
   @include font(h6);
 }
 
@@ -164,7 +163,7 @@
   @include pseudo-icon('info-circle', $spacing-and-half, currentColor);
 }
 
-.unit-contact-card__link {
+.unit-contact-card__link-wrapper {
   margin-top: $spacing-double;
   padding-left: 0; // There is no icon on the link so this padding is not needed.
 
@@ -175,7 +174,11 @@
   }
 }
 
-.unit__link::after {
-  @include pseudo-icon('arrow-right', $spacing-and-half, currentColor);
-  margin-left: $spacing-half;
+.unit-contact-card__link {
+  @include font(h6);
+
+  &::after {
+    @include pseudo-icon('arrow-right', $spacing-and-half, currentColor);
+    margin-left: $spacing-half;
+  }
 }

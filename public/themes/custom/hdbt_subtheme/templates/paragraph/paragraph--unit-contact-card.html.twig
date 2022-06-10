@@ -71,8 +71,8 @@
       {{ unit_contact_card_details }}
 
       {% if unit_contact_card.unit_url %}
-        <div class="unit-contact-card__info-row unit-contact-card__link">
-          {% set unit_link_attributes = { 'class': [ 'unit__link', ], } %}
+        <div class="unit-contact-card__info-row unit-contact-card__link-wrapper">
+          {% set unit_link_attributes = { 'class': [ 'unit-contact-card__link', ], } %}
           {{ link('Unit homepage'|t, unit_contact_card.unit_url, unit_link_attributes) }}
         </div>
       {% endif %}
