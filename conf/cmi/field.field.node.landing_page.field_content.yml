@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.content_cards
     - paragraphs.paragraphs_type.content_liftup
+    - paragraphs.paragraphs_type.event_list
     - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
@@ -17,6 +18,7 @@ dependencies:
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.service_list
     - paragraphs.paragraphs_type.unit_accessibility_information
+    - paragraphs.paragraphs_type.unit_contact_card
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
@@ -47,10 +49,10 @@ settings:
       map: map
       chart: chart
       unit_search: unit_search
+      event_list: event_list
+      unit_contact_card: unit_contact_card
       service_list: service_list
       unit_accessibility_information: unit_accessibility_information
-      unit_contact_card: unit_contact_card
-      event_list: event_list
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -127,6 +129,7 @@ settings:
         enabled: false
       unit_accessibility_information:
         weight: 49
+        enabled: true
       unit_contact_card:
         weight: 35
         enabled: true
