@@ -46,27 +46,6 @@
   }
 }
 
-// If the left column on desktop is empty.
-.unit-contact-card--left-column-empty .unit-contact-card__image-with-details {
-  float: none;
-  margin-left: 0;
-}
-
-// If the details should be visible on the left column on desktop.
-.unit-contact-card--details-on-left {
-  .unit-contact-card__info-row--details {
-    @include breakpoint($breakpoint-l) {
-      display: block;
-    }
-  }
-
-  .unit-contact-card__image-with-details .unit-contact-card__info-row--details {
-    @include breakpoint($breakpoint-l) {
-      display: none;
-    }
-  }
-}
-
 .unit-contact-card__info-row {
   margin-top: $spacing-double;
   padding-left: calc(#{$spacing-and-half} + #{$spacing-half}); // Icon width + spacing between text and icon.
@@ -91,8 +70,8 @@
 
   // Icons container.
   &::before {
-    position: absolute;
     left: 0;
+    position: absolute;
     top: 0;
   }
 
@@ -105,6 +84,21 @@
 .unit-contact-card__info-row--details {
   @include breakpoint($breakpoint-l) {
     display: none; // This is shown only on mobile to make the print order correct.
+  }
+}
+
+// If the details should be visible on the left column on desktop.
+.unit-contact-card--details-on-left {
+  .unit-contact-card__info-row--details {
+    @include breakpoint($breakpoint-l) {
+      display: block;
+    }
+  }
+
+  .unit-contact-card__image-with-details .unit-contact-card__info-row--details {
+    @include breakpoint($breakpoint-l) {
+      display: none;
+    }
   }
 }
 
@@ -127,6 +121,12 @@
       width: 100%;
     }
   }
+}
+
+// If the left column on desktop is empty.
+.unit-contact-card--left-column-empty .unit-contact-card__image-with-details {
+  float: none;
+  margin-left: 0;
 }
 
 .unit-contact-card__image {
@@ -154,8 +154,7 @@
   }
 }
 
-.unit-contact-card__info-row__title,
-.unit__link {
+.unit-contact-card__info-row__title {
   @include font(h6);
 }
 
@@ -186,7 +185,7 @@
   @include pseudo-icon('info-circle', $spacing-and-half, currentColor);
 }
 
-.unit-contact-card__link {
+.unit-contact-card__link-wrapper {
   margin-top: $spacing-double;
   padding-left: 0; // There is no icon on the link so this padding is not needed.
 
@@ -197,7 +196,11 @@
   }
 }
 
-.unit__link::after {
-  @include pseudo-icon('arrow-right', $spacing-and-half, currentColor);
-  margin-left: $spacing-half;
+.unit-contact-card__link {
+  @include font(h6);
+
+  &::after {
+    @include pseudo-icon('arrow-right', $spacing-and-half, currentColor);
+    margin-left: $spacing-half;
+  }
 }
