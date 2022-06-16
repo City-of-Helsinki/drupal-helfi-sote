@@ -8,6 +8,28 @@
   padding-bottom: 55px; // Leave enough room between the last card and footer.
 }
 
+// If the unit contact card is at the upper content area.
+.components--upper,
+.components--unit,
+.components--service {
+  > .component--unit-contact-card .component__container {
+    padding-left: $spacing;
+    padding-right: $spacing;
+    @include breakpoint($breakpoint-m) {
+      padding-bottom: $spacing-triple;
+      padding-top: $spacing-triple;
+      padding-left: $spacing-double;
+      padding-right: $spacing-double;
+    }
+
+    .component__title + .component__content {
+      @include breakpoint($component-spacing-breakpoint) {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
 .component--unit-contact-card .component__container {
   padding-bottom: $spacing-double;
   padding-top: $spacing-double;
@@ -21,27 +43,6 @@
 .unit-contact-card {
   @include breakpoint($breakpoint-l) {
     overflow: hidden; // Because of the floats.
-  }
-}
-
-// If the left column on desktop is empty.
-.unit-contact-card--left-column-empty .unit-contact-card__image-with-details {
-  float: none;
-  margin-left: 0;
-}
-
-// If the details should be visible on the left column on desktop.
-.unit-contact-card--details-on-left {
-  .unit-contact-card__info-row--details {
-    @include breakpoint($breakpoint-l) {
-      display: block;
-    }
-  }
-
-  .unit-contact-card__image-with-details .unit-contact-card__info-row--details {
-    @include breakpoint($breakpoint-l) {
-      display: none;
-    }
   }
 }
 
@@ -69,8 +70,8 @@
 
   // Icons container.
   &::before {
-    position: absolute;
     left: 0;
+    position: absolute;
     top: 0;
   }
 
@@ -83,6 +84,21 @@
 .unit-contact-card__info-row--details {
   @include breakpoint($breakpoint-l) {
     display: none; // This is shown only on mobile to make the print order correct.
+  }
+}
+
+// If the details should be visible on the left column on desktop.
+.unit-contact-card--details-on-left {
+  .unit-contact-card__info-row--details {
+    @include breakpoint($breakpoint-l) {
+      display: block;
+    }
+  }
+
+  .unit-contact-card__image-with-details .unit-contact-card__info-row--details {
+    @include breakpoint($breakpoint-l) {
+      display: none;
+    }
   }
 }
 
@@ -105,6 +121,12 @@
       width: 100%;
     }
   }
+}
+
+// If the left column on desktop is empty.
+.unit-contact-card--left-column-empty .unit-contact-card__image-with-details {
+  float: none;
+  margin-left: 0;
 }
 
 .unit-contact-card__image {
@@ -132,8 +154,7 @@
   }
 }
 
-.unit-contact-card__info-row__title,
-.unit__link {
+.unit-contact-card__info-row__title {
   @include font(h6);
 }
 
@@ -164,7 +185,7 @@
   @include pseudo-icon('info-circle', $spacing-and-half, currentColor);
 }
 
-.unit-contact-card__link {
+.unit-contact-card__link-wrapper {
   margin-top: $spacing-double;
   padding-left: 0; // There is no icon on the link so this padding is not needed.
 
@@ -175,7 +196,11 @@
   }
 }
 
-.unit__link::after {
-  @include pseudo-icon('arrow-right', $spacing-and-half, currentColor);
-  margin-left: $spacing-half;
+.unit-contact-card__link {
+  @include font(h6);
+
+  &::after {
+    @include pseudo-icon('arrow-right', $spacing-and-half, currentColor);
+    margin-left: $spacing-half;
+  }
 }

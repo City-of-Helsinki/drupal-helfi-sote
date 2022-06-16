@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.unit_contact_card.field_unit_contact_use_details
     - field.field.paragraph.unit_contact_card.field_unit_contact_use_link
     - field.field.paragraph.unit_contact_card.field_unit_contact_use_opening
+    - field.field.paragraph.unit_contact_card.field_unit_contact_use_override
     - field.field.paragraph.unit_contact_card.field_unit_contact_use_phone
     - field.field.paragraph.unit_contact_card.field_unit_contact_use_picture
     - field.field.paragraph.unit_contact_card.field_unit_contact_use_postal
@@ -39,6 +40,7 @@ hidden:
   field_unit_contact_use_details: true
   field_unit_contact_use_link: true
   field_unit_contact_use_opening: true
+  field_unit_contact_use_override: true
   field_unit_contact_use_phone: true
   field_unit_contact_use_picture: true
   field_unit_contact_use_postal: true

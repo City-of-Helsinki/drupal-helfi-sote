@@ -146,8 +146,10 @@ function hdbt_subtheme_preprocess_paragraph(array &$variables) {
       if ($paragraph->get('field_unit_contact_use_picture')->value === '1') {
         $variables['unit_contact_card']['picture_url'] = $unit_translation?->get('picture_url')
           ?->view('full');
-        $variables['unit_contact_card']['picture_url_override'] = $unit_translation?->get('picture_url_override')
-          ?->view('full');
+        if ($paragraph->get('field_unit_contact_use_override')->value === '1') {
+          $variables['unit_contact_card']['picture_url_override'] = $unit_translation?->get('picture_url_override')
+            ?->view('full');
+        }
       }
 
       // Show highlight connections as additional information if chosen from
