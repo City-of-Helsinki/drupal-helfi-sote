@@ -46,6 +46,7 @@ settings:
       remote_video: remote_video
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
+      phasing: phasing
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -89,6 +90,12 @@ settings:
         enabled: false
       map:
         weight: 31
+        enabled: false
+      phasing:
+        weight: 50
+        enabled: true
+      phasing_item:
+        weight: 30
         enabled: false
       remote_video:
         weight: 41
