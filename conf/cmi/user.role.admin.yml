@@ -26,7 +26,6 @@ dependencies:
     - file
     - filter
     - helfi_api_base
-    - helfi_hotjar
     - helfi_tpr
     - locale
     - media
@@ -69,7 +68,6 @@ permissions:
   - 'administer blocks'
   - 'administer eu cookie compliance categories'
   - 'administer eu cookie compliance popup'
-  - 'administer hotjar settings'
   - 'administer menu'
   - 'administer nodes'
   - 'administer paragraphs library'
