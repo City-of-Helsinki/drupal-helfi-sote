@@ -7,14 +7,17 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.chart
     - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.contact_card_listing
     - paragraphs.paragraphs_type.content_cards
     - paragraphs.paragraphs_type.content_liftup
+    - paragraphs.paragraphs_type.event_list
     - paragraphs.paragraphs_type.from_library
-    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.phasing
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.unit_accessibility_information
@@ -46,12 +49,13 @@ settings:
       unit_search: unit_search
       from_library: from_library
       content_liftup: content_liftup
+      chart: chart
+      event_list: event_list
+      contact_card_listing: contact_card_listing
       map: map
       remote_video: remote_video
-      chart: chart
-      contact_card_listing: contact_card_listing
       unit_contact_card: unit_contact_card
-      event_list: event_list
+      phasing: phasing
       unit_accessibility_information: unit_accessibility_information
     negate: 0
     target_bundles_drag_drop:
@@ -112,9 +116,21 @@ settings:
       map:
         weight: 31
         enabled: true
+      phasing:
+        weight: 49
+        enabled: true
+      phasing_item:
+        weight: 50
+        enabled: false
       remote_video:
         weight: 32
         enabled: true
+      service_list:
+        weight: 52
+        enabled: false
+      sidebar_text:
+        weight: 53
+        enabled: false
       social_media_link:
         weight: 46
         enabled: false

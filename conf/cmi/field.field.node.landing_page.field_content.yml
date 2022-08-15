@@ -15,6 +15,7 @@ dependencies:
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.phasing
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.service_list
     - paragraphs.paragraphs_type.unit_accessibility_information
@@ -52,6 +53,7 @@ settings:
       event_list: event_list
       unit_contact_card: unit_contact_card
       service_list: service_list
+      phasing: phasing
       unit_accessibility_information: unit_accessibility_information
     negate: 0
     target_bundles_drag_drop:
@@ -112,6 +114,12 @@ settings:
       map:
         weight: -20
         enabled: true
+      phasing:
+        weight: 49
+        enabled: true
+      phasing_item:
+        weight: 50
+        enabled: false
       remote_video:
         weight: -22
         enabled: true
