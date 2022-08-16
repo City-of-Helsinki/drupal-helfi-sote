@@ -1,23 +1,18 @@
-uuid: b6b2b719-6ef9-49a1-8c41-afb16408da0d
+uuid: 347bbc5b-91b6-4c3a-9d6f-af0bf5754bf4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_accordion_item_content
-    - paragraphs.paragraphs_type.accordion_item
-    - paragraphs.paragraphs_type.columns
-    - paragraphs.paragraphs_type.image
+    - field.storage.paragraph.field_phasing_item
     - paragraphs.paragraphs_type.phasing
-    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.phasing_item
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: bwS_FVJJmaXanJseLF9iTjvfYYHXzCvGHAaw4IQNEtc
-id: paragraph.accordion_item.field_accordion_item_content
-field_name: field_accordion_item_content
+id: paragraph.phasing.field_phasing_item
+field_name: field_phasing_item
 entity_type: paragraph
-bundle: accordion_item
-label: Content
+bundle: phasing
+label: 'Phasing item'
 description: ''
 required: true
 translatable: false
@@ -27,90 +22,87 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      columns: columns
-      image: image
-      text: text
-      phasing: phasing
+      phasing_item: phasing_item
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: 12
+        weight: 31
         enabled: false
       accordion_item:
-        weight: 13
-        enabled: false
-      banner:
-        weight: 23
-        enabled: false
-      chart:
-        weight: 33
-        enabled: false
-      columns:
-        weight: 14
-        enabled: true
-      contact_card:
-        weight: 35
-        enabled: false
-      contact_card_listing:
-        weight: 36
-        enabled: false
-      content_cards:
-        weight: 25
-        enabled: false
-      content_liftup:
-        weight: 26
-        enabled: false
-      event_list:
-        weight: 39
-        enabled: false
-      from_library:
-        weight: 27
-        enabled: false
-      gallery:
-        weight: 15
-        enabled: false
-      gallery_slide:
-        weight: 16
-        enabled: false
-      hero:
-        weight: 17
-        enabled: false
-      image:
-        weight: 18
-        enabled: true
-      liftup_with_image:
         weight: 32
         enabled: false
-      list_of_links:
-        weight: 20
+      banner:
+        weight: 33
         enabled: false
-      list_of_links_item:
-        weight: 21
+      chart:
+        weight: 34
         enabled: false
-      map:
+      columns:
         weight: 35
         enabled: false
-      phasing:
-        weight: 49
-        enabled: true
-      phasing_item:
-        weight: 50
-        enabled: false
-      remote_video:
+      contact_card:
         weight: 36
         enabled: false
-      service_list:
+      contact_card_listing:
         weight: 37
         enabled: false
-      sidebar_text:
+      content_cards:
         weight: 38
+        enabled: false
+      content_liftup:
+        weight: 39
+        enabled: false
+      event_list:
+        weight: 40
+        enabled: false
+      from_library:
+        weight: 41
+        enabled: false
+      gallery:
+        weight: 42
+        enabled: false
+      gallery_slide:
+        weight: 43
+        enabled: false
+      hero:
+        weight: 44
+        enabled: false
+      image:
+        weight: 45
+        enabled: false
+      liftup_with_image:
+        weight: 46
+        enabled: false
+      list_of_links:
+        weight: 47
+        enabled: false
+      list_of_links_item:
+        weight: 48
+        enabled: false
+      map:
+        weight: 49
+        enabled: false
+      phasing:
+        weight: 50
+        enabled: false
+      phasing_item:
+        weight: 30
+        enabled: true
+      remote_video:
+        weight: 51
+        enabled: false
+      service_list:
+        weight: 52
+        enabled: false
+      sidebar_text:
+        weight: 53
         enabled: false
       social_media_link:
         weight: 54
         enabled: false
       text:
-        weight: 22
-        enabled: true
+        weight: 55
+        enabled: false
       unit_accessibility_information:
         weight: 56
         enabled: false
@@ -118,6 +110,6 @@ settings:
         weight: 57
         enabled: false
       unit_search:
-        weight: 40
+        weight: 58
         enabled: false
 field_type: entity_reference_revisions
