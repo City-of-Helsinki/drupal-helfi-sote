@@ -2,8 +2,6 @@ uuid: 8218889a-7585-4548-a6cb-584905e2b722
 langcode: en
 status: true
 dependencies:
-  module:
-    - ctools
   theme:
     - hdbt_subtheme
 _core:
