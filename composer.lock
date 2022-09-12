@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64f3d45afc145229bc1a5b97b4056a31",
+    "content-hash": "68f2fd88dc7d86c4accd454355d40bb9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4047,16 +4047,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "dev-UHF-6356_merge_main_to_jsnav",
+            "version": "3.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "f78bb20e66c83277346ff9743fafc43cc48f0ce4"
+                "reference": "93c63c350a787c77d7e12e43bbe6b7d8b37db72d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/f78bb20e66c83277346ff9743fafc43cc48f0ce4",
-                "reference": "f78bb20e66c83277346ff9743fafc43cc48f0ce4",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/93c63c350a787c77d7e12e43bbe6b7d8b37db72d",
+                "reference": "93c63c350a787c77d7e12e43bbe6b7d8b37db72d",
                 "shasum": ""
             },
             "require": {
@@ -4071,10 +4071,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/UHF-6356_merge_main_to_jsnav",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/3.0.25",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2022-09-12T09:59:04+00:00"
+            "time": "2022-09-02T18:59:18+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -17702,7 +17702,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/hdbt": 20,
         "drupal/helfi_drupal_tools": 20,
         "drupal/helfi_navigation": 20
     },
