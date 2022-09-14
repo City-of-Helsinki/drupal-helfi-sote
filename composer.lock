@@ -4182,16 +4182,16 @@
         },
         {
             "name": "drupal/helfi_azure_fs",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs.git",
-                "reference": "fcc126b20d3ee322a6fc83ec5b9e7b75542709b6"
+                "reference": "0c8555e5f447d619adb9b3eba264905744c40497"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-azure-fs/zipball/fcc126b20d3ee322a6fc83ec5b9e7b75542709b6",
-                "reference": "fcc126b20d3ee322a6fc83ec5b9e7b75542709b6",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-azure-fs/zipball/0c8555e5f447d619adb9b3eba264905744c40497",
+                "reference": "0c8555e5f447d619adb9b3eba264905744c40497",
                 "shasum": ""
             },
             "require": {
@@ -4207,10 +4207,10 @@
             ],
             "description": "Helfi - Azure FS",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/tree/1.1.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/tree/1.1.1",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/issues"
             },
-            "time": "2022-07-26T11:12:07+00:00"
+            "time": "2022-09-09T06:23:52+00:00"
         },
         {
             "name": "drupal/helfi_drupal_tools",
@@ -4376,16 +4376,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.9.20",
+            "version": "2.9.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "61ba500e2916aada42b40fbc73f97e36933625cb"
+                "reference": "1298e9ff9b9ff0c3519182caf5eeaeb6f2a64c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/61ba500e2916aada42b40fbc73f97e36933625cb",
-                "reference": "61ba500e2916aada42b40fbc73f97e36933625cb",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/1298e9ff9b9ff0c3519182caf5eeaeb6f2a64c22",
+                "reference": "1298e9ff9b9ff0c3519182caf5eeaeb6f2a64c22",
                 "shasum": ""
             },
             "require": {
@@ -4498,10 +4498,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.9.20",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.9.21",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2022-08-29T12:53:09+00:00"
+            "time": "2022-09-02T12:26:58+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -10454,12 +10454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "878acd2727aee1a228ecb695c1470c0900195c59"
+                "reference": "c1a49d53f23fa4d931658f074d862ab71edb512d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/878acd2727aee1a228ecb695c1470c0900195c59",
-                "reference": "878acd2727aee1a228ecb695c1470c0900195c59",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/c1a49d53f23fa4d931658f074d862ab71edb512d",
+                "reference": "c1a49d53f23fa4d931658f074d862ab71edb512d",
                 "shasum": ""
             },
             "require": {
@@ -10516,7 +10516,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2022-08-30T12:13:29+00:00"
+            "time": "2022-09-05T07:53:34+00:00"
         },
         {
             "name": "sentry/sdk",
@@ -17709,5 +17709,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
