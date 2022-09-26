@@ -1,4 +1,4 @@
-uuid: ea4a6030-7b65-4d8f-8161-cb80a64372c7
+uuid: e45448c0-5be9-4578-b96d-eb5e34d59648
 langcode: en
 status: true
 dependencies:
@@ -7,17 +7,19 @@ dependencies:
     - system
   theme:
     - hdbt_subtheme
-id: genesyschatsuunte
+id: chatleijuke
 theme: hdbt_subtheme
 region: attachments
 weight: 0
 provider: null
-plugin: genesys_suunte
+plugin: chat_leijuke
 settings:
-  id: genesys_suunte
-  label: 'Genesys Chat (SUUNTE)'
+  id: chat_leijuke
+  label: 'Chat Leijuke SUUNTE'
   label_display: '0'
   provider: helfi_platform_config
+  chat_title: 'Hammashoidon chat'
+  chat_selection: genesys_suunte
 visibility:
   request_path:
     id: request_path
