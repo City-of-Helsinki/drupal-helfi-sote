@@ -25,7 +25,8 @@
         "drupal/raven": "^3.2",
         "drupal/redis": "^1.5",
         "drupal/stage_file_proxy": "^1.2",
-        "drush/drush": "^10.4"
+        "drush/drush": "^10.4",
+        "twig/twig": "v2.15.2"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
