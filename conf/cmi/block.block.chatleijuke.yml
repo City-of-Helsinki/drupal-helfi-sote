@@ -18,7 +18,7 @@ settings:
   label: 'Chat Leijuke SUUNTE'
   label_display: '0'
   provider: helfi_platform_config
-  chat_title: 'Hammashoidon chat'
+  chat_title: 'Dental care chat'
   chat_selection: genesys_suunte
 visibility:
   request_path:

@@ -18,7 +18,7 @@ settings:
   label: 'Chat Leijuke Kuura'
   label_display: '0'
   provider: helfi_platform_config
-  chat_title: 'Kysy terveydestä ja koronasta'
+  chat_title: 'Ask about health and COVID-19'
   chat_selection: kuura_health_chat
 visibility:
   request_path:
