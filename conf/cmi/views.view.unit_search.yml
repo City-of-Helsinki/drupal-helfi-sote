@@ -720,7 +720,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Show heath stations that provide service in Swedish'
+                title: 'Show service points that provide service in Swedish'
                 operator: '='
                 value: sv
         field_districts_target_id:
@@ -856,8 +856,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
         - user
+        - user.permissions
       tags: {  }
   block:
     id: block
@@ -875,8 +875,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
         - user
+        - user.permissions
       tags: {  }
   entity_reference:
     id: entity_reference
