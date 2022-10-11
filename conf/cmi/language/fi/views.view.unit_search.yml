@@ -6,12 +6,16 @@ display:
           group_info:
             group_items:
               1:
-                title: 'Näytä terveysasemat, joilta saan palvelua ruotsiksi'
+                title: 'Näytä toimipisteet, joilta saa palvelua ruotsiksi'
+          expose:
+            description: ''
+            placeholder: ''
         combine:
           expose:
             label: Etsi
           group_info:
             label: 'Kentät yhdistävä suodatin'
+            description: ''
       pager:
         options:
           tags:
