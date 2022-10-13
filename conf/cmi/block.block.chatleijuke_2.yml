@@ -1,4 +1,4 @@
-uuid: ea4a6030-7b65-4d8f-8161-cb80a64372c7
+uuid: 716d9214-6b6b-4377-a479-30fc1e5f6e06
 langcode: en
 status: true
 dependencies:
@@ -7,19 +7,21 @@ dependencies:
     - system
   theme:
     - hdbt_subtheme
-id: genesyschatsuunte
+id: chatleijuke_2
 theme: hdbt_subtheme
 region: attachments
 weight: 0
 provider: null
-plugin: genesys_suunte
+plugin: chat_leijuke
 settings:
-  id: genesys_suunte
-  label: 'Genesys Chat (SUUNTE)'
+  id: chat_leijuke
+  label: 'Chat Leijuke Kuura'
   label_display: '0'
   provider: helfi_platform_config
+  chat_title: 'Ask about health and COVID-19'
+  chat_selection: kuura_health_chat
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/terveydenhoito/hammashoito\r\n/terveydenhoito/hammashoito/*"
+    pages: "/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*"
