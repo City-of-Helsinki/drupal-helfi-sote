@@ -60,4 +60,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_phasing_item_title_level: true
