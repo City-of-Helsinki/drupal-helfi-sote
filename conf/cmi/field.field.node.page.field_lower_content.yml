@@ -17,6 +17,7 @@ dependencies:
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.news_list
     - paragraphs.paragraphs_type.phasing
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.text
@@ -57,6 +58,7 @@ settings:
       unit_contact_card: unit_contact_card
       phasing: phasing
       unit_accessibility_information: unit_accessibility_information
+      news_list: news_list
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -115,6 +117,9 @@ settings:
         enabled: false
       map:
         weight: 31
+        enabled: true
+      news_list:
+        weight: 30
         enabled: true
       phasing:
         weight: 49
