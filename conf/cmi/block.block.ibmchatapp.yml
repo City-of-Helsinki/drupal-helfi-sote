@@ -1,0 +1,24 @@
+uuid: 87c2646d-e5da-40c2-a168-b1c7df016e6e
+langcode: en
+status: false
+dependencies:
+  module:
+    - helfi_platform_config
+  theme:
+    - hdbt_subtheme
+id: ibmchatapp
+theme: hdbt_subtheme
+region: attachments
+weight: 0
+provider: null
+plugin: ibm_chat_app
+settings:
+  id: ibm_chat_app
+  label: 'IBM Chat App'
+  label_display: '0'
+  provider: helfi_platform_config
+  hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
+  engagementId: sote-bot
+  tenantId: sote-prod
+  assistantId: sote-bot
+visibility: {  }
