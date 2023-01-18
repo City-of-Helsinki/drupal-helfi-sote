@@ -24,4 +24,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*"
+    pages: "/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*\r\n/terveydenhoito/kiireellinen-hoito-ja-paivystys\r\n/halsovard/bradskande-vard-och-halsocentralsjour\r\n/health-care/urgent-and-emergency-care"
