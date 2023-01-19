@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f48fdc2fd31d56b64f0aa7156ffe656",
+    "content-hash": "2c9012a8c82e9cf91da95bdf6091de7d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4253,7 +4253,7 @@
         },
         {
             "name": "drupal/helfi_api_base",
-            "version": "3.9.10",
+            "version": "2.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
