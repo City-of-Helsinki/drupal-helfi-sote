@@ -7,7 +7,7 @@ display:
             group_items:
               1:
                 title: 'Näytä toimipisteet, joilta saa palvelua ruotsiksi'
-            expose:
+          expose:
             description: ''
             placeholder: ''
         combine:
