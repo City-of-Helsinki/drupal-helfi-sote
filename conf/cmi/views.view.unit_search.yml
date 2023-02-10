@@ -786,7 +786,7 @@ display:
             use_operator: false
             operator: ''
             operator_limit_selection: false
-            operator_list: { }
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
