@@ -1970,27 +1970,27 @@
         },
         {
             "name": "drupal/config_ignore",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_ignore.git",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "2e1f07a455275fb6637909921a8915646601fc00"
+                "url": "https://ftp.drupal.org/files/projects/config_ignore-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "e0e45dde2d6927c5d26de59f352792fb6cf26554"
             },
             "require": {
                 "drupal/config_filter": "^1 || ^2",
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1608306489",
+                    "version": "8.x-2.4",
+                    "datestamp": "1676045435",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2022,7 +2022,7 @@
             "homepage": "http://drupal.org/project/config_ignore",
             "support": {
                 "source": "https://git.drupalcode.org/project/config_ignore",
-                "issues": "http://drupal.org/project/config_ignore",
+                "issues": "https://drupal.org/project/config_ignore",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
@@ -4108,16 +4108,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "4.4.6",
+            "version": "4.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "564a5a9e3a87e1a231681186f25c5b0222fe7e9d"
+                "reference": "004da872f1bfea0b8112024b266f007b06600784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/564a5a9e3a87e1a231681186f25c5b0222fe7e9d",
-                "reference": "564a5a9e3a87e1a231681186f25c5b0222fe7e9d",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/004da872f1bfea0b8112024b266f007b06600784",
+                "reference": "004da872f1bfea0b8112024b266f007b06600784",
                 "shasum": ""
             },
             "require": {
@@ -4132,23 +4132,23 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/4.4.6",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/4.4.8",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2023-02-09T13:53:25+00:00"
+            "time": "2023-02-14T05:54:57+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
-            "version": "1.8.5",
+            "version": "1.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "9e062a862d33d14dee10117a01b0c694cbc19d10"
+                "reference": "9136a0177d426b2dd045a3f63e87186d46539f4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/9e062a862d33d14dee10117a01b0c694cbc19d10",
-                "reference": "9e062a862d33d14dee10117a01b0c694cbc19d10",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/9136a0177d426b2dd045a3f63e87186d46539f4b",
+                "reference": "9136a0177d426b2dd045a3f63e87186d46539f4b",
                 "shasum": ""
             },
             "require": {
@@ -4164,10 +4164,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/1.8.5",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/1.8.6",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2023-01-17T09:33:26+00:00"
+            "time": "2023-02-13T16:24:34+00:00"
         },
         {
             "name": "drupal/health_check",
@@ -4487,16 +4487,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.17.3",
+            "version": "2.17.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "41b1bf65048f6940894031ffe1c2d3d13e9a1734"
+                "reference": "965bda197229bd80b085909c01b11da071f0460d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/41b1bf65048f6940894031ffe1c2d3d13e9a1734",
-                "reference": "41b1bf65048f6940894031ffe1c2d3d13e9a1734",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/965bda197229bd80b085909c01b11da071f0460d",
+                "reference": "965bda197229bd80b085909c01b11da071f0460d",
                 "shasum": ""
             },
             "require": {
@@ -4556,7 +4556,8 @@
                 "drupal/update_helper": "^2.0",
                 "drupal/view_unpublished": "^1.0",
                 "drupal/views_bulk_edit": "^2.7",
-                "drupal/views_bulk_operations": "^4.1"
+                "drupal/views_bulk_operations": "^4.1",
+                "ext-curl": "*"
             },
             "conflict": {
                 "drupal/core-recommended": "<9.5",
@@ -4607,10 +4608,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.17.3",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.17.5",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2023-02-09T15:49:22+00:00"
+            "time": "2023-02-14T06:06:13+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -7769,16 +7770,16 @@
         },
         {
             "name": "fileeye/mimemap",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FileEye/MimeMap.git",
-                "reference": "24144b7dc84168e14e4fc893d654c4fb40628346"
+                "reference": "58fbd11312a8f69e0824a640b86b33a9d096fe7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/24144b7dc84168e14e4fc893d654c4fb40628346",
-                "reference": "24144b7dc84168e14e4fc893d654c4fb40628346",
+                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/58fbd11312a8f69e0824a640b86b33a9d096fe7f",
+                "reference": "58fbd11312a8f69e0824a640b86b33a9d096fe7f",
                 "shasum": ""
             },
             "require": {
@@ -7825,9 +7826,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FileEye/MimeMap/issues",
-                "source": "https://github.com/FileEye/MimeMap/tree/2.0.0"
+                "source": "https://github.com/FileEye/MimeMap/tree/2.0.1"
             },
-            "time": "2022-07-17T13:00:20+00:00"
+            "time": "2023-02-11T19:58:58+00:00"
         },
         {
             "name": "galbar/jsonpath",
