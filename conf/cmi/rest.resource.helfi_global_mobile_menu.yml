@@ -1,0 +1,18 @@
+uuid: 2df3155c-456e-435b-8651-ce10ac7f191c
+langcode: fi
+status: true
+dependencies:
+  module:
+    - helfi_navigation
+    - serialization
+    - user
+id: helfi_global_mobile_menu
+plugin_id: helfi_global_mobile_menu
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
