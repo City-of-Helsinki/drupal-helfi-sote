@@ -5,8 +5,6 @@ dependencies:
   module:
     - external_entities
     - imagecache_external
-_core:
-  default_config_hash: k-bIvgFdaVICd0s60Gng2zWabkpeZTQ53HF1Eff7zDk
 id: helfi_news.helfi_news.default
 targetEntityType: helfi_news
 bundle: helfi_news

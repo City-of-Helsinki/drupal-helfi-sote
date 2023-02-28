@@ -16,8 +16,6 @@ dependencies:
     - entity_reference_revisions
     - metatag
     - user
-_core:
-  default_config_hash: i22XraOl4gS7_CJgs4Rz9EUcPl88E0ripb7VPtyUGho
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -62,7 +60,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 5
     region: content
   links:
     settings: {  }
@@ -84,3 +82,5 @@ hidden:
   field_hero: true
   field_liftup_image: true
   langcode: true
+  published_at: true
+  search_api_excerpt: true

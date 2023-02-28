@@ -2,20 +2,15 @@ display:
   default:
     display_options:
       filters:
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Näytä toimipisteet, joilta saa palvelua ruotsiksi'
-          expose:
-            description: ''
-            placeholder: ''
         combine:
-          expose:
-            label: Etsi
           group_info:
             label: 'Kentät yhdistävä suodatin'
-            description: ''
+          expose:
+            label: Etsi
+      empty:
+        area:
+          content:
+            value: "<p>Ei tuloksia</p>\r\n"
       exposed_form:
         options:
           submit_button: Käytä
@@ -34,19 +29,6 @@ display:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
-      fields:
-        name:
-          separator: ', '
-        address__postal_code:
-          separator: ', '
-        address__address_line1:
-          separator: ', '
-        address__address_line2:
-          separator: ', '
-      empty:
-        area:
-          content:
-            value: "<p>Ei tuloksia</p>\r\n"
       arguments:
         id:
           exception:
@@ -56,12 +38,4 @@ display:
     display_title: Lohko
   entity_reference:
     display_title: Entiteettiviittaus
-    display_options:
-      fields:
-        name_override:
-          separator: ', '
-        id:
-          separator: ', '
-        name:
-          separator: ', '
 label: Toimipistehaku

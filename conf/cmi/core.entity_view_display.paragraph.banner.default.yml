@@ -13,10 +13,8 @@ dependencies:
   module:
     - link
     - options
-    - select2_icon
+    - hdbt_admin_tools
     - text
-_core:
-  default_config_hash: OdCRcV75MyH8GcyDvhFVPoFlvSgQ6-ElU8Vp3uPhlyU
 id: paragraph.banner.default
 targetEntityType: paragraph
 bundle: banner

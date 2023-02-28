@@ -5,8 +5,6 @@ dependencies:
   module:
     - helfi_tpr
     - user
-_core:
-  default_config_hash: 0wDqZhJn8tnNhEq6QJNITXspmRbtFffjYqD82wc3myE
 id: tpr_errand_service_list
 label: 'TPR errand service list'
 module: views

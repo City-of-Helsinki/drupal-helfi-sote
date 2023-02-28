@@ -6,12 +6,12 @@ dependencies:
     - field.field.paragraph.accordion_item.field_accordion_item_content
     - field.field.paragraph.accordion_item.field_accordion_item_heading
     - field.field.paragraph.accordion_item.field_icon
-    - paragraphs.paragraphs_type.accordion_item
   module:
     - paragraphs
-    - select2_icon
-_core:
-  default_config_hash: 9KnxBsuUqoD7DFeo2k8i1cZYkK2DuwHM6wyTIEtM-u0
+    - hdbt_admin_tools
+  enforced:
+    config:
+      - paragraphs.paragraphs_type.accordion_item
 id: paragraph.accordion_item.default
 targetEntityType: paragraph
 bundle: accordion_item
