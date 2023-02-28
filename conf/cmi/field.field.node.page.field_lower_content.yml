@@ -45,11 +45,15 @@ settings:
       content_cards: content_cards
       content_liftup: content_liftup
       banner: banner
+      news_list: news_list
       event_list: event_list
+      phasing: phasing
       from_library: from_library
       chart: chart
       remote_video: remote_video
       map: map
+      unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
       unit_search: unit_search
     negate: 0
     target_bundles_drag_drop:
@@ -89,10 +93,22 @@ settings:
       map:
         weight: 30
         enabled: true
+      news_list:
+        weight: 30
+        enabled: true
+      phasing:
+        weight: 30
+        enabled: true
       remote_video:
         weight: 30
         enabled: true
       text:
+        weight: 30
+        enabled: true
+      unit_accessibility_information:
+        weight: 30
+        enabled: true
+      unit_contact_card:
         weight: 30
         enabled: true
       unit_search:

@@ -21,6 +21,8 @@ dependencies:
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.service_list
     - paragraphs.paragraphs_type.target_group_links
+    - paragraphs.paragraphs_type.unit_accessibility_information
+    - paragraphs.paragraphs_type.unit_contact_card
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
@@ -53,6 +55,8 @@ settings:
       phasing: phasing
       popular_services: popular_services
       target_group_links: target_group_links
+      unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
       unit_search: unit_search
       service_list: service_list
     negate: 0
@@ -103,6 +107,12 @@ settings:
         weight: 30
         enabled: true
       target_group_links:
+        weight: 30
+        enabled: true
+      unit_accessibility_information:
+        weight: 30
+        enabled: true
+      unit_contact_card:
         weight: 30
         enabled: true
       unit_search:

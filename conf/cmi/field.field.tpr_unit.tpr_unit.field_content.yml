@@ -41,6 +41,8 @@ settings:
       from_library: from_library
       contact_card_listing: contact_card_listing
       remote_video: remote_video
+      unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -71,6 +73,12 @@ settings:
         weight: 30
         enabled: true
       text:
+        weight: 30
+        enabled: true
+      unit_accessibility_information:
+        weight: 30
+        enabled: true
+      unit_contact_card:
         weight: 30
         enabled: true
 field_type: entity_reference_revisions

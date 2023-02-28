@@ -41,8 +41,11 @@ settings:
       liftup_with_image: liftup_with_image
       from_library: from_library
       remote_video: remote_video
+      news_list: news_list
       event_list: event_list
       phasing: phasing
+      unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -72,10 +75,19 @@ settings:
       list_of_links:
         weight: 30
         enabled: true
+      news_list:
+        weight: 30
+        enabled: true
       phasing:
         weight: 30
         enabled: true
       remote_video:
+        weight: 30
+        enabled: true
+      unit_accessibility_information:
+        weight: 30
+        enabled: true
+      unit_contact_card:
         weight: 30
         enabled: true
 field_type: entity_reference_revisions
