@@ -4,6 +4,17 @@ status: true
 dependencies:
   config:
     - field.storage.tpr_service.field_lower_content
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.content_cards
+    - paragraphs.paragraphs_type.event_list
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.liftup_with_image
+    - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.phasing
+    - paragraphs.paragraphs_type.remote_video
   module:
     - entity_reference_revisions
     - helfi_tpr
@@ -20,7 +31,51 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      columns: columns
+      accordion: accordion
+      image: image
+      list_of_links: list_of_links
+      content_cards: content_cards
+      banner: banner
+      liftup_with_image: liftup_with_image
+      from_library: from_library
+      remote_video: remote_video
+      event_list: event_list
+      phasing: phasing
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      accordion:
+        weight: 30
+        enabled: true
+      banner:
+        weight: 30
+        enabled: true
+      columns:
+        weight: 30
+        enabled: true
+      content_cards:
+        weight: 30
+        enabled: true
+      event_list:
+        weight: 30
+        enabled: true
+      from_library:
+        weight: 30
+        enabled: true
+      image:
+        weight: 30
+        enabled: true
+      liftup_with_image:
+        weight: 30
+        enabled: true
+      list_of_links:
+        weight: 30
+        enabled: true
+      phasing:
+        weight: 30
+        enabled: true
+      remote_video:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

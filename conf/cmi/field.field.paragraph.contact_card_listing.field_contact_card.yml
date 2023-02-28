@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_contact_card
+    - paragraphs.paragraphs_type.contact_card
+    - paragraphs.paragraphs_type.contact_card_listing
   module:
     - entity_reference_revisions
 id: paragraph.contact_card_listing.field_contact_card
@@ -19,7 +21,11 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      contact_card: contact_card
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      contact_card:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

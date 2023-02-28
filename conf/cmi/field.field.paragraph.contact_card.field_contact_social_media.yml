@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_contact_social_media
+    - paragraphs.paragraphs_type.contact_card
+    - paragraphs.paragraphs_type.social_media_link
   module:
     - entity_reference_revisions
 id: paragraph.contact_card.field_contact_social_media
@@ -19,7 +21,11 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      social_media_link: social_media_link
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      social_media_link:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

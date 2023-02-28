@@ -2,6 +2,19 @@ uuid: 3839d0cc-b945-4074-95c2-e76f392d5b36
 langcode: en
 status: true
 dependencies:
+  config:
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.contact_card_listing
+    - paragraphs.paragraphs_type.content_cards
+    - paragraphs.paragraphs_type.content_liftup
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.liftup_with_image
+    - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.sidebar_text
+    - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
     - paragraphs_library
@@ -21,7 +34,55 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      accordion: accordion
+      banner: banner
+      columns: columns
+      contact_card_listing: contact_card_listing
+      content_cards: content_cards
+      content_liftup: content_liftup
+      image: image
+      liftup_with_image: liftup_with_image
+      list_of_links: list_of_links
+      map: map
+      sidebar_text: sidebar_text
+      text: text
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      accordion:
+        weight: 30
+        enabled: true
+      banner:
+        weight: 30
+        enabled: true
+      columns:
+        weight: 30
+        enabled: true
+      contact_card_listing:
+        weight: 30
+        enabled: true
+      content_cards:
+        weight: 30
+        enabled: true
+      content_liftup:
+        weight: 30
+        enabled: true
+      image:
+        weight: 30
+        enabled: true
+      liftup_with_image:
+        weight: 30
+        enabled: true
+      list_of_links:
+        weight: 30
+        enabled: true
+      map:
+        weight: 30
+        enabled: true
+      sidebar_text:
+        weight: 30
+        enabled: true
+      text:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

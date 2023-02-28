@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_service_items
+    - paragraphs.paragraphs_type.popular_service_item
+    - paragraphs.paragraphs_type.popular_services
   module:
     - entity_reference_revisions
 id: paragraph.popular_services.field_service_items
@@ -19,7 +21,11 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      popular_service_item: popular_service_item
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      popular_service_item:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

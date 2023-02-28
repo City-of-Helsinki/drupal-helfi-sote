@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.tpr_service.field_sidebar_content
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
     - helfi_tpr
@@ -20,7 +22,15 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      text: text
+      from_library: from_library
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      from_library:
+        weight: 30
+        enabled: true
+      text:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

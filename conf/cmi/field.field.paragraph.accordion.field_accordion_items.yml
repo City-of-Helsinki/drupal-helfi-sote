@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_accordion_items
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
   module:
     - entity_reference_revisions
   enforced:
@@ -22,7 +24,11 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      accordion_item: accordion_item
     negate: 0
-    target_bundles_drag_drop: {  }
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions
