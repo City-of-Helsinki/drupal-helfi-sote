@@ -13,8 +13,10 @@ dependencies:
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.service_list
     - paragraphs.paragraphs_type.sidebar_text
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
     - paragraphs_library
@@ -47,6 +49,8 @@ settings:
       map: map
       sidebar_text: sidebar_text
       text: text
+      unit_search: unit_search
+      service_list: service_list
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -79,10 +83,16 @@ settings:
       map:
         weight: 30
         enabled: true
+      service_list:
+        weight: 30
+        enabled: true
       sidebar_text:
         weight: 30
         enabled: true
       text:
+        weight: 30
+        enabled: true
+      unit_search:
         weight: 30
         enabled: true
 field_type: entity_reference_revisions

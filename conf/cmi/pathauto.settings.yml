@@ -1,5 +1,7 @@
 enabled_entity_types:
   - user
+  - tpr_service
+  - tpr_unit
 punctuation:
   hyphen: 1
 verbose: false

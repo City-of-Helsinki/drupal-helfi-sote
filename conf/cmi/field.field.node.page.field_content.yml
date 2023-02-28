@@ -49,12 +49,12 @@ settings:
       event_list: event_list
       from_library: from_library
       chart: chart
-      phasing: phasing
       remote_video: remote_video
       map: map
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
       unit_search: unit_search
+      phasing: phasing
     negate: 0
     target_bundles_drag_drop:
       accordion:
