@@ -3985,16 +3985,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "4.4.18",
+            "version": "4.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "3b38c3f224e01f6749d4cc99ecd9c65b14d1eddb"
+                "reference": "d11e98808707d6696527a52607ebc028c66f59bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/3b38c3f224e01f6749d4cc99ecd9c65b14d1eddb",
-                "reference": "3b38c3f224e01f6749d4cc99ecd9c65b14d1eddb",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d11e98808707d6696527a52607ebc028c66f59bb",
+                "reference": "d11e98808707d6696527a52607ebc028c66f59bb",
                 "shasum": ""
             },
             "require": {
@@ -4009,10 +4009,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/4.4.18",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/4.4.19",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2023-03-01T06:42:38+00:00"
+            "time": "2023-03-01T10:37:19+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -11328,12 +11328,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "0121954c80fd17c18cf050fe73360e63bb43d4fb"
+                "reference": "e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0121954c80fd17c18cf050fe73360e63bb43d4fb",
-                "reference": "0121954c80fd17c18cf050fe73360e63bb43d4fb",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e",
+                "reference": "e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e",
                 "shasum": ""
             },
             "require": {
@@ -11387,7 +11387,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-02T07:48:03+00:00"
+            "time": "2023-03-01T10:25:55+00:00"
         },
         {
             "name": "symfony/error-handler",
