@@ -3985,16 +3985,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "4.4.17",
+            "version": "4.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "6065c40f968f5b3dfcb42b8fb295ad8b41867c15"
+                "reference": "3b38c3f224e01f6749d4cc99ecd9c65b14d1eddb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/6065c40f968f5b3dfcb42b8fb295ad8b41867c15",
-                "reference": "6065c40f968f5b3dfcb42b8fb295ad8b41867c15",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/3b38c3f224e01f6749d4cc99ecd9c65b14d1eddb",
+                "reference": "3b38c3f224e01f6749d4cc99ecd9c65b14d1eddb",
                 "shasum": ""
             },
             "require": {
@@ -4009,10 +4009,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/4.4.17",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/4.4.18",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2023-02-28T07:38:40+00:00"
+            "time": "2023-03-01T06:42:38+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4297,16 +4297,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.17.12",
+            "version": "2.17.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "9487709294a1c4f8626f344b8cbd51528838a1cd"
+                "reference": "2482b3878ed4c4cf55d3b13f79232c4e1c7b0561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/9487709294a1c4f8626f344b8cbd51528838a1cd",
-                "reference": "9487709294a1c4f8626f344b8cbd51528838a1cd",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/2482b3878ed4c4cf55d3b13f79232c4e1c7b0561",
+                "reference": "2482b3878ed4c4cf55d3b13f79232c4e1c7b0561",
                 "shasum": ""
             },
             "require": {
@@ -4417,10 +4417,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.17.12",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.17.14",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2023-02-22T08:19:51+00:00"
+            "time": "2023-03-01T06:44:03+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -11324,16 +11324,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "1ee04c65529dea5d8744774d474e7cbd2f1206d3"
+                "reference": "0121954c80fd17c18cf050fe73360e63bb43d4fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/1ee04c65529dea5d8744774d474e7cbd2f1206d3",
-                "reference": "1ee04c65529dea5d8744774d474e7cbd2f1206d3",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0121954c80fd17c18cf050fe73360e63bb43d4fb",
+                "reference": "0121954c80fd17c18cf050fe73360e63bb43d4fb",
                 "shasum": ""
             },
             "require": {
@@ -11371,7 +11371,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.2.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.2.1"
             },
             "funding": [
                 {
@@ -11387,7 +11387,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-25T10:21:52+00:00"
+            "time": "2023-02-02T07:48:03+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -13662,16 +13662,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.4.19",
+            "version": "v5.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "2944bbc23f5f8da2b962fbcbf7c4a6109b2f4b7b"
+                "reference": "6c5ac3a1be8b849d59a1a77877ee110e1b55eb74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2944bbc23f5f8da2b962fbcbf7c4a6109b2f4b7b",
-                "reference": "2944bbc23f5f8da2b962fbcbf7c4a6109b2f4b7b",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/6c5ac3a1be8b849d59a1a77877ee110e1b55eb74",
+                "reference": "6c5ac3a1be8b849d59a1a77877ee110e1b55eb74",
                 "shasum": ""
             },
             "require": {
@@ -13731,7 +13731,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.19"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.4.21"
             },
             "funding": [
                 {
@@ -13747,7 +13747,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-16T10:52:33+00:00"
+            "time": "2023-02-23T10:00:28+00:00"
         },
         {
             "name": "symfony/yaml",
