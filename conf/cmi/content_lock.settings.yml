@@ -6,6 +6,12 @@ types:
     '*': '*'
   tpr_unit:
     '*': '*'
+  node:
+    '*': '*'
+  paragraphs_library_item:
+    '*': '*'
+  taxonomy_term:
+    '*': '*'
 form_op_lock:
   tpr_service_channel:
     mode: 0
