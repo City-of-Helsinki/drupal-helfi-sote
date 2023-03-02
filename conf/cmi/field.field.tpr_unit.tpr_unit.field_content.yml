@@ -14,6 +14,8 @@ dependencies:
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.unit_accessibility_information
+    - paragraphs.paragraphs_type.unit_contact_card
   module:
     - entity_reference_revisions
     - helfi_tpr
@@ -31,6 +33,8 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
       text: text
       columns: columns
       accordion: accordion
@@ -41,8 +45,6 @@ settings:
       from_library: from_library
       contact_card_listing: contact_card_listing
       remote_video: remote_video
-      unit_accessibility_information: unit_accessibility_information
-      unit_contact_card: unit_contact_card
     negate: 0
     target_bundles_drag_drop:
       accordion:

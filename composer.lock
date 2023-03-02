@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "833aa912a3476c47c8e93d5732bbba7e",
+    "content-hash": "7a97b234fb5e78b2448d9272044cc524",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -540,16 +540,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.7.1",
+            "version": "4.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "fd263e3e9341d29758025b1a9b2878e3247525be"
+                "reference": "8fefdcff0cdb61bc04e34323f626404d536786a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/fd263e3e9341d29758025b1a9b2878e3247525be",
-                "reference": "fd263e3e9341d29758025b1a9b2878e3247525be",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/8fefdcff0cdb61bc04e34323f626404d536786a5",
+                "reference": "8fefdcff0cdb61bc04e34323f626404d536786a5",
                 "shasum": ""
             },
             "require": {
@@ -590,9 +590,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.7.1"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.8.1"
             },
-            "time": "2022-12-06T22:57:25+00:00"
+            "time": "2023-02-28T15:36:38+00:00"
         },
         {
             "name": "consolidation/config",
@@ -2645,17 +2645,17 @@
         },
         {
             "name": "drupal/editoria11y",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editoria11y.git",
-                "reference": "2.0.8"
+                "reference": "2.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.0.8.zip",
-                "reference": "2.0.8",
-                "shasum": "faccd439eb589cf05f6c7341897feafd3c3019d0"
+                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.0.9.zip",
+                "reference": "2.0.9",
+                "shasum": "381cff220455bf99a29eec0d8cb12ce22aa86c2f"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -2663,8 +2663,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.8",
-                    "datestamp": "1675787063",
+                    "version": "2.0.9",
+                    "datestamp": "1677719268",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3736,16 +3736,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "ad6108bb42fecc0fd1889674ae75c4257f4247f2"
+                "reference": "1813f6bc46ea8264af08bc7ac54214e700810dc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/ad6108bb42fecc0fd1889674ae75c4257f4247f2",
-                "reference": "ad6108bb42fecc0fd1889674ae75c4257f4247f2",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/1813f6bc46ea8264af08bc7ac54214e700810dc9",
+                "reference": "1813f6bc46ea8264af08bc7ac54214e700810dc9",
                 "shasum": ""
             },
             "require": {
@@ -3763,23 +3763,23 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/5.0.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/5.0.1",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2023-02-27T08:34:00+00:00"
+            "time": "2023-03-02T09:02:42+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "99d8cb99bcba11f4ede2404f9fc8e153a03665df"
+                "reference": "476a848ec263b51b47352a1d5c6dd241a83786e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/99d8cb99bcba11f4ede2404f9fc8e153a03665df",
-                "reference": "99d8cb99bcba11f4ede2404f9fc8e153a03665df",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/476a848ec263b51b47352a1d5c6dd241a83786e6",
+                "reference": "476a848ec263b51b47352a1d5c6dd241a83786e6",
                 "shasum": ""
             },
             "require": {
@@ -3798,10 +3798,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/2.0.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/2.0.1",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2023-02-22T07:07:42+00:00"
+            "time": "2023-03-02T08:43:59+00:00"
         },
         {
             "name": "drupal/health_check",
@@ -12783,16 +12783,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.2.5",
+            "version": "v6.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0"
+                "reference": "67b8c1eec78296b85dc1c7d9743830160218993d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0",
-                "reference": "b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0",
+                "url": "https://api.github.com/repos/symfony/string/zipball/67b8c1eec78296b85dc1c7d9743830160218993d",
+                "reference": "67b8c1eec78296b85dc1c7d9743830160218993d",
                 "shasum": ""
             },
             "require": {
@@ -12849,7 +12849,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.2.5"
+                "source": "https://github.com/symfony/string/tree/v6.2.7"
             },
             "funding": [
                 {
@@ -12865,7 +12865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-01T08:38:09+00:00"
+            "time": "2023-02-24T10:42:00+00:00"
         },
         {
             "name": "symfony/translation",

@@ -20,6 +20,8 @@ dependencies:
     - paragraphs.paragraphs_type.phasing
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.unit_accessibility_information
+    - paragraphs.paragraphs_type.unit_contact_card
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
@@ -48,13 +50,13 @@ settings:
       banner: banner
       event_list: event_list
       from_library: from_library
+      phasing: phasing
       chart: chart
       remote_video: remote_video
       map: map
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
       unit_search: unit_search
-      phasing: phasing
     negate: 0
     target_bundles_drag_drop:
       accordion:
