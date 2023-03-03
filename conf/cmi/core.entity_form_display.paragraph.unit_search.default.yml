@@ -21,7 +21,6 @@ third_party_settings:
         - field_unit_search_meta_label
         - field_unit_search_meta_placehold
         - field_unit_search_meta_button
-        - field_unit_search_meta_load_more
       label: 'Meta information'
       region: content
       parent_name: ''
@@ -33,8 +32,6 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
-_core:
-  default_config_hash: qf1KLGPPrP7EP5sDnNxNfe9U91dKzpemSCOGVPcbg4E
 id: paragraph.unit_search.default
 targetEntityType: paragraph
 bundle: unit_search

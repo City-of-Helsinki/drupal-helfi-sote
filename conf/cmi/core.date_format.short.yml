@@ -2,8 +2,6 @@ uuid: 06bcd89c-d732-4bc8-ac89-dc91783dc417
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: AlzeyytA8InBgxIG9H2UDJYs3CG98Zj6yRsDKmlbZwA
 id: short
 label: 'Default short date'
 locked: false

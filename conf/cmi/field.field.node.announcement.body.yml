@@ -12,8 +12,6 @@ third_party_settings:
   allowed_formats:
     allowed_formats:
       - minimal
-_core:
-  default_config_hash: q4uWcoLupyOdIrak0dZP0imY7sTyklrRHVmrN8I4Xyg
 id: node.announcement.body
 field_name: body
 entity_type: node

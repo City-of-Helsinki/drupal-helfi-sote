@@ -7,8 +7,6 @@ dependencies:
     - media.type.file
   module:
     - file
-_core:
-  default_config_hash: jwQKir29dK1SOV5MVD2m4ZqCY6UdoUVAgBUBKkCu518
 id: media.file.default
 targetEntityType: media
 bundle: file
@@ -26,5 +24,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_event_list_title
     - paragraphs.paragraphs_type.event_list
 _core:
-  default_config_hash: uB2i15UibWJ0pcAIh5PjKDoPfEpaGZ4uyD3FSBh-a1Q
+  default_config_hash: qMwLluN7b1ya1NYMVR_UnfesNUiGxOPi3hkx-F-_MMM
 id: paragraph.event_list.field_event_list_title
 field_name: field_event_list_title
 entity_type: paragraph
