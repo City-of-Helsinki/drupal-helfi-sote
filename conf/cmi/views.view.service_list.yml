@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.tpr_service.teaser
     - core.entity_view_mode.tpr_service.teaser_search_result
     - core.entity_view_mode.tpr_service.teaser_search_result
+    - core.entity_view_mode.tpr_service.teaser_search_result
   module:
     - helfi_tpr
     - user
@@ -810,6 +811,7 @@ display:
         groups:
           - AND
           - AND
+          - AND
       style:
         type: default
         options:
@@ -841,6 +843,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
