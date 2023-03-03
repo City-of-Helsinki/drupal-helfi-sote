@@ -2,8 +2,6 @@ uuid: b42c089f-8805-44db-b3e2-f7b5a5fa19b1
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: wkWXjXpGr6lPWM3nZ-8RqlBCt7nsAuHiP7EC1Vh4oMc
 id: helfi_news_tags
 label: 'Helfi: News tags'
 label_plural: 'Helfi: News tags'

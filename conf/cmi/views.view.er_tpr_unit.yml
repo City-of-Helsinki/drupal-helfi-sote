@@ -5,8 +5,6 @@ dependencies:
   module:
     - helfi_tpr
     - user
-_core:
-  default_config_hash: zQ42nbFfpEozSJ5KKZAtnpZJWTBMAQeUgGa0DiN9NDE
 id: er_tpr_unit
 label: 'Entity reference - TPR Unit'
 module: views
@@ -622,8 +620,7 @@ display:
         arguments: false
         filters: false
         filter_groups: false
-      display_extenders:
-        metatag_display_extender: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:

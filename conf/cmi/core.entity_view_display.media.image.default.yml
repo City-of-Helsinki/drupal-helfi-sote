@@ -9,8 +9,6 @@ dependencies:
     - media.type.image
   module:
     - image
-_core:
-  default_config_hash: in_XCvnpxCs_Bfi1xBUEGLq1TwGghNZOnnJsyyeWqQE
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -32,5 +30,6 @@ hidden:
   field_photographer: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

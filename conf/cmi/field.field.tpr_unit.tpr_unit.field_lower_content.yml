@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.contact_card_listing
     - paragraphs.paragraphs_type.content_cards
+    - paragraphs.paragraphs_type.event_list
     - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.liftup_with_image
@@ -17,12 +18,9 @@ dependencies:
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.unit_accessibility_information
     - paragraphs.paragraphs_type.unit_contact_card
-    - paragraphs.paragraphs_type.event_list
   module:
     - entity_reference_revisions
     - helfi_tpr
-_core:
-  default_config_hash: nD8QC6Ca3OaIGPx9uKKwbMHflYfmsWfYG2N-uCUMAzQ
 id: tpr_unit.tpr_unit.field_lower_content
 field_name: field_lower_content
 entity_type: tpr_unit
@@ -37,6 +35,8 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      unit_accessibility_information: unit_accessibility_information
+      unit_contact_card: unit_contact_card
       columns: columns
       accordion: accordion
       image: image
@@ -45,84 +45,52 @@ settings:
       banner: banner
       liftup_with_image: liftup_with_image
       from_library: from_library
+      news_list: news_list
       contact_card_listing: contact_card_listing
       remote_video: remote_video
-      unit_contact_card: unit_contact_card
-      unit_accessibility_information: unit_accessibility_information
-      news_list: news_list
       event_list: event_list
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: -27
+        weight: 0
         enabled: true
-      accordion_item:
-        weight: -22
-        enabled: false
       banner:
-        weight: -21
+        weight: 0
         enabled: true
       columns:
-        weight: -28
+        weight: 0
         enabled: true
-      contact_card:
-        weight: 30
-        enabled: false
       contact_card_listing:
-        weight: 31
+        weight: 0
         enabled: true
       content_cards:
-        weight: -23
+        weight: 0
         enabled: true
       event_list:
-        weight: 44
+        weight: 0
         enabled: true
       from_library:
-        weight: 21
+        weight: 0
         enabled: true
-      gallery:
-        weight: -25
-        enabled: false
-      gallery_slide:
-        weight: -20
-        enabled: false
-      hero:
-        weight: -19
-        enabled: false
       image:
-        weight: -26
+        weight: 0
         enabled: true
       liftup_with_image:
-        weight: -18
+        weight: 0
         enabled: true
       list_of_links:
-        weight: -24
+        weight: 0
         enabled: true
-      list_of_links_item:
-        weight: -17
-        enabled: false
-      map:
-        weight: 31
-        enabled: false
       news_list:
-        weight: 30
+        weight: 0
         enabled: true
       remote_video:
-        weight: 32
+        weight: 0
         enabled: true
-      social_media_link:
-        weight: 46
-        enabled: false
-      text:
-        weight: -29
-        enabled: false
       unit_accessibility_information:
-        weight: 52
+        weight: 0
         enabled: true
       unit_contact_card:
-        weight: 35
+        weight: 0
         enabled: true
-      unit_search:
-        weight: -16
-        enabled: false
 field_type: entity_reference_revisions

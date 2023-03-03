@@ -23,10 +23,12 @@ dependencies:
     - helfi_api_base
     - helfi_tpr
     - media
+    - menu_link_content
     - node
     - paragraphs
     - paragraphs_library
     - path
+    - publication_date
     - scheduler
     - siteimprove
     - system
@@ -64,6 +66,7 @@ permissions:
   - 'create terms in keywords'
   - 'create terms in neighbourhoods'
   - 'create url aliases'
+  - 'delete landing_page revisions'
   - 'delete media'
   - 'delete own announcement content'
   - 'delete own file media'
@@ -92,6 +95,7 @@ permissions:
   - 'edit paragraph library item'
   - 'edit terms in keywords'
   - 'edit terms in neighbourhoods'
+  - 'mark as hidden in editoria11y'
   - 'revert announcement revisions'
   - 'revert landing_page revisions'
   - 'revert page revisions'
@@ -100,7 +104,16 @@ permissions:
   - 'set landing_page published on date'
   - 'set page published on date'
   - 'translate editable entities'
+  - 'translate file media'
+  - 'translate image media'
+  - 'translate landing_page node'
+  - 'translate menu_link_content'
   - 'translate neighbourhoods taxonomy_term'
+  - 'translate page node'
+  - 'translate tpr_errand_service'
+  - 'translate tpr_service'
+  - 'translate tpr_service_channel'
+  - 'translate tpr_unit'
   - 'update any tpr_service'
   - 'update any tpr_unit'
   - 'update media'
