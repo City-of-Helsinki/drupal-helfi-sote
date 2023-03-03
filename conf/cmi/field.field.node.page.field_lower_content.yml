@@ -62,60 +62,60 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: 30
+        weight: 0
         enabled: true
       banner:
-        weight: 30
+        weight: 0
         enabled: true
       chart:
-        weight: 30
+        weight: 0
         enabled: true
       columns:
-        weight: 30
+        weight: 0
         enabled: true
       contact_card_listing:
-        weight: 30
+        weight: 0
         enabled: true
       content_cards:
-        weight: 30
+        weight: 0
         enabled: true
       content_liftup:
-        weight: 30
+        weight: 0
         enabled: true
       event_list:
-        weight: 30
+        weight: 0
         enabled: true
       from_library:
-        weight: 30
+        weight: 0
         enabled: true
       image:
-        weight: 30
+        weight: 0
         enabled: true
       list_of_links:
-        weight: 30
+        weight: 0
         enabled: true
       map:
-        weight: 30
+        weight: 0
         enabled: true
       news_list:
-        weight: 30
+        weight: 0
         enabled: true
       phasing:
-        weight: 30
+        weight: 0
         enabled: true
       remote_video:
-        weight: 30
+        weight: 0
         enabled: true
       text:
-        weight: 30
+        weight: 0
         enabled: true
       unit_accessibility_information:
-        weight: 30
+        weight: 0
         enabled: true
       unit_contact_card:
-        weight: 30
+        weight: 0
         enabled: true
       unit_search:
-        weight: 30
+        weight: 0
         enabled: true
 field_type: entity_reference_revisions

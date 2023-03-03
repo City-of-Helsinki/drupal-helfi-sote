@@ -28,9 +28,9 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       from_library:
-        weight: 30
+        weight: 0
         enabled: true
       sidebar_text:
-        weight: 30
+        weight: 0
         enabled: true
 field_type: entity_reference_revisions

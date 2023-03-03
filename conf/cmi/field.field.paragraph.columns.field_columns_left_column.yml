@@ -28,9 +28,9 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       image:
-        weight: 30
+        weight: 0
         enabled: true
       text:
-        weight: 30
+        weight: 0
         enabled: true
 field_type: entity_reference_revisions
