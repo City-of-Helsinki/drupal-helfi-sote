@@ -2645,17 +2645,17 @@
         },
         {
             "name": "drupal/editoria11y",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editoria11y.git",
-                "reference": "2.0.9"
+                "reference": "2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "381cff220455bf99a29eec0d8cb12ce22aa86c2f"
+                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.0.10.zip",
+                "reference": "2.0.10",
+                "shasum": "58dd5d8d16ffb8f46c844f8b5a89e62e51a69f95"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -2663,8 +2663,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1677719268",
+                    "version": "2.0.10",
+                    "datestamp": "1678221078",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3987,16 +3987,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "3.0.2",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "4ab42b6f71a87b3b3add418e0382fc60b715c4cb"
+                "reference": "7c5c6f14bce3cf54184fb738dbf88e7a6557e5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/4ab42b6f71a87b3b3add418e0382fc60b715c4cb",
-                "reference": "4ab42b6f71a87b3b3add418e0382fc60b715c4cb",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/7c5c6f14bce3cf54184fb738dbf88e7a6557e5bc",
+                "reference": "7c5c6f14bce3cf54184fb738dbf88e7a6557e5bc",
                 "shasum": ""
             },
             "require": {
@@ -4023,7 +4023,7 @@
                 "drupal/image_style_quality": "^1.4",
                 "drupal/imagecache_external": "^3.0",
                 "drupal/imagemagick": "^3.4",
-                "drupal/linkit": "^6.0@beta",
+                "drupal/linkit": "6.0.0-beta3",
                 "drupal/media_entity_file_replace": "^1.0",
                 "drupal/menu_block_current_language": "^2.0",
                 "drupal/menu_link_attributes": "^1.2",
@@ -4082,7 +4082,7 @@
                         "[#UHF-3268] Support for field group translations (https://www.drupal.org/node/3111107)": "https://www.drupal.org/files/issues/2022-09-27/3111107-39.patch"
                     },
                     "drupal/linkit": {
-                        "[#UHF-1872] Linkit support for link field (https://www.drupal.org/project/linkit/issues/2712951)": "https://www.drupal.org/files/issues/2023-02-08/2712951-315.patch"
+                        "[#UHF-1872] Linkit support for link field (https://www.drupal.org/i/2712951)": "https://www.drupal.org/files/issues/2021-08-20/avoid-linkit-CI-issue.patch"
                     },
                     "drupal/paragraphs": {
                         "https://www.drupal.org/project/paragraphs/issues/2904705#comment-13836790": "https://www.drupal.org/files/issues/2020-09-25/2904705-115.patch",
@@ -4101,10 +4101,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/3.0.2",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/3.0.5",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2023-03-03T08:08:49+00:00"
+            "time": "2023-03-08T13:20:47+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -4457,6 +4457,10 @@
                 {
                     "name": "johnwebdev",
                     "homepage": "https://www.drupal.org/user/3331569"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
                 }
             ],
             "description": "Linkit - Enriched linking experience",
