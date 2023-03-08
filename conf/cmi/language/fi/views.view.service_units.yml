@@ -6,20 +6,20 @@ display:
         options:
           submit_button: Käytä
           reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
-          sort_asc_label: Nousevasti
-          sort_desc_label: Laskevasti
+          exposed_sorts_label: Järjestä
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
       pager:
         options:
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
+            next: Seuraava
+            previous: Edellinen
+            first: Ensimmäinen
+            last: Viimeinen
           expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_label: 'Kohteita sivulla'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Lataa lisää palvelupaikkoja'
       fields:
         name:
           separator: ', '

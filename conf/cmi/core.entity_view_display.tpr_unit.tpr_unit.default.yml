@@ -17,8 +17,6 @@ dependencies:
     - metatag
     - telephone
     - text
-_core:
-  default_config_hash: ECaVPCJRldoUwExuc1n2VcC4lhdfxOxJc-jx5AgDYn0
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit
