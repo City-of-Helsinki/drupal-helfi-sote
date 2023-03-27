@@ -1,0 +1,29 @@
+uuid: f5478984-1fa4-409a-bcfc-0d79c0a8fb29
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_platform_config
+    - system
+  theme:
+    - hdbt_subtheme
+id: ibmchatapp_watson_sotebot_exceptions
+theme: hdbt_subtheme
+region: attachments
+weight: 0
+provider: null
+plugin: ibm_chat_app
+settings:
+  id: ibm_chat_app
+  label: 'Watson Sotebot / Hester (Exceptions)'
+  label_display: visible
+  provider: helfi_platform_config
+  hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
+  engagementId: sote-prod
+  tenantId: sote-prod
+  assistantId: sote-prod
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/terveydenhoito/sairaalat-ja-poliklinikat/geriatrian-poliklinikka\r\n/halsovard/sjukhus-och-polikliniker/geriatriska-polikliniken\r\n/health-care/hospitals-and-outpatient-clinics/memory-outpatient-clinic"
