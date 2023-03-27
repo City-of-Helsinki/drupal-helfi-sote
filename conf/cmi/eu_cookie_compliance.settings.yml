@@ -1,7 +1,4 @@
-_core:
-  default_config_hash: hQ7DNLHTlQh0_X_bDls8Gwa7MA_vHoOePmKn2NASjM4
 langcode: en
-uuid: 794fc11b-a1b4-41a7-a351-aaa84516c2c5
 popup_enabled: true
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
@@ -71,10 +68,6 @@ domain_all_sites: true
 settings_tab_enabled: false
 containing_element: body
 cookie_policy_version: 1.1.0
-cookie_value_disagreed: '0'
-cookie_value_agreed_show_thank_you: '1'
-cookie_value_agreed: '2'
-accessibility_focus: false
 close_button_action: close_banner
 reject_button_label: ''
 reject_button_enabled: false

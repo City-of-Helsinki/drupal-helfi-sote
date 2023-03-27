@@ -1,3 +1,4 @@
 site_settings:
   default_icon: heart-fill
+  theme_color: bus
   koro: pulse

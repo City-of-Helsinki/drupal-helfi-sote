@@ -2,8 +2,6 @@ uuid: f8c73069-d90f-40f7-b09d-4881ef8a98b5
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: h4y6pjlsSfKM9cgEi9tWGsJ57_zj1b4CelECji9A1Y0
 id: helfi_news_neighbourhoods
 label: 'Helfi: News neighbourhoods'
 label_plural: 'Helfi: News neighbourhoods'

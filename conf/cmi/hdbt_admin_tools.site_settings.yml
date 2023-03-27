@@ -1,9 +1,8 @@
-_core:
-  default_config_hash: AOXdYmkvKEWQ90i8bbStpi07jONjN29ny1BcgITQFSM
 langcode: en
 site_settings:
   default_icon: heart-fill
-  theme_color: coat-of-arms
+  theme_color: bus
   koro: pulse
 footer_settings:
   footer_color: dark
+path_to_json: /themes/contrib/hdbt/src/icons/editor-selectable-icons.json
