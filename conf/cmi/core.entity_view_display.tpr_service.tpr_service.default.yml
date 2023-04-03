@@ -13,6 +13,8 @@ dependencies:
     - link
     - metatag
     - text
+_core:
+  default_config_hash: 26lfekZ94e-EhgSzEv_7KLsDbUr7VnPlFuJk0GdpVtc
 id: tpr_service.tpr_service.default
 targetEntityType: tpr_service
 bundle: tpr_service
