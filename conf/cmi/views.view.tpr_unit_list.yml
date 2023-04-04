@@ -81,8 +81,6 @@ display:
           clear_on_exposed: true
           force_selection_info: false
           selected_actions:
-
-
             -
               action_id: 'entity:break_lock:tpr_unit'
               preconfiguration:
