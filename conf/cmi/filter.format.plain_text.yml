@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - helfi_api_base
-    - helfi_api_base
 name: 'Plain text'
 format: plain_text
 weight: 10
