@@ -4,14 +4,16 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: J-GWO5EBcq_881yD1jMX3zsrR14hw97BvBqi6h5kknE
 id: paragraph.field_unit_search_title
 field_name: field_unit_search_title
 entity_type: paragraph
 type: string
 settings:
   max_length: 255
-  case_sensitive: false
   is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

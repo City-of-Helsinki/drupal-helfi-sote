@@ -46,12 +46,12 @@ module:
   helfi_base_content: 0
   helfi_ckeditor: 0
   helfi_eu_cookie_compliance: 0
+  helfi_global_announcement: 0
   helfi_image_styles: 0
   helfi_media: 0
   helfi_media_chart: 0
   helfi_media_map: 0
   helfi_media_remote_video: 0
-  helfi_navigation: 0
   helfi_node_announcement: 0
   helfi_node_landing_page: 0
   helfi_node_page: 0
@@ -153,6 +153,7 @@ module:
   views_bulk_edit: 0
   views_bulk_operations: 0
   views_ui: 0
+  helfi_navigation: 1
   pathauto: 1
   content_translation: 10
   externalauth: 10
