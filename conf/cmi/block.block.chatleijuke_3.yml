@@ -18,7 +18,7 @@ settings:
   label: 'Chat Leijuke'
   label_display: '0'
   provider: helfi_platform_config
-  chat_title: ''
+  chat_title: 'Sotebotti Hester'
   chat_selection: watson_sote
 visibility:
   request_path:
