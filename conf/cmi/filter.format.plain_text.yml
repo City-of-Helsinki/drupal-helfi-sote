@@ -4,7 +4,7 @@ status: true
 dependencies:
   module:
     - helfi_api_base
-name: 'Puhdas teksti'
+name: 'Plain text'
 format: plain_text
 weight: 10
 filters:
