@@ -2,6 +2,8 @@ uuid: 8c277859-7e46-4d71-bf09-cc7b05e22469
 langcode: und
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: XF03x7sTGKHXr9snkobFVOuxt8Wz1WbCCnnZGarmARU
 id: branding-navigation
 label: 'Branding - Navigation'
 description: 'Navigation for branding bar'
