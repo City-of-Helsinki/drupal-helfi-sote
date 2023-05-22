@@ -19,9 +19,9 @@ settings:
   label_display: visible
   provider: helfi_platform_config
   hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
-  engagementId: sote-prod
+  engagementId: sote-bot
   tenantId: sote-prod
-  assistantId: sote-prod
+  assistantId: sote-bot
 visibility:
   request_path:
     id: request_path
