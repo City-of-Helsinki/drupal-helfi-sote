@@ -1,25 +1,27 @@
-uuid: e294fbbf-9b89-42f7-8136-0f52488e8e99
+uuid: f5478984-1fa4-409a-bcfc-0d79c0a8fb29
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - helfi_platform_config
     - system
   theme:
     - hdbt_subtheme
-id: chatleijuke_4
+id: ibmchatapp_watson_sotebot_exceptions
 theme: hdbt_subtheme
 region: attachments
 weight: 0
 provider: null
-plugin: chat_leijuke
+plugin: ibm_chat_app
 settings:
-  id: chat_leijuke
-  label: 'Chat Leijuke Exceptions'
+  id: ibm_chat_app
+  label: 'Watson Sotebot / Hester (Exceptions)'
   label_display: visible
   provider: helfi_platform_config
-  chat_title: ''
-  chat_selection: watson_sote
+  hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
+  engagementId: sote-bot
+  tenantId: sote-prod
+  assistantId: sote-bot
 visibility:
   request_path:
     id: request_path
