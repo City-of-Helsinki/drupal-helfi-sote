@@ -1,9 +1,10 @@
 uuid: 87c2646d-e5da-40c2-a168-b1c7df016e6e
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - helfi_platform_config
+    - system
   theme:
     - hdbt_subtheme
 id: ibmchatapp
@@ -14,11 +15,15 @@ provider: null
 plugin: ibm_chat_app
 settings:
   id: ibm_chat_app
-  label: 'IBM Chat App'
+  label: 'Watson Sotebot / Hester'
   label_display: '0'
   provider: helfi_platform_config
   hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
   engagementId: sote-bot
   tenantId: sote-prod
   assistantId: sote-bot
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/asiakkaan-tiedot-ja-oikeudet\r\n/asiakkaan-tiedot-ja-oikeudet/*\r\n/sosiaalinen-ja-taloudellinen-tuki\r\n/sosiaalinen-ja-taloudellinen-tuki/*\r\n/vammaisten-palvelut\r\n/vammaisten-palvelut/*\r\n/toihin-meille\r\n/toihin-meille/*\r\n/terveydenhoito/kuntoutus-ja-terapiat/puheterapia/aikuisten-puheterapia\r\n/terveydenhoito/kuntoutus-ja-terapiat/kuntoutussuunnittelu\r\n/terveydenhoito/kuntoutus-ja-terapiat/kuntoutusohjaus\r\n/halsovard/rehabilitering-och-terapi/talterapi/logopedi-for-vuxna\r\n/halsovard/rehabilitering-och-terapi/rehabiliteringsplanering\r\n/halsovard/rehabilitering-och-terapi/rehabiliteringshandledning\r\n/health-care/rehabilitation-and-therapies/speech-therapy/adult-speech-therapy\r\n/health-care/rehabilitation-and-therapies/rehabilitation-planning\r\n/health-care/rehabilitation-and-therapies/rehabilitation-counselling\r\n/terveydenhoito/terveysasemat\r\n/terveydenhoito/terveysasemat/*\r\n/halsovard/halsostationer\r\n/halsovard/halsostationer/*\r\n/health-care/health-stations\r\n/health-care/health-stations/*\r\n/terveydenhoito/sairaalat-ja-poliklinikat\r\n/halsovard/sjukhus-och-polikliniker\r\n/health-care/hospitals-and-outpatient-clinics\r\n/terveydenhoito/sairaalat-ja-poliklinikat/*\r\n/halsovard/sjukhus-och-polikliniker/*\r\n/health-care/hospitals-and-outpatient-clinics/*\r\n/terveydenhoito/hammashoito\r\n/terveydenhoito/hammashoito/*\r\n/halsovard/tandvard\r\n/halsovard/tandvard/*\r\n/health-care/dental-care\r\n/health-care/dental-care/*\r\n/terveydenhoito/kiireellinen-hoito-ja-paivystys\r\n/halsovard/bradskande-vard-och-halsocentralsjour\r\n/health-care/urgent-and-emergency-care"
