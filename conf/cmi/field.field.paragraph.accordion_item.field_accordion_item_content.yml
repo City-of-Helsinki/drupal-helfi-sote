@@ -11,6 +11,8 @@ dependencies:
     - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: PZYH0XJHai5BanrU841HBb6psP_104W5Abd-D8q4dIU
 id: paragraph.accordion_item.field_accordion_item_content
 field_name: field_accordion_item_content
 entity_type: paragraph

@@ -166,11 +166,6 @@
   &::before {
     @include pseudo-icon('location', $spacing-and-half, currentColor);
   }
-
-  .address-line1::after,
-  .address-line2::after {
-    content: ',';
-  }
 }
 
 .unit-contact-card__info-row--phone::before {
