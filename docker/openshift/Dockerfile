@@ -9,6 +9,10 @@ RUN composer install --no-progress --profile --prefer-dist --no-interaction --no
 COPY docker/openshift/entrypoints/20-deploy.sh /entrypoints
 RUN chmod +x /entrypoints/20-deploy.sh
 
+RUN { \
+    echo 'zend.enable_gc=On'; \
+  } > /etc/php81/conf.d/php-xyz-overrides.ini
+
 # Copy cron scripts
 RUN mkdir /crons
 COPY docker/openshift/crons/ /crons
