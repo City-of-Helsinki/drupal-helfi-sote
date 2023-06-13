@@ -1,0 +1,29 @@
+uuid: 87c2646d-e5da-40c2-a168-b1c7df016e6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_platform_config
+    - system
+  theme:
+    - hdbt_subtheme
+id: ibmchatapp
+theme: hdbt_subtheme
+region: attachments
+weight: 0
+provider: null
+plugin: ibm_chat_app
+settings:
+  id: ibm_chat_app
+  label: 'Watson Sotebot / Hester'
+  label_display: '0'
+  provider: helfi_platform_config
+  hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
+  engagementId: sote-bot
+  tenantId: sote-prod
+  assistantId: sote-bot
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/asiakkaan-tiedot-ja-oikeudet\r\n/asiakkaan-tiedot-ja-oikeudet/*\r\n/data-and-the-rights-of-the-client\r\n/data-and-the-rights-of-the-client/*\r\n/kundens-uppgifter-och-rattigheter\r\n/kundens-uppgifter-och-rattigheter/*\r\n/vammaisten-palvelut\r\n/vammaisten-palvelut/*\r\n/services-for-people-with-disabilities\r\n/services-for-people-with-disabilities/*\r\n/tjanster-for-personer-med-funktionsnedsattning\r\n/tjanster-for-personer-med-funktionsnedsattning/*\r\n/toihin-meille\r\n/toihin-meille/*\r\n/join-us\r\n/join-us/*\r\n/kom-och-jobba-hos-oss\r\n/kom-och-jobba-hos-oss/*\r\n/vammaispalvelut\r\n/vammaispalvelut/*\r\n/funktionshinderservice\r\n/funktionshinderservice/*\r\n/disabilityservices\r\n/disabilityservices/*\r\n/terveydenhoito/kuntoutus-ja-terapiat/puheterapia/aikuisten-puheterapia\r\n/terveydenhoito/kuntoutus-ja-terapiat/kuntoutussuunnittelu\r\n/terveydenhoito/kuntoutus-ja-terapiat/kuntoutusohjaus\r\n/halsovard/rehabilitering-och-terapi/talterapi/logopedi-for-vuxna\r\n/halsovard/rehabilitering-och-terapi/rehabiliteringsplanering\r\n/halsovard/rehabilitering-och-terapi/rehabiliteringshandledning\r\n/health-care/rehabilitation-and-therapies/speech-therapy/adult-speech-therapy\r\n/health-care/rehabilitation-and-therapies/rehabilitation-planning\r\n/health-care/rehabilitation-and-therapies/rehabilitation-counselling\r\n/terveydenhoito/sairaalat-ja-poliklinikat\r\n/terveydenhoito/sairaalat-ja-poliklinikat/*\r\n/halsovard/sjukhus-och-polikliniker\r\n/halsovard/sjukhus-och-polikliniker/*\r\n/health-care/hospitals-and-outpatient-clinics\r\n/health-care/hospitals-and-outpatient-clinics/*\r\n/terveydenhoito/hammashoito\r\n/terveydenhoito/hammashoito/*\r\n/halsovard/tandvard\r\n/halsovard/tandvard/*\r\n/health-care/dental-care\r\n/health-care/dental-care/*"
