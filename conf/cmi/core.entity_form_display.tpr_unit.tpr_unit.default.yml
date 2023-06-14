@@ -18,7 +18,7 @@ dependencies:
     - readonly_field_widget
     - select2
 _core:
-  default_config_hash: YWnRrqJSaeQZEwAqgArp65Mhok9h6tEU1KTO5KzRl80
+  default_config_hash: cotjiL17Qafj5pirtPax237aflvFs_-3pKHSP6wblrg
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit
