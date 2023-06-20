@@ -19,7 +19,7 @@ dependencies:
     - telephone
     - text
 _core:
-  default_config_hash: Zg1dRaAcdqWrYdUQPfrE3NjtAFm507U4rg_8LPIPhWA
+  default_config_hash: eEYHiODeZDTb8z0FJIhd8OeomGNTM2nh51IdmVBQBqc
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit
@@ -191,7 +191,7 @@ content:
     label: hidden
     settings:
       iframe_title: 'Location on map'
-      link_title: 'Open the map in a new window'
+      link_title: 'Open larger map'
       target: true
     third_party_settings: {  }
     weight: 10

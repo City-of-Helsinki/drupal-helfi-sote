@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.hero.field_hero_bg_color
     - field.field.paragraph.hero.field_hero_desc
     - field.field.paragraph.hero.field_hero_design
     - field.field.paragraph.hero.field_hero_image
@@ -15,18 +14,13 @@ dependencies:
     - link
     - options
     - text
+_core:
+  default_config_hash: _cEmb8iIMHW_kmY2nlzrMR-ur24Tc0k7N4FGGAvT03k
 id: paragraph.hero.default
 targetEntityType: paragraph
 bundle: hero
 mode: default
 content:
-  field_hero_bg_color:
-    type: list_key
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
   field_hero_desc:
     type: text_default
     label: hidden
