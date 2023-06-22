@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains SOTE installation hooks.
+ */
+
+declare(strict_types = 1);
+
+/**
+ * UHF-X: Enable calculator paragraph on strandard page on SOTE-instance.
+ */
+function helfi_sote_update_9001(): void {
+  helfi_platform_config_update_paragraph_target_types();
+}

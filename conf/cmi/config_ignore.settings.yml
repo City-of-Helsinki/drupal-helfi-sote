@@ -5,3 +5,5 @@ ignored_config_entities:
   - 'easy_breadcrumb.settings:home_segment_title'
   - block.block.ibmchatapp
   - block.block.ibmchatapp_watson_sotebot_exceptions
+  - 'field.storage.paragraph.field_calculator:settings.allowed_values'
+  - helfi_calculator.calculator_settings

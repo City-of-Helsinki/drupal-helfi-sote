@@ -1,0 +1,25 @@
+uuid: bc263706-2e05-4f00-992d-6b62c7bacb03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_calculator
+    - paragraphs.paragraphs_type.calculator
+  module:
+    - options
+_core:
+  default_config_hash: nC51dNmmyCVk7ig7qpYMOc69UxdmGo26EMF3HNe02Go
+id: paragraph.calculator.field_calculator
+field_name: field_calculator
+entity_type: paragraph
+bundle: calculator
+label: Calculator
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: disabled
+default_value_callback: ''
+settings: {  }
+field_type: list_string
