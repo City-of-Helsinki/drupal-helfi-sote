@@ -55,10 +55,12 @@ function helfi_sote_helfi_paragraph_types() : array {
     'node' => [
       'page' => [
         'field_content' => [
+          'calculator',
           'unit_accessibility_information',
           'unit_contact_card',
         ],
         'field_lower_content' => [
+          'calculator',
           'unit_accessibility_information',
           'unit_contact_card',
         ],

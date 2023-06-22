@@ -1,0 +1,23 @@
+uuid: dc2270f2-80b3-47ae-b588-43745eff93b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 8ttyUjXwYzU9Wtlyub9tIN-_lxaF5mV0rXomnfBPUGI
+id: paragraph.field_calculator
+field_name: field_calculator
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: 'Drupal\helfi_calculator\Form\CalculatorSettings::getActiveCalculators'
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

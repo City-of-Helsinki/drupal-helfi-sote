@@ -44,6 +44,7 @@ module:
   helfi_api_base: 0
   helfi_azure_fs: 0
   helfi_base_content: 0
+  helfi_calculator: 0
   helfi_ckeditor: 0
   helfi_eu_cookie_compliance: 0
   helfi_global_announcement: 0
