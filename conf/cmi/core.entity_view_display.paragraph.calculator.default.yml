@@ -1,0 +1,34 @@
+uuid: bac419dc-c19d-4405-a2c5-8485e5e5cbab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.calculator.field_calculator
+    - field.field.paragraph.calculator.field_calculator_title
+    - paragraphs.paragraphs_type.calculator
+  module:
+    - options
+_core:
+  default_config_hash: IV9HaopKVuXUhTly62bndhPetfg5MmB3FKOud1RqnNk
+id: paragraph.calculator.default
+targetEntityType: paragraph
+bundle: calculator
+mode: default
+content:
+  field_calculator:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_calculator_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true
