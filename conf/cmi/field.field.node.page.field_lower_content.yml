@@ -28,6 +28,8 @@ dependencies:
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: AejXN443GE3b159k_6fsqDyZ_BHs68SU9wBMY24Ueog
 id: node.page.field_lower_content
 field_name: field_lower_content
 entity_type: node
@@ -58,11 +60,11 @@ settings:
       phasing: phasing
       remote_video: remote_video
       map: map
+      calculator: calculator
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
       unit_search: unit_search
       service_list_search: service_list_search
-      calculator: calculator
     negate: 0
     target_bundles_drag_drop:
       accordion:

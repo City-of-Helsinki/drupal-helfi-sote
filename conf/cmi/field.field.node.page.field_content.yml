@@ -28,6 +28,8 @@ dependencies:
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: G8uqVofIIeSPJSEW4FPnQrwefO2xMZGnwlbcHrbpZ48
 id: node.page.field_content
 field_name: field_content
 entity_type: node
@@ -58,11 +60,11 @@ settings:
       chart: chart
       remote_video: remote_video
       map: map
+      calculator: calculator
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
       unit_search: unit_search
       service_list_search: service_list_search
-      calculator: calculator
     negate: 0
     target_bundles_drag_drop:
       accordion:
