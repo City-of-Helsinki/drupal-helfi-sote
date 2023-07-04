@@ -217,12 +217,16 @@ content:
     weight: 12
     region: content
 hidden:
+  contacts: true
   created: true
   field_districts: true
   field_unit_type: true
   hide_description: true
   langcode: true
   latitude: true
+  links: true
   longitude: true
+  other_info: true
+  price_info: true
   show_www: true
   streetview_entrance_url: true

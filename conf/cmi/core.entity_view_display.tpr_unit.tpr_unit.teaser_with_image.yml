@@ -70,6 +70,7 @@ hidden:
   accessibility_www: true
   address_postal: true
   call_charge_info: true
+  contacts: true
   created: true
   description: true
   email: true
@@ -82,9 +83,12 @@ hidden:
   highlights: true
   langcode: true
   latitude: true
+  links: true
   longitude: true
   name_override: true
   opening_hours: true
+  other_info: true
+  price_info: true
   provided_languages: true
   service_map_embed: true
   services: true
