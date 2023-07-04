@@ -383,7 +383,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_districts: true
   hide_description: true
   ontologyword_ids: true
   show_www: true
