@@ -1,16 +1,16 @@
-uuid: ffc459f2-7e6f-4de4-98bb-0a34a6c406a5
+uuid: 9d9c59d4-c4ce-432c-8c58-e4a09cad99d5
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.announcement
+    - node.type.landing_page
 _core:
-  default_config_hash: Dssk6_3sRlJ0urINRbHmfK7WCXlc3hHp1hVsZlAEv1w
-id: node.announcement.promote
-field_name: promote
+  default_config_hash: ewmZbuO4KgD36Ka7QA-8tJ9jktJH-jQbTNMrkHfuQRc
+id: node.landing_page.status
+field_name: status
 entity_type: node
-bundle: announcement
-label: 'Promoted to front page'
+bundle: landing_page
+label: Published
 description: ''
 required: false
 translatable: true

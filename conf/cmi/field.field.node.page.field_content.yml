@@ -28,6 +28,8 @@ dependencies:
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: G8uqVofIIeSPJSEW4FPnQrwefO2xMZGnwlbcHrbpZ48
 id: node.page.field_content
 field_name: field_content
 entity_type: node
