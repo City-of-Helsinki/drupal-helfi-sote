@@ -9,4 +9,4 @@ $config['helfi_proxy.settings']['prefixes'] = [
   'ru' => 'test-health-and-social-services',
 ];
 
-
+$config['helfi_global_announcement.settings']['source_environment'] = 'testing';
