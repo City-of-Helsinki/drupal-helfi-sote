@@ -7,6 +7,7 @@ $config['helfi_proxy.settings']['prefixes'] = [
   'fi' => 'test-sosiaali-ja-terveyspalvelut',
   'sv' => 'test-social-och-halsovardstjanster',
   'ru' => 'test-health-and-social-services',
+  'zxx' => 'test-health-and-social-services',
 ];
 
 $config['helfi_global_announcement.settings']['source_environment'] = 'testing';
