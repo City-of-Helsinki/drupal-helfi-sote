@@ -7,5 +7,6 @@ $config['helfi_proxy.settings']['prefixes'] = [
   'fi' => 'staging-sosiaali-ja-terveyspalvelut',
   'sv' => 'staging-social-och-halsovardstjanster',
   'ru' => 'staging-health-and-social-services',
+  'zxx' => 'staging-health-and-social-services',
 ];
 
