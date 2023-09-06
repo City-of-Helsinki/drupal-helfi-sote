@@ -2,6 +2,8 @@ uuid: c41621f3-55b2-4fe0-b01f-0d990d7cdc94
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: tbLi8ugyIzjhw6yIC8GnD7DwIclp9hchjpbdiJ8qeBI
 id: unit_contact_card
 label: 'Unit contact card'
 icon_uuid: null
