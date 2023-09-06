@@ -42,6 +42,7 @@ settings:
     target_bundles:
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
+      text: text
       columns: columns
       accordion: accordion
       image: image
@@ -54,7 +55,6 @@ settings:
       news_list: news_list
       event_list: event_list
       phasing: phasing
-      text: text
       contact_card_listing: contact_card_listing
       map: map
     negate: 0
