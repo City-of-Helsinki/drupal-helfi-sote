@@ -1,0 +1,7 @@
+helfi_sote.genesys_auth_redirect_test:
+  path: '/genesys-auth-redirect-test'
+  defaults:
+    _controller: '\Drupal\helfi_sote\Controller\GenesysAuthRedirectControllerTesting::content'
+    _title: 'Genesys auth redirect test'
+  requirements:
+    _permission: 'access content'
