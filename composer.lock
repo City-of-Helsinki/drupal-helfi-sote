@@ -3747,16 +3747,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "5.6.8",
+            "version": "5.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "e8a3b4554e0d87a35cb49aba4c1f581c47fbbd2a"
+                "reference": "c811827bc4ccf10b6d2312902f9821172d7b8b48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/e8a3b4554e0d87a35cb49aba4c1f581c47fbbd2a",
-                "reference": "e8a3b4554e0d87a35cb49aba4c1f581c47fbbd2a",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/c811827bc4ccf10b6d2312902f9821172d7b8b48",
+                "reference": "c811827bc4ccf10b6d2312902f9821172d7b8b48",
                 "shasum": ""
             },
             "require": {
@@ -3774,10 +3774,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/5.6.8",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/5.6.10",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2023-09-22T10:02:05+00:00"
+            "time": "2023-09-25T12:26:46+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4007,16 +4007,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "3.4.13",
+            "version": "3.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "1b07d5f2c76efef3298ceae016671a2a22bbdaf5"
+                "reference": "f3a9eff8df01870a1b3124a87465ae62bb7c47ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/1b07d5f2c76efef3298ceae016671a2a22bbdaf5",
-                "reference": "1b07d5f2c76efef3298ceae016671a2a22bbdaf5",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/f3a9eff8df01870a1b3124a87465ae62bb7c47ba",
+                "reference": "f3a9eff8df01870a1b3124a87465ae62bb7c47ba",
                 "shasum": ""
             },
             "require": {
@@ -4119,10 +4119,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/3.4.13",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/3.4.14",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2023-09-22T10:01:32+00:00"
+            "time": "2023-09-25T07:25:21+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -9955,16 +9955,16 @@
         },
         {
             "name": "psr/http-client",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31"
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/0955afe48220520692d2d09f7ab7e0f93ffd6a31",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
                 "shasum": ""
             },
             "require": {
@@ -10001,9 +10001,9 @@
                 "psr-18"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-client/tree/1.0.2"
+                "source": "https://github.com/php-fig/http-client"
             },
-            "time": "2023-04-10T20:12:12+00:00"
+            "time": "2023-09-23T14:17:50+00:00"
         },
         {
             "name": "psr/http-factory",
