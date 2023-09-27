@@ -5,7 +5,6 @@
   color: white;
   font-size: 20px;
   background-color: white;
-  right: 20px !important;
 }
 
 .cx-theme-helsinki-blue .cx-common-container .cx-titlebar {
@@ -219,13 +218,13 @@
 }
 
 .cx-widget.cx-webchat-chat-button.cx-side-button.cx-theme-helsinki-blue {
+  background: none;
   background-position: bottom right !important;
   display: flex;
   background-repeat: no-repeat !important;
   background-color: transparent !important;
   width: 150px;
   height: 114px;
-  background: none;
   border: none;
   margin: 0;
   border-radius: 0;

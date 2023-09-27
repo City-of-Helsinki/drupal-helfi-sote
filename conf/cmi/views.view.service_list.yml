@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: pUd-EuRjmmZcRI9CC31DmD1tyVIMUKNtqAHiBjxB9Q0
+  default_config_hash: MvCiaSrdVcljMT3wLlt5V47it0_DgXogcHidiHT4sug
 id: service_list
 label: 'Service list'
 module: views
@@ -360,6 +360,12 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: none
+        options:
+          offset: 0
+      defaults:
+        pager: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
