@@ -16,6 +16,7 @@ dependencies:
     - paragraphs
     - path
     - readonly_field_widget
+    - select2
 _core:
   default_config_hash: cotjiL17Qafj5pirtPax237aflvFs_-3pKHSP6wblrg
 id: tpr_unit.tpr_unit.default
@@ -132,6 +133,16 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_districts:
+    type: select2_entity_reference
+    weight: 29
+    region: content
+    settings:
+      width: 100%
+      autocomplete: false
+      match_operator: STARTS_WITH
+      match_limit: 10
+    third_party_settings: {  }
   field_lower_content:
     type: paragraphs
     weight: 28
@@ -177,7 +188,7 @@ content:
     third_party_settings: {  }
   highlights:
     type: readonly_field_widget
-    weight: 33
+    weight: 32
     region: content
     settings:
       label: above
@@ -204,7 +215,7 @@ content:
     third_party_settings: {  }
   links:
     type: readonly_field_widget
-    weight: 31
+    weight: 35
     region: content
     settings:
       label: above
@@ -242,7 +253,7 @@ content:
     third_party_settings: {  }
   opening_hours:
     type: readonly_field_widget
-    weight: 32
+    weight: 31
     region: content
     settings:
       label: above
@@ -252,7 +263,7 @@ content:
     third_party_settings: {  }
   other_info:
     type: readonly_field_widget
-    weight: 34
+    weight: 33
     region: content
     settings:
       label: above
@@ -295,7 +306,7 @@ content:
     third_party_settings: {  }
   price_info:
     type: readonly_field_widget
-    weight: 35
+    weight: 34
     region: content
     settings:
       label: above
@@ -372,7 +383,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_districts: true
   hide_description: true
   ontologyword_ids: true
   show_www: true
