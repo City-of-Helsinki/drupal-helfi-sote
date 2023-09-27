@@ -20,8 +20,6 @@ done
 
 echo "Starting cron: $(date)"
 
-echo "Starting cron: $(date)"
-
 # You can add any additional cron "daemons" here:
 #
 # exec "/crons/some-command.sh" &
