@@ -5,3 +5,11 @@ helfi_sote.genesys_auth_redirect_test:
     _title: 'Genesys auth redirect test'
   requirements:
     _permission: 'access content'
+
+helfi_sote.genesys_auth_redirect_test_old:
+  path: '/genesys-auth-redirect-test-old'
+  defaults:
+    _controller: '\Drupal\helfi_sote\Controller\GenesysAuthRedirectControllerTestingOld::content'
+    _title: 'Genesys old auth redirect test'
+  requirements:
+    _permission: 'access content'
