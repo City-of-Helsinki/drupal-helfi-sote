@@ -31,6 +31,7 @@ class SuunteTest extends BlockBase {
       '#default_value' => $config['chat_selection'] ?? '',
       '#options' => [
         'genesys_suunte_test' => 'Genesys SUUNTE TEST',
+        'genesys_suunte_test_old' => 'Genesys SUUNTE TEST OLD',
       ],
     ];
 
