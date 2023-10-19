@@ -1178,10 +1178,12 @@ display:
             id: id
             name_override: name_override
       defaults:
+        relationships: false
         fields: false
         arguments: false
         filters: false
         filter_groups: false
+      relationships: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
