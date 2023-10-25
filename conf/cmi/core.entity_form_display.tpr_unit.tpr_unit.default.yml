@@ -16,6 +16,7 @@ dependencies:
     - paragraphs
     - path
     - readonly_field_widget
+    - select2
 _core:
   default_config_hash: C2Xc2BwYmiIL9SayNQLxaufcoqA5SLusFthQgnmb10A
 id: tpr_unit.tpr_unit.default
