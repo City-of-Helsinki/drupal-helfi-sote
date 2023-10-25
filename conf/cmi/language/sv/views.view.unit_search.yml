@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Förvald
     display_options:
       filters:
         provided_languages_value:
@@ -50,7 +51,6 @@ display:
         id:
           exception:
             title: Alla
-    display_title: Förvald
   block:
     display_title: Block
   entity_reference:
