@@ -1,0 +1,14 @@
+uuid: 958a863a-fd28-4f72-a1e1-476be787e122
+langcode: en
+status: true
+dependencies:
+  module:
+    - elasticsearch_connector
+id: elastic_sote
+name: 'Elastic sote'
+description: ''
+backend: elasticsearch
+backend_config:
+  cluster_settings:
+    cluster: sote
+  fuzziness: auto
