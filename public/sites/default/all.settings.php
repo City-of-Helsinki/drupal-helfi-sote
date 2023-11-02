@@ -14,3 +14,18 @@ if ($drush_options_uri = getenv('DRUSH_OPTIONS_URI')) {
     $config['helfi_proxy.settings']['default_proxy_domain'] = 'www.hel.fi';
   }
 }
+
+// Elasticsearch settings.
+if (getenv('ELASTICSEARCH_URL')) {
+  $config['elasticsearch_connector.cluster.sote']['url'] = getenv('ELASTICSEARCH_URL');
+
+  if (getenv('ELASTIC_USER') && getenv('ELASTIC_PASSWORD')) {
+    $config['elasticsearch_connector.cluster.sote']['options']['use_authentication'] = '1';
+    $config['elasticsearch_connector.cluster.sote']['options']['authentication_type'] = 'Basic';
+    $config['elasticsearch_connector.cluster.sote']['options']['username'] = getenv('ELASTIC_USER');
+    $config['elasticsearch_connector.cluster.sote']['options']['password'] = getenv('ELASTIC_PASSWORD');
+  }
+}
+
+// Elastic proxy URL.
+$config['elastic_proxy.settings']['elastic_proxy_url'] = getenv('ELASTIC_PROXY_URL');
