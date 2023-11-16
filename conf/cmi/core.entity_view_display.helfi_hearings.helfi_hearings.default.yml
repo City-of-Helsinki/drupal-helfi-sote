@@ -121,3 +121,4 @@ content:
     region: content
 hidden:
   abstract: true
+  search_api_excerpt: true

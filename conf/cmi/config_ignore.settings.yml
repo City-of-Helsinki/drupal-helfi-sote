@@ -1,9 +1,10 @@
+mode: simple
 ignored_config_entities:
-  - 'system.site:page.front'
-  - 'hdbt_admin_tools.site_settings:site_settings'
-  - 'hdbt_admin_tools.site_settings:footer_settings'
-  - 'easy_breadcrumb.settings:home_segment_title'
   - block.block.ibmchatapp
   - block.block.ibmchatapp_watson_sotebot_exceptions
+  - 'easy_breadcrumb.settings:home_segment_title'
   - 'field.storage.paragraph.field_calculator:settings.allowed_values'
+  - 'hdbt_admin_tools.site_settings:footer_settings'
+  - 'hdbt_admin_tools.site_settings:site_settings'
   - helfi_calculator.settings
+  - 'system.site:page.front'
