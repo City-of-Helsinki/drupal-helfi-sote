@@ -98,5 +98,6 @@ hidden:
   links: true
   name_override: true
   name_synonyms: true
+  search_api_excerpt: true
   service_id: true
   toc_enabled: true

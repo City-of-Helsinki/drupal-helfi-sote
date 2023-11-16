@@ -71,6 +71,7 @@ hidden:
   picture_url_override: true
   price_info: true
   provided_languages: true
+  search_api_excerpt: true
   service_map_embed: true
   services: true
   show_www: true
