@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_liftup
     - paragraphs.paragraphs_type.event_list
     - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.health_station_search
     - paragraphs.paragraphs_type.hearings
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
@@ -65,6 +66,7 @@ settings:
       service_list: service_list
       service_list_search: service_list_search
       hearings: hearings
+      health_station_search: health_station_search 
     negate: 0
     target_bundles_drag_drop:
       banner:
@@ -86,6 +88,9 @@ settings:
         weight: 0
         enabled: true
       from_library:
+        weight: 0
+        enabled: true
+      health_station_search:
         weight: 0
         enabled: true
       hearings:
