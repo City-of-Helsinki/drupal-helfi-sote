@@ -290,5 +290,6 @@ hidden:
   field_unit_type: true
   hide_description: true
   langcode: true
+  search_api_excerpt: true
   show_www: true
   streetview_entrance_url: true
