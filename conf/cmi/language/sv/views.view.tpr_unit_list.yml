@@ -13,6 +13,8 @@ display:
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« Första'
             last: 'Sista »'
           expose:
@@ -20,17 +22,24 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        id: {  }
+        id:
+          label: ID
+          separator: ', '
         name:
           label: Namn
+          separator: ', '
         langcode:
           label: Språk
+          separator: ', '
         content_translation_status:
+          label: Status
           settings:
             format_custom_true: Publicerad
             format_custom_false: 'Ej publicerad'
+          separator: ', '
         content_translation_changed:
           label: Uppdaterad
+          separator: ', '
         operations:
           label: Funktioner
       filters:

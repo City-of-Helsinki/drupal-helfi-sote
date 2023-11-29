@@ -19,8 +19,10 @@ display:
           expose:
             items_per_page_label: 'Kohteita sivulla'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       fields:
-        name: {  }
+        name:
+          separator: ', '
       arguments:
         id:
           exception:

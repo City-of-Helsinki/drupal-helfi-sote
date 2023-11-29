@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: Onde7zmLJhxKFNX9U2CaS7memiRbiKGiDMf4Wf7UO2M
+  default_config_hash: MvCiaSrdVcljMT3wLlt5V47it0_DgXogcHidiHT4sug
 id: service_list
 label: 'Service list'
 module: views
@@ -373,6 +373,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - user
         - user.permissions
       tags: {  }

@@ -19,15 +19,11 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       arguments:
         id:
           exception:
             title: Kaikki
-      empty:
-        area:
-          content:
-            value: '<p>Ei tuloksia</p>'
-            format: full_html
   block_search:
     display_options:
       exposed_form:
