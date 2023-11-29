@@ -34,32 +34,25 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        name:
-          separator: ', '
-        address__postal_code:
-          separator: ', '
-        address__address_line1:
-          separator: ', '
-        address__address_line2:
-          separator: ', '
+        name: {  }
+        address__postal_code: {  }
+        address__address_line1: {  }
+        address__address_line2: {  }
       empty:
         area:
           content:
-            value: 'Inget resultat'
+            value: '<p>Inget resultat</p>'
+            format: full_html
       arguments:
         id:
           exception:
             title: Alla
     display_title: Förvald
-  block:
-    display_title: Block
+  block: {  }
   entity_reference:
     display_title: Objektsreferens
     display_options:
       fields:
-        name_override:
-          separator: ', '
-        id:
-          separator: ', '
-        name:
-          separator: ', '
+        name_override: {  }
+        id: {  }
+        name: {  }

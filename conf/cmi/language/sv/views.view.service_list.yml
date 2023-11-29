@@ -8,6 +8,11 @@ display:
             previous: Föregående
             first: Första
             last: Sista
+      empty:
+        area:
+          content:
+            value: '<p>Inget resultat</p>'
+            format: full_html
   block_search:
     display_options:
       exposed_form:

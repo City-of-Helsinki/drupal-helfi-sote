@@ -10,7 +10,6 @@ display:
           sort_asc_label: Stigande
           sort_desc_label: Fallande
       fields:
-        name:
-          separator: ', '
+        name: {  }
   entity_reference_1:
     display_title: Objektsreferens
