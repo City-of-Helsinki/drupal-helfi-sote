@@ -21,11 +21,9 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        name:
-          separator: ', '
+        name: {  }
       arguments:
         id:
           exception:
             title: Alla
-  service_units:
-    display_title: Block
+  service_units: {  }

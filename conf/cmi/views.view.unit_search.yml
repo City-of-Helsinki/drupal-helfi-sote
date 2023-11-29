@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_unit.teaser_with_image
+    - taxonomy.vocabulary.neighbourhoods
   module:
     - address
     - helfi_tpr
+    - taxonomy
     - user
 _core:
   default_config_hash: mwuTSnSRTePqNG6WFWBI9ajFxnho8CH-6sfyfJnDr0E
