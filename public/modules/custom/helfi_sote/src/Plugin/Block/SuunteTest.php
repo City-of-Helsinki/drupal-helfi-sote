@@ -30,7 +30,9 @@ class SuunteTest extends BlockBase {
       '#description' => $this->t('Choose the approriate chat/bot provider?'),
       '#default_value' => $config['chat_selection'] ?? '',
       '#options' => [
+        // phpcs:ignore
         'genesys_suunte_test' => 'Genesys SUUNTE TEST',
+        // phpcs:ignore
         'genesys_suunte_test_old' => 'Genesys SUUNTE TEST OLD',
       ],
     ];
@@ -60,8 +62,10 @@ class SuunteTest extends BlockBase {
     $config = $this->getConfiguration();
     $build = [];
     $chatLibrary = [];
-    $modulePath = \Drupal::service('extension.list.module')->getPath('helfi_sote');
-    $assetPath = \Drupal::config('helfi_proxy.settings')->get('asset_path');
+    // @phpstan-ignore-next-line
+    $modulePath = \Drupal::service('extension.list.module')->getPath('helfi_sote'); // phpcs:ignore
+    // @phpstan-ignore-next-line
+    $assetPath = \Drupal::config('helfi_proxy.settings')->get('asset_path'); // phpcs:ignore
 
     $librariesYml = Yaml::parseFile($modulePath . '/helfi_sote.libraries.yml');
 
