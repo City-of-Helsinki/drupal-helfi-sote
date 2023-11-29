@@ -33,20 +33,16 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
       fields:
-        name:
-          separator: ', '
-        address__postal_code:
-          separator: ', '
-        address__address_line1:
-          separator: ', '
-        address__address_line2:
-          separator: ', '
+        name: {  }
+        address__postal_code: {  }
+        address__address_line1: {  }
+        address__address_line2: {  }
       empty:
         area:
           content:
-            value: "<p>Ei tuloksia</p>\r\n"
+            value: '<p>Ei tuloksia</p>'
+            format: full_html
       arguments:
         id:
           exception:
@@ -58,10 +54,7 @@ display:
     display_title: Entiteettiviittaus
     display_options:
       fields:
-        name_override:
-          separator: ', '
-        id:
-          separator: ', '
-        name:
-          separator: ', '
+        name_override: {  }
+        id: {  }
+        name: {  }
 label: Toimipistehaku
