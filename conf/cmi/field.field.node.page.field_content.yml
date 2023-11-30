@@ -44,6 +44,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      calculator: calculator
       text: text
       columns: columns
       image: image
@@ -60,7 +61,6 @@ settings:
       chart: chart
       remote_video: remote_video
       map: map
-      calculator: calculator
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
       unit_search: unit_search

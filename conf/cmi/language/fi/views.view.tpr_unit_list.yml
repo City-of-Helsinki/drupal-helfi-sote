@@ -21,7 +21,6 @@ display:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
       fields:
-        id: {  }
         name:
           label: Nimi
         langcode:

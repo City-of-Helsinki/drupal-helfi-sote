@@ -22,7 +22,6 @@ display:
         tpr_errand_service_bulk_form:
           label: Massuppdatera
           action_title: Åtgärd
-        id: {  }
         name:
           label: Namn
         langcode:
