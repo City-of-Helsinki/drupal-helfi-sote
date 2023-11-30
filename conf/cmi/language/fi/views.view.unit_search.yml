@@ -11,18 +11,12 @@ display:
             description: ''
             placeholder: ''
         combine:
-          expose:
-            label: Etsi
           group_info:
             label: 'Kentät yhdistävä suodatin'
             description: ''
-      exposed_form:
-        options:
-          submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Järjestä
-          sort_asc_label: Nouseva
-          sort_desc_label: Laskeva
+          expose:
+            label: Etsi
+            placeholder: 'Syötä toimipisteen nimi tai osoite'
       pager:
         options:
           tags:
@@ -33,11 +27,13 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-      fields:
-        name: {  }
-        address__postal_code: {  }
-        address__address_line1: {  }
-        address__address_line2: {  }
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Palauta
+          exposed_sorts_label: Järjestä
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
       empty:
         area:
           content:
@@ -52,9 +48,4 @@ display:
     display_title: Lohko
   entity_reference:
     display_title: Entiteettiviittaus
-    display_options:
-      fields:
-        name_override: {  }
-        id: {  }
-        name: {  }
 label: Toimipistehaku

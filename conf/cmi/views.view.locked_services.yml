@@ -7,7 +7,7 @@ dependencies:
     - helfi_tpr
     - user
 _core:
-  default_config_hash: FDZcRw67DkxROxzgM6JstwpDXjlOOPt3eoaBSh-n5NA
+  default_config_hash: aH7J9QoFP01KCyEcUcw89rP57lnqQeFTwSTQezYdEDY
 id: locked_services
 label: 'Locked services'
 module: views

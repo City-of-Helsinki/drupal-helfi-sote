@@ -7,7 +7,7 @@ dependencies:
     - helfi_tpr
     - user
 _core:
-  default_config_hash: ttPnpXga7YMo7jK1EJ5SySavpSnXjjMpqPAVZdX0mZI
+  default_config_hash: ZsyMOcwmJLa4Ewb7MJ0P9xrYSMa-s5YlRrpY5VG_Kvg
 id: locked_units
 label: 'Locked units'
 module: views
