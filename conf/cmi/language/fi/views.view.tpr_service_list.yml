@@ -24,7 +24,6 @@ display:
         tpr_service_bulk_form:
           label: Massapäivitys
           action_title: Toiminto
-        id: {  }
         name:
           label: Nimi
         langcode:

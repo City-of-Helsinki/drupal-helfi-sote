@@ -1,6 +1,34 @@
 display:
   default:
+    display_title: Förvald
     display_options:
+      pager:
+        options:
+          tags:
+            next: Nästa
+            previous: Föregående
+            first: Första
+            last: Sista
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      exposed_form:
+        options:
+          submit_button: Verkställ
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      empty:
+        area:
+          content:
+            value: '<p>Inget resultat</p>'
+            format: full_html
+      arguments:
+        id:
+          exception:
+            title: Alla
       filters:
         provided_languages_value:
           group_info:
@@ -14,45 +42,7 @@ display:
           expose:
             label: Sök
           group_info:
+            label: 'Kombinera filterfält'
             description: ''
-      exposed_form:
-        options:
-          submit_button: Verkställ
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
-      pager:
-        options:
-          tags:
-            next: Nästa
-            previous: Föregående
-            first: Första
-            last: Sista
-          expose:
-            items_per_page_label: 'Inlägg per sida'
-            items_per_page_options_all_label: '- Alla -'
-            offset_label: Kompensera
-      fields:
-        name: {  }
-        address__postal_code: {  }
-        address__address_line1: {  }
-        address__address_line2: {  }
-      empty:
-        area:
-          content:
-            value: '<p>Inget resultat</p>'
-            format: full_html
-      arguments:
-        id:
-          exception:
-            title: Alla
-    display_title: Förvald
-  block: {  }
   entity_reference:
     display_title: Objektsreferens
-    display_options:
-      fields:
-        name_override: {  }
-        id: {  }
-        name: {  }

@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Förvald
     display_options:
       exposed_form:
         options:
@@ -13,4 +12,5 @@ display:
         id:
           exception:
             title: Alla
+    display_title: Förvald
   unit_services: {  }
