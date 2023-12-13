@@ -1,4 +1,4 @@
 site_settings:
-  default_icon: heart-fill
-  theme_color: bus
-  koro: pulse
+  theme_color: coat-of-arms
+  default_icon: abstract-1
+  koro: basic
