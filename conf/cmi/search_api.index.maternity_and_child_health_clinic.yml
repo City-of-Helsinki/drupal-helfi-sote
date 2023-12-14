@@ -1,0 +1,48 @@
+uuid: d81f5c75-bffc-461d-a0a4-fa128fcbef7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.elastic_sote
+  module:
+    - helfi_tpr
+    - search_api
+    - helfi_react_search
+id: maternity_and_child_health_clinic
+name: 'maternity and child health clinic'
+description: ''
+read_only: false
+field_settings:
+  address:
+    label: Address
+    datasource_id: 'entity:tpr_unit'
+    property_path: address
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+datasource_settings:
+  'entity:tpr_unit':
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  district_image_absolute_url: {  }
+  entity_type: {  }
+  is_health_station: {  }
+  language_with_fallback: {  }
+  project_execution_schedule: {  }
+  project_image_absolute_url: {  }
+  project_plan_schedule: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: elastic_sote
