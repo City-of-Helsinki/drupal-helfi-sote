@@ -13,7 +13,7 @@ name: 'maternity and child health clinic'
 description: ''
 read_only: false
 field_settings:
-  address_line1:
+  address:
     label: 'Address » The first line of the address block'
     datasource_id: 'entity:tpr_unit'
     property_path: 'address:address_line1'
@@ -41,7 +41,7 @@ field_settings:
     label: Name
     datasource_id: 'entity:tpr_unit'
     property_path: name
-    type: string
+    type: text
     dependencies:
       module:
         - helfi_tpr
@@ -90,7 +90,7 @@ field_settings:
     property_path: search_api_url
     type: string
     configuration:
-      absolute: false
+      absolute: true
 datasource_settings:
   'entity:tpr_unit':
     languages:
