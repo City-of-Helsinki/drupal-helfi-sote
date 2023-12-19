@@ -1,0 +1,123 @@
+uuid: d81f5c75-bffc-461d-a0a4-fa128fcbef7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.elastic_sote
+  module:
+    - helfi_tpr
+    - search_api
+    - helfi_react_search
+id: maternity_and_child_health_clinic
+name: 'maternity and child health clinic'
+description: ''
+read_only: false
+field_settings:
+  address:
+    label: 'Address » The first line of the address block'
+    datasource_id: 'entity:tpr_unit'
+    property_path: 'address:address_line1'
+    type: text
+    dependencies:
+      module:
+        - helfi_tpr
+  coordinates:
+    label: Coordinates
+    property_path: coordinates
+    type: object
+  id:
+    label: ID
+    datasource_id: 'entity:tpr_unit'
+    property_path: id
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+  media_as_objects:
+    label: 'Media objects'
+    property_path: media_as_objects
+    type: object
+  name:
+    label: Name
+    datasource_id: 'entity:tpr_unit'
+    property_path: name
+    type: text
+    dependencies:
+      module:
+        - helfi_tpr
+  name_override:
+    label: 'Override: Name'
+    datasource_id: 'entity:tpr_unit'
+    property_path: name_override
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+  picture_url:
+    label: Picture
+    datasource_id: 'entity:tpr_unit'
+    property_path: picture_url
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+  postal_code:
+    label: 'Address » The postal code'
+    datasource_id: 'entity:tpr_unit'
+    property_path: 'address:postal_code'
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+  provided_languages:
+    label: 'Provided languages'
+    datasource_id: 'entity:tpr_unit'
+    property_path: provided_languages
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+  summary_processed:
+    label: 'Description » Processed summary'
+    datasource_id: 'entity:tpr_unit'
+    property_path: 'description:summary_processed'
+    type: string
+    dependencies:
+      module:
+        - helfi_tpr
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+datasource_settings:
+  'entity:tpr_unit':
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  coordinates: {  }
+  custom_value: {  }
+  district_image_absolute_url: {  }
+  entity_status: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  maternity_and_child_health_clinic: {  }
+  media_reference_to_object:
+    fields:
+      picture_url_override: 1
+  project_execution_schedule: {  }
+  project_image_absolute_url: {  }
+  project_plan_schedule: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: elastic_sote
