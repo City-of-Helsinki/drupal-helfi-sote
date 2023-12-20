@@ -3,3 +3,9 @@ msgstr "Enhetens hemsida"
 
 msgid "Additional details"
 msgstr "Ytterligare detaljer"
+
+msgctxt "Health station search count"
+msgid "health station"
+msgid_plural "health stations"
+msgstr[0] "hälsostation"
+msgstr[1] "hälsostation"
