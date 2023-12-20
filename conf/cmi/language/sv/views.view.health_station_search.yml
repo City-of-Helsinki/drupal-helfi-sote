@@ -22,7 +22,7 @@ display:
       empty:
         area:
           content:
-            value: '<p><span>Inget resultat</span></p>'
+            value: '<p>Inget resultat</p>'
             format: full_html
       filters:
         combine:
