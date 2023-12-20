@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_unit.minimal
+    - taxonomy.vocabulary.neighbourhoods
   module:
+    - address
     - helfi_tpr
+    - taxonomy
 id: health_station_search
 label: 'Health station search'
 module: views
@@ -76,7 +79,7 @@ display:
           click_sort_column: value
           type: string
           settings: {  }
-          group_column: value
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -86,6 +89,330 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        address__address_line1:
+          id: address__address_line1
+          table: tpr_unit_field_data
+          field: address__address_line1
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: address
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        address__address_line2:
+          id: address__address_line2
+          table: tpr_unit_field_data
+          field: address__address_line2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: address
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        address__postal_code:
+          id: address__postal_code
+          table: tpr_unit_field_data
+          field: address__postal_code
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: address
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        id:
+          id: id
+          table: tpr_unit_field_data
+          field: id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: id
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: entity_id
+          group_columns:
+            entity_id: entity_id
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        name_1:
+          id: name_1
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_districts
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
       pager:
         type: full
         options:
@@ -94,10 +421,10 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
+            next: Next
+            previous: Previous
+            first: First
+            last: Last
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -110,7 +437,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: 'Search for a health station'
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -123,22 +450,117 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
-      sorts: {  }
-      arguments: {  }
-      filters:
-        id:
-          id: id
-          table: tpr_service_field_data
-          field: id
-          relationship: services_target_id
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
           group_type: group
           admin_label: ''
-          entity_type: tpr_service
-          entity_field: id
-          plugin_id: string
+          plugin_id: text
+          empty: true
+          content:
+            value: 'No results'
+            format: full_html
+          tokenize: false
+      sorts:
+        name_override:
+          id: name_override
+          table: tpr_unit_field_data
+          field: name_override
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: name_override
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        name:
+          id: name
+          table: tpr_unit_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: name
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      arguments: {  }
+      filters:
+        combine:
+          id: combine
+          table: views
+          field: combine
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: combine
+          operator: allwords
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: combine_op
+            label: 'Health station search'
+            description: ''
+            use_operator: false
+            operator: combine_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: combine
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              read_only: '0'
+              content_producer: '0'
+              editor: '0'
+              admin: '0'
+              debug_api: '0'
+              super_administrator: '0'
+            placeholder: "Enter the city district or the health station's name here"
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          fields:
+            name: name
+            address__address_line1: address__address_line1
+            address__address_line2: address__address_line2
+            address__postal_code: address__postal_code
+            name_1: name_1
+        content_translation_status:
+          id: content_translation_status
+          table: tpr_unit_field_data
+          field: content_translation_status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: content_translation_status
+          plugin_id: boolean
           operator: '='
-          value: '2890'
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -155,7 +577,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -210,6 +631,92 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        provided_languages_value:
+          id: provided_languages_value
+          table: tpr_unit__provided_languages
+          field: provided_languages_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: provided_languages
+          plugin_id: string
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: provided_languages_value_op
+            label: 'Provided languages'
+            description: null
+            use_operator: false
+            operator: provided_languages_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: provided_languages_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+          is_grouped: true
+          group_info:
+            label: ''
+            description: ''
+            identifier: provided_languages_value
+            optional: true
+            widget: select
+            multiple: true
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Show service points that provide service in Swedish'
+                operator: '='
+                value: sv
+        id:
+          id: id
+          table: tpr_service_field_data
+          field: id
+          relationship: services_target_id
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_service
+          entity_field: id
+          plugin_id: string
+          operator: '='
+          value: '2890'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         status_extra:
           id: status_extra
           table: tpr_unit_field_data
@@ -249,8 +756,104 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_districts_target_id:
+          id: field_districts_target_id
+          table: tpr_unit__field_districts
+          field: field_districts_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: empty
+          value: {  }
+          group: 2
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: neighbourhoods
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        langcode_1:
+          id: langcode_1
+          table: taxonomy_term_field_data
+          field: langcode
+          relationship: field_districts
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+          group: 2
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+          2: OR
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: true
       row:
         type: 'entity:tpr_unit'
         options:
@@ -261,7 +864,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: true
+          distinct: false
           replica: false
           query_tags: {  }
       relationships:
@@ -276,6 +879,16 @@ display:
           entity_field: services
           plugin_id: standard
           required: true
+        field_districts:
+          id: field_districts
+          table: tpr_unit__field_districts
+          field: field_districts
+          relationship: none
+          group_type: group
+          admin_label: 'field_districts: Taxonomy term'
+          plugin_id: standard
+          required: false
+      group_by: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -284,6 +897,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user
       tags: {  }
@@ -303,6 +917,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user
       tags: {  }
