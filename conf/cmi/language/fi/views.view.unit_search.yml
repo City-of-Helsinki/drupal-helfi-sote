@@ -3,6 +3,14 @@ display:
     display_options:
       filters:
         combine:
+          provided_languages_value:
+            group_info:
+              group_items:
+                1:
+                  title: 'Näytä toimipisteet, joilta saa palvelua ruotsiksi'
+            expose:
+              description: ''
+              placeholder: ''
           group_info:
             label: 'Kentät yhdistävä suodatin'
             description: ''
