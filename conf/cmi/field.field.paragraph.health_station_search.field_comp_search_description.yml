@@ -1,0 +1,26 @@
+uuid: 1ececcc7-2929-4761-8fca-71d82f6d5e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comp_search_description
+    - paragraphs.paragraphs_type.health_station_search
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
+id: paragraph.health_station_search.field_comp_search_description
+field_name: field_comp_search_description
+entity_type: paragraph
+bundle: health_station_search
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

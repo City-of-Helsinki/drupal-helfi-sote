@@ -1,0 +1,32 @@
+uuid: 1acc63a2-41fe-48cb-8442-3a60ca65aef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.health_station_search.field_comp_search_description
+    - field.field.paragraph.health_station_search.field_comp_search_title
+    - paragraphs.paragraphs_type.health_station_search
+  module:
+    - text
+id: paragraph.health_station_search.default
+targetEntityType: paragraph
+bundle: health_station_search
+mode: default
+content:
+  field_comp_search_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_comp_search_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

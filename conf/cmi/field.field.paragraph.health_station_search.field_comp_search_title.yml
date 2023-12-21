@@ -1,0 +1,19 @@
+uuid: b57da53f-4e50-48c2-b51b-3958b52244d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comp_search_title
+    - paragraphs.paragraphs_type.health_station_search
+id: paragraph.health_station_search.field_comp_search_title
+field_name: field_comp_search_title
+entity_type: paragraph
+bundle: health_station_search
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

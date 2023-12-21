@@ -1,0 +1,34 @@
+uuid: 2c004d5a-124e-4405-ba32-d39afc7af3fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.health_station_search.field_comp_search_description
+    - field.field.paragraph.health_station_search.field_comp_search_title
+    - paragraphs.paragraphs_type.health_station_search
+  module:
+    - text
+id: paragraph.health_station_search.default
+targetEntityType: paragraph
+bundle: health_station_search
+mode: default
+content:
+  field_comp_search_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_comp_search_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
