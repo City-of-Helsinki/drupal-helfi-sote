@@ -107,6 +107,9 @@ settings:
       map:
         weight: 0
         enabled: true
+      maternity_and_child_health_clini:
+        weight: 0
+        enabled: true
       news_list:
         weight: 0
         enabled: true
@@ -137,8 +140,4 @@ settings:
       unit_search:
         weight: 0
         enabled: true
-      maternity_and_child_health_clini:
-        weight: 0
-        enabled: true
 field_type: entity_reference_revisions
-

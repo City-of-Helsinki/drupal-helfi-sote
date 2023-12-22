@@ -35,14 +35,6 @@ display:
           exception:
             title: Alla
       filters:
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Visa serviceställen som erbjuder service på svenska'
-          expose:
-            description: ''
-            placeholder: ''
         combine:
           expose:
             label: Sök
