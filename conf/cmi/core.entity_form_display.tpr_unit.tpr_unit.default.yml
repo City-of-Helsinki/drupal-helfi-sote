@@ -145,7 +145,7 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
- field_districts:
+  field_districts:
     type: select2_entity_reference
     weight: 29
     region: content
