@@ -17,6 +17,7 @@ dependencies:
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.maternity_and_child_health_clini
     - paragraphs.paragraphs_type.news_list
     - paragraphs.paragraphs_type.phasing
     - paragraphs.paragraphs_type.popular_services
@@ -45,28 +46,29 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      banner: banner
+      chart: chart
       columns: columns
-      list_of_links: list_of_links
       content_cards: content_cards
       content_liftup: content_liftup
-      banner: banner
-      liftup_with_image: liftup_with_image
+      event_list: event_list
       from_library: from_library
-      chart: chart
-      remote_video: remote_video
+      health_station_search: health_station_search
+      hearings: hearings
+      liftup_with_image: liftup_with_image
+      list_of_links: list_of_links
       map: map
       news_list: news_list
-      event_list: event_list
       phasing: phasing
       popular_services: popular_services
+      remote_video: remote_video
+      service_list: service_list
+      service_list_search: service_list_search
       target_group_links: target_group_links
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
       unit_search: unit_search
-      service_list: service_list
-      service_list_search: service_list_search
-      hearings: hearings
-      health_station_search: health_station_search
+      maternity_and_child_health_clini: maternity_and_child_health_clini
     negate: 0
     target_bundles_drag_drop:
       banner:
@@ -135,4 +137,8 @@ settings:
       unit_search:
         weight: 0
         enabled: true
+      maternity_and_child_health_clini:
+        weight: 0
+        enabled: true
 field_type: entity_reference_revisions
+

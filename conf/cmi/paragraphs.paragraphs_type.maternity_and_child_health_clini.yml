@@ -1,0 +1,10 @@
+uuid: 3febcb44-9c90-4098-aa40-f877afb0d341
+langcode: en
+status: true
+dependencies: {  }
+id: maternity_and_child_health_clini
+label: 'Maternity and child health clinic'
+icon_uuid: null
+icon_default: null
+description: 'Provides a paragraph for searching / filtering maternity and child health clinics.'
+behavior_plugins: {  }
