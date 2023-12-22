@@ -71,30 +71,15 @@ settings:
       maternity_and_child_health_clini: maternity_and_child_health_clini
     negate: 0
     target_bundles_drag_drop:
-      accordion:
-        weight: 38
-        enabled: false
-      accordion_item:
-        weight: 39
-        enabled: false
       banner:
         weight: 0
         enabled: true
-      calculator:
-        weight: 41
-        enabled: false
       chart:
         weight: 0
         enabled: true
       columns:
         weight: 0
         enabled: true
-      contact_card:
-        weight: 44
-        enabled: false
-      contact_card_listing:
-        weight: 45
-        enabled: false
       content_cards:
         weight: 0
         enabled: true
@@ -113,26 +98,14 @@ settings:
       hearings:
         weight: 0
         enabled: true
-      hero:
-        weight: 52
-        enabled: false
-      image:
-        weight: 53
-        enabled: false
       liftup_with_image:
         weight: 0
         enabled: true
       list_of_links:
         weight: 0
         enabled: true
-      list_of_links_item:
-        weight: 56
-        enabled: false
       map:
         weight: 0
-        enabled: true
-      maternity_and_child_health_clini:
-        weight: 58
         enabled: true
       news_list:
         weight: 0
@@ -140,12 +113,6 @@ settings:
       phasing:
         weight: 0
         enabled: true
-      phasing_item:
-        weight: 61
-        enabled: false
-      popular_service_item:
-        weight: 62
-        enabled: false
       popular_services:
         weight: 0
         enabled: true
@@ -158,21 +125,9 @@ settings:
       service_list_search:
         weight: 0
         enabled: true
-      sidebar_text:
-        weight: 67
-        enabled: false
-      social_media_link:
-        weight: 68
-        enabled: false
-      target_group_link_item:
-        weight: 69
-        enabled: false
       target_group_links:
         weight: 0
         enabled: true
-      text:
-        weight: 71
-        enabled: false
       unit_accessibility_information:
         weight: 0
         enabled: true
@@ -180,6 +135,9 @@ settings:
         weight: 0
         enabled: true
       unit_search:
+        weight: 0
+        enabled: true
+      maternity_and_child_health_clini:
         weight: 0
         enabled: true
 field_type: entity_reference_revisions
