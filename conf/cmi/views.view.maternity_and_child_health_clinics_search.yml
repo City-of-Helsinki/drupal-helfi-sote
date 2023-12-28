@@ -517,7 +517,7 @@ display:
             operator: combine_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: combine
+            identifier: clinic_name_district
             required: false
             remember: false
             multiple: false

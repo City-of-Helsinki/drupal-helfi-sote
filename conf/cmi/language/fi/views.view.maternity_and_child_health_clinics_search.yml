@@ -30,13 +30,11 @@ display:
       filters:
         combine:
           expose:
-            label: 'Neuvolahaku'
+            label: Neuvolahaku
             placeholder: 'Syötä tähän kaupunginosa tai neuvolan nimi'
         provided_languages_value:
           expose:
             label: 'Saatavissa olevat kielet'
-            description: ''
-            placeholder: ''
           group_info:
             group_items:
               1:
