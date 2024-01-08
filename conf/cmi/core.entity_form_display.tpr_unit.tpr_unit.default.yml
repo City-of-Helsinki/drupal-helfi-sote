@@ -154,7 +154,7 @@ content:
       autocomplete: false
       match_operator: STARTS_WITH
       match_limit: 10
-    third_party_settings: { }
+    third_party_settings: {  }
   field_lower_content:
     type: paragraphs
     weight: 29

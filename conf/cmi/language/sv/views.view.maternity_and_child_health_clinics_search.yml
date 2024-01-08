@@ -1,9 +1,9 @@
-label: 'Hälsostation sökning'
-description: 'Reservlista för sökningen efter hälsostationen'
+label: 'Rådgivningsbyrå sökning'
+description: 'Reservlista för sökningen efter rådgivningsbyråer'
 display:
   default:
     display_options:
-      title: 'Hälsostation sökning'
+      title: 'Rådgivningsbyrå sökning'
       pager:
         options:
           tags:
@@ -16,7 +16,7 @@ display:
             items_per_page_options_all_label: '- Alla -'
       exposed_form:
         options:
-          submit_button: 'Sök hälsostation'
+          submit_button: 'Sök rådgivningsbyrå'
           reset_button_label: Återställ
           exposed_sorts_label: 'Sortera efter'
       empty:
@@ -27,14 +27,12 @@ display:
       filters:
         combine:
           expose:
-            label: 'Sök hälsostationer'
-            placeholder: 'Skriv in stadsdelen eller namnet på hälsostationen här'
+            label: 'Sök rådgivningsbyråer'
+            placeholder: 'Skriv in stadsdelen eller namnet på rådgivningsbyrån här'
         provided_languages_value:
           expose:
             label: 'Tillhandahållna språk'
-            description: ''
-            placeholder: ''
           group_info:
             group_items:
               1:
-                title: 'Visa hälsostationer som erbjuder service på svenska'
+                title: 'Visa rådgivningsbyråer som erbjuder service på svenska'

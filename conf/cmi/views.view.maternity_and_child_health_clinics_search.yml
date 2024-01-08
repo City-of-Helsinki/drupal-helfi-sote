@@ -1,4 +1,4 @@
-uuid: d7f1f59e-9ffc-4585-91d1-e93ad75e194c
+uuid: a847da46-e2e1-4df7-a5c4-e632fd2058f5
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ dependencies:
     - address
     - helfi_tpr
     - taxonomy
-id: health_station_search
-label: 'Health station search'
+id: maternity_and_child_health_clinics_search
+label: 'Maternity and child health clinics search'
 module: views
 description: 'Fallback listing for the health station search'
 tag: ''
@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Health station search'
+      title: 'Maternity and child health clinics search'
       fields:
         name:
           id: name
@@ -511,13 +511,13 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Health station search'
+            label: 'Maternity and child health clinics search'
             description: ''
             use_operator: false
             operator: combine_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: combine
+            identifier: clinic_name_district
             required: false
             remember: false
             multiple: false
@@ -530,7 +530,7 @@ display:
               admin: '0'
               debug_api: '0'
               super_administrator: '0'
-            placeholder: "Enter the city district or the health station's name here"
+            placeholder: 'Enter the city district or the clinics name here'
           is_grouped: false
           group_info:
             label: ''
@@ -673,50 +673,9 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Show health stations that provide service in Swedish'
+                title: 'Show clinics that provide service in Swedish'
                 operator: '='
                 value: sv
-        id:
-          id: id
-          table: tpr_service_field_data
-          field: id
-          relationship: services_target_id
-          group_type: group
-          admin_label: ''
-          entity_type: tpr_service
-          entity_field: id
-          plugin_id: string
-          operator: '='
-          value: '2890'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         status_extra:
           id: status_extra
           table: tpr_unit_field_data
@@ -843,11 +802,135 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        id:
+          id: id
+          table: tpr_service_field_data
+          field: id
+          relationship: services_target_id
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_service
+          entity_field: id
+          plugin_id: string
+          operator: '='
+          value: '3210'
+          group: 3
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        id_1:
+          id: id_1
+          table: tpr_service_field_data
+          field: id
+          relationship: services_target_id
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_service
+          entity_field: id
+          plugin_id: string
+          operator: '='
+          value: '6440'
+          group: 3
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        id_2:
+          id: id_2
+          table: tpr_service_field_data
+          field: id
+          relationship: services_target_id
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_service
+          entity_field: id
+          plugin_id: string
+          operator: '='
+          value: '6441'
+          group: 3
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
           1: AND
           2: OR
+          3: OR
       style:
         type: default
         options:
@@ -901,8 +984,8 @@ display:
         - url.query_args
         - user
       tags: {  }
-  health_station_search:
-    id: health_station_search
+  maternity_and_child_health_clinics_search:
+    id: maternity_and_child_health_clinics_search
     display_title: Block
     display_plugin: block
     position: 1

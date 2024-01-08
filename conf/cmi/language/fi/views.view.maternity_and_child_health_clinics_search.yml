@@ -1,10 +1,10 @@
-label: Terveysasemahaku
-description: 'Varalistaus terveysasemahaulle'
+label: Neuvolahaku
+description: 'Varalistaus neuvolahaulle'
 display:
   default:
     display_title: Oletus
     display_options:
-      title: Terveysasemahaku
+      title: Neuvolahaku
       pager:
         options:
           tags:
@@ -17,7 +17,7 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
       exposed_form:
         options:
-          submit_button: 'Hae terveysasemaa'
+          submit_button: 'Hae neuvolaa'
           reset_button_label: Palauta
           exposed_sorts_label: Järjestä
           sort_asc_label: Nouseva
@@ -30,16 +30,14 @@ display:
       filters:
         combine:
           expose:
-            label: 'Terveysasemien haku'
-            placeholder: 'Syötä tähän kaupunginosa tai terveysaseman nimi'
+            label: Neuvolahaku
+            placeholder: 'Syötä tähän kaupunginosa tai neuvolan nimi'
         provided_languages_value:
           expose:
             label: 'Saatavissa olevat kielet'
-            description: ''
-            placeholder: ''
           group_info:
             group_items:
               1:
-                title: 'Näytä terveysasemat, joilta saa palvelua ruotsiksi'
-  health_station_search:
+                title: 'Näytä neuvolat, joilta saa palvelua ruotsiksi'
+  maternity_and_child_health_clinics_search:
     display_title: Lohko

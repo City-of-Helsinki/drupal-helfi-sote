@@ -71,6 +71,8 @@ function helfi_sote_helfi_paragraph_types() : array {
         'field_content' => [
           'unit_accessibility_information',
           'unit_contact_card',
+          'health_station_search',
+          'maternity_and_child_health_clini',
         ],
       ],
     ],
@@ -135,6 +137,7 @@ function helfi_sote_preprocess_block(&$variables) {
   // and add classes accordingly.
   $paragraph_types = [
     'health_station_search',
+    'maternity_and_child_health_clini',
   ];
 
   if (in_array($paragraph->getType(), $paragraph_types)) {
