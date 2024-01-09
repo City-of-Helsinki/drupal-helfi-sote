@@ -3,3 +3,15 @@ msgstr "Toimipisteen kotisivut"
 
 msgid "Additional details"
 msgstr "Lisätiedot"
+
+msgctxt "Health station search count"
+msgid "health station"
+msgid_plural "health stations"
+msgstr[0] "terveysasema"
+msgstr[1] "terveysasemaa"
+
+msgctxt "Maternity and child health clinics search count"
+msgid "clinic"
+msgid_plural "clinics"
+msgstr[0] "neuvola"
+msgstr[1] "neuvolaa"

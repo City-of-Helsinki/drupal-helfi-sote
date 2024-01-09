@@ -1,0 +1,43 @@
+label: Neuvolahaku
+description: 'Varalistaus neuvolahaulle'
+display:
+  default:
+    display_title: Oletus
+    display_options:
+      title: Neuvolahaku
+      pager:
+        options:
+          tags:
+            next: Seuraava
+            previous: Edellinen
+            first: Ensimmäinen
+            last: Viimeinen
+          expose:
+            items_per_page_label: 'Kohteita sivulla'
+            items_per_page_options_all_label: '- Kaikki -'
+      exposed_form:
+        options:
+          submit_button: 'Hae neuvolaa'
+          reset_button_label: Palauta
+          exposed_sorts_label: Järjestä
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
+      empty:
+        area:
+          content:
+            value: '<p>Ei tuloksia</p>'
+            format: full_html
+      filters:
+        combine:
+          expose:
+            label: Neuvolahaku
+            placeholder: 'Syötä tähän kaupunginosa tai neuvolan nimi'
+        provided_languages_value:
+          expose:
+            label: 'Saatavissa olevat kielet'
+          group_info:
+            group_items:
+              1:
+                title: 'Näytä neuvolat, joilta saa palvelua ruotsiksi'
+  maternity_and_child_health_clinics_search:
+    display_title: Lohko

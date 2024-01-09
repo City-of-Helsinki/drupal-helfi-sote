@@ -1,0 +1,38 @@
+label: 'Rådgivningsbyrå sökning'
+description: 'Reservlista för sökningen efter rådgivningsbyråer'
+display:
+  default:
+    display_options:
+      title: 'Rådgivningsbyrå sökning'
+      pager:
+        options:
+          tags:
+            next: Nästa
+            previous: Tidigare
+            first: Först
+            last: Sista
+          expose:
+            items_per_page_label: 'Objekt per sida'
+            items_per_page_options_all_label: '- Alla -'
+      exposed_form:
+        options:
+          submit_button: 'Sök rådgivningsbyrå'
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+      empty:
+        area:
+          content:
+            value: '<p>Inget resultat</p>'
+            format: full_html
+      filters:
+        combine:
+          expose:
+            label: 'Sök rådgivningsbyråer'
+            placeholder: 'Skriv in stadsdelen eller namnet på rådgivningsbyrån här'
+        provided_languages_value:
+          expose:
+            label: 'Tillhandahållna språk'
+          group_info:
+            group_items:
+              1:
+                title: 'Visa rådgivningsbyråer som erbjuder service på svenska'
