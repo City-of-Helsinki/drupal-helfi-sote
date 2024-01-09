@@ -39,7 +39,7 @@ display:
           group_info:
             group_items:
               1:
-                title: 'Visa serviceställen som erbjuder service på svenska'
+                title: 'Visa endast de verksamhetsställen där man får betjäning på svenska.'
           expose:
             description: ''
             placeholder: ''

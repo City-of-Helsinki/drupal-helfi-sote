@@ -720,7 +720,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Show service points that provide service in Swedish'
+                title: 'Only show service points where services are available in Swedish.'
                 operator: '='
                 value: sv
         field_districts_target_id:

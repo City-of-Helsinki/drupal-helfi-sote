@@ -6,7 +6,7 @@ display:
           group_info:
             group_items:
               1:
-                title: 'Näytä toimipisteet, joilta saa palvelua ruotsiksi'
+                title: 'Näytä vain toimipisteet, joista saa palvelua ruotsiksi.'
           expose:
             description: ''
             placeholder: ''
