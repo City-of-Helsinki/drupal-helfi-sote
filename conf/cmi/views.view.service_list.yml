@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: 7yogbfzUwfJPIVkd8lMk8QJHI9ZUsmQd0TE9Jg0ox0E
+  default_config_hash: a3JC_bJwbKIX0EJTTwHXJJktTrejHgdKwxozmzfG2xA
 id: service_list
 label: 'Service list'
 module: views
