@@ -4009,22 +4009,21 @@
         },
         {
             "name": "drupal/helfi_navigation",
-            "version": "2.1.4",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation.git",
-                "reference": "a10ae58499ac50c2d4b34773c85653c0256a2e61"
+                "reference": "0da4087a191d7fef371fd72924eaff2e33223f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-navigation/zipball/a10ae58499ac50c2d4b34773c85653c0256a2e61",
-                "reference": "a10ae58499ac50c2d4b34773c85653c0256a2e61",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-navigation/zipball/0da4087a191d7fef371fd72924eaff2e33223f91",
+                "reference": "0da4087a191d7fef371fd72924eaff2e33223f91",
                 "shasum": ""
             },
             "require": {
                 "drupal/helfi_api_base": "*",
-                "ext-curl": "*",
-                "php": "^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -4037,10 +4036,10 @@
             ],
             "description": "Helfi - Navigation",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/tree/2.1.4",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/tree/2.2.0",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/issues"
             },
-            "time": "2023-10-24T07:08:39+00:00"
+            "time": "2024-01-16T08:17:38+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
