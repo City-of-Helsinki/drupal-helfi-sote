@@ -56,14 +56,17 @@
   {{ attachment_before }}
 
   <div class="unit-search__results" data-id-number="{{ dom_id }}">
-    <span class="unit-search__count-container">
-      {% if total_rows %}
-        <span class="unit-search__count">{{ total_rows }}</span>
-        {% trans with {'context': 'Health station search count'}%}health station{% plural total_rows %}health stations{% endtrans %}
-      {% endif %}
+    <h3 class="unit-search__count-container">
+      {%- if total_rows -%}
+        {{ total_rows }} {% trans with {'context': 'Health station search count'}%}health station{% plural total_rows %}health stations{% endtrans %}
+      {%- else -%}
+        {{ 'No results'|t({}, {'context' : 'Unit search no results title'}) }}
+      {%- endif -%}
+    </h3>
 
-      {{ empty }}
-    </span>
+    {%- if empty -%}
+      <p>{{ 'No results were found for the criteria you entered. Try changing your search criteria.'|t({}, {'context' : 'Unit search no results text'}) }}</p>
+    {%- endif -%}
 
     {{ rows }}
 
