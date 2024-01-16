@@ -8,5 +8,6 @@ _core:
   default_config_hash: kzVXngjEGNpJsdD08ZS2eH18frDmMTMm5-s03cB3SMU
 id: tpr_unit.token
 label: Token
+description: ''
 targetEntityType: tpr_unit
 cache: true

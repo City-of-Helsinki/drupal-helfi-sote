@@ -8,5 +8,6 @@ _core:
   default_config_hash: YJXddqfHzgzWlN_oVmr77-vQmOPw1kMx9ZaqJQntc08
 id: tpr_service.teaser_search_result
 label: 'Teaser search result'
+description: ''
 targetEntityType: tpr_service
 cache: true
