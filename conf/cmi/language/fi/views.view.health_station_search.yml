@@ -40,6 +40,6 @@ display:
           group_info:
             group_items:
               1:
-                title: 'Näytä terveysasemat, joilta saa palvelua ruotsiksi'
+                title: 'Näytä vain toimipisteet, joista saa palvelua ruotsiksi.'
   health_station_search:
     display_title: Lohko
