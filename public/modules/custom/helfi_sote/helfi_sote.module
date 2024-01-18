@@ -33,54 +33,40 @@ function helfi_sote_helfi_paragraph_types() : array {
     'tpr_unit' => [
       'tpr_unit' => [
         'field_content' => [
-          'unit_accessibility_information',
-          'unit_contact_card',
+          'unit_accessibility_information' => 10,
+          'unit_contact_card' => 11,
         ],
         'field_lower_content' => [
-          'unit_accessibility_information',
-          'unit_contact_card',
-        ],
-      ],
-    ],
-    'tpr_service' => [
-      'tpr_service' => [
-        'field_content' => [
-          'unit_accessibility_information',
-          'unit_contact_card',
-        ],
-        'field_lower_content' => [
-          'unit_accessibility_information',
-          'unit_contact_card',
+          'unit_accessibility_information' => 14,
+          'unit_contact_card' => 15,
         ],
       ],
     ],
     'node' => [
       'page' => [
         'field_content' => [
-          'calculator',
-          'unit_accessibility_information',
-          'unit_contact_card',
+          'unit_accessibility_information' => 20,
+          'unit_contact_card' => 21,
         ],
         'field_lower_content' => [
-          'calculator',
-          'unit_accessibility_information',
-          'unit_contact_card',
+          'unit_accessibility_information' => 21,
+          'unit_contact_card' => 22,
         ],
       ],
       'landing_page' => [
         'field_content' => [
-          'unit_accessibility_information',
-          'unit_contact_card',
-          'health_station_search',
-          'maternity_and_child_health_clini',
+          'unit_accessibility_information' => 18,
+          'unit_contact_card' => 19,
+          'health_station_search' => 20,
+          'maternity_and_child_health_clini' => 21,
         ],
       ],
     ],
     'paragraphs_library_item' => [
       'paragraphs_library_item' => [
         'paragraphs' => [
-          'unit_accessibility_information',
-          'unit_contact_card',
+          'unit_accessibility_information' => 1,
+          'unit_contact_card' => 1,
         ],
       ],
     ],
@@ -90,8 +76,8 @@ function helfi_sote_helfi_paragraph_types() : array {
   foreach ($entities as $entityTypeId => $bundles) {
     foreach ($bundles as $bundle => $fields) {
       foreach ($fields as $field => $paragraphTypes) {
-        foreach ($paragraphTypes as $paragraphType) {
-          $enabled[] = new ParagraphTypeCollection($entityTypeId, $bundle, $field, $paragraphType);
+        foreach ($paragraphTypes as $paragraphType => $weight) {
+          $enabled[] = new ParagraphTypeCollection($entityTypeId, $bundle, $field, $paragraphType, $weight);
         }
       }
     }
