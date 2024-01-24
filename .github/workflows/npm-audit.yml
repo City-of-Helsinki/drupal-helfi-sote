@@ -34,7 +34,7 @@ jobs:
           ' sh {} \;
 
       - name: Use Node.js from .nvmrc in themes/custom
-        id: npm_audit_modules
+        id: npm_audit_themes
         run: |
           find public/themes/custom -type f -name ".nvmrc" -exec sh -c '
             dir=$(dirname "$1")
@@ -51,7 +51,7 @@ jobs:
           ' sh {} \;
 
       - name: Create Pull Request
-        if: steps.npm_audit.outputs.CREATE_PR == 'true'
+        if: steps.npm_audit_modules.outputs.CREATE_PR == 'true' || steps.npm_audit_themes.outputs.CREATE_PR == 'true'
         uses: peter-evans/create-pull-request@v4
         with:
           committer: GitHub <noreply@github.com>
