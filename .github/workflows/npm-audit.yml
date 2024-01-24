@@ -16,11 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js, install dependencies
-        run: |
-          
-          npm install --silent
-
       - name: Use Node.js from .nvmrc in modules/custom
         id: npm_audit_modules
         run: |
