@@ -74,7 +74,7 @@ jobs:
           labels: auto-update
           body: |
             # Npm audit
-  
+
             ${{ env.BC_BREAK }}
 
             ## How to install
