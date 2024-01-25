@@ -78,7 +78,7 @@ jobs:
           body: |
             # Npm audit
   
-            ${{ BC_BREAK }}
+            ${{ env.BC_BREAK }}
 
             ## How to install
 
