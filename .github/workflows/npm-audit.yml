@@ -19,13 +19,12 @@ jobs:
       - name: Use Node.js from .nvmrc in modules/custom
         id: npm_audit_modules
         run: |
-          # Source the nvm.sh script in the current shell environment
-          export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           find public/modules/custom -type f -name ".nvmrc" -exec sh -c '
             dir=$(dirname "$1")
             node_version=$(cat "$1")
             echo "Using Node.js version $node_version in $dir"
             cd "$dir"
+            export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             nvm install $node_version
             nvm use $node_version
             npm install --silent
@@ -45,13 +44,12 @@ jobs:
       - name: Use Node.js from .nvmrc in themes/custom
         id: npm_audit_themes
         run: |
-          # Source the nvm.sh script in the current shell environment
-          export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           find public/themes/custom -type f -name ".nvmrc" -exec sh -c '
             dir=$(dirname "$1")
             node_version=$(cat "$1")
             echo "Using Node.js version $node_version in $dir"
             cd "$dir"
+            export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             nvm install $node_version
             nvm use $node_version
             npm install --silent
