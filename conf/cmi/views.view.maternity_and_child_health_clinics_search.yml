@@ -12,7 +12,7 @@ dependencies:
 id: maternity_and_child_health_clinics_search
 label: 'Maternity and child health clinics search'
 module: views
-description: 'Fallback listing for the health station search'
+description: 'Fallback listing for the maternity and child health clinic search'
 tag: ''
 base_table: tpr_unit_field_data
 base_field: id
@@ -417,7 +417,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 15
           total_pages: null
           id: 0
           tags:
