@@ -2,11 +2,6 @@ display:
   default:
     display_options:
       filters:
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Näytä vain toimipisteet, joista saa palvelua ruotsiksi.'
         combine:
           group_info:
             label: 'Kentät yhdistävä suodatin'
@@ -25,7 +20,7 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
       exposed_form:
         options:
-          submit_button: Käytä
+          submit_button: Etsi
           reset_button_label: Palauta
           exposed_sorts_label: Järjestä
           sort_asc_label: Nouseva
