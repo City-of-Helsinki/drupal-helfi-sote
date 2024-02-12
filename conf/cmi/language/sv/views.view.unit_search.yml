@@ -30,11 +30,6 @@ display:
           exception:
             title: Alla
       filters:
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Visa endast de verksamhetsställen där man får betjäning på svenska.'
         combine:
           expose:
             label: Sök
