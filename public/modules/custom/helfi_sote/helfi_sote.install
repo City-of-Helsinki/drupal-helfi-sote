@@ -5,7 +5,7 @@
  * Contains SOTE installation hooks.
  */
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 /**
  * UHF-X: Enable calculator paragraph on strandard page on SOTE-instance.
