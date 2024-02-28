@@ -11,7 +11,7 @@ dependencies:
 id: hdbt_subtheme_user_inquiry
 theme: hdbt_subtheme
 region: attachments
-weight: 0
+weight: -19
 provider: helfi_platform_config
 plugin: chat_leijuke
 settings:
