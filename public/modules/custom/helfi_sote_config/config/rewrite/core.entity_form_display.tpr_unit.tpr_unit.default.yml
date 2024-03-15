@@ -1,5 +1,5 @@
 config_rewrite:
-  replace: ['hidden', '']
+  replace: ['hidden']
 content:
   field_districts:
     type: select2_entity_reference
