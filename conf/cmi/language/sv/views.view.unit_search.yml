@@ -30,15 +30,15 @@ display:
           exception:
             title: Alla
       filters:
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Visa endast de verksamhetsställen där man får betjäning på svenska.'
         combine:
           expose:
             label: Sök
           group_info:
             label: 'Kombinera filterfält'
+        provided_languages_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Visa endast de verksamhetsställen där man får betjäning på svenska.'
   entity_reference:
     display_title: Objektsreferens
