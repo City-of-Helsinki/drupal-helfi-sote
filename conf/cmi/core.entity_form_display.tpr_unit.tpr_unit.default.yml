@@ -145,6 +145,16 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_districts:
+    type: select2_entity_reference
+    weight: 29
+    region: content
+    settings:
+      width: 100%
+      autocomplete: false
+      match_operator: STARTS_WITH
+      match_limit: 10
+    third_party_settings: {  }
   field_lower_content:
     type: paragraphs
     weight: 29
@@ -416,16 +426,6 @@ content:
       formatter_type: null
       formatter_settings: {  }
       show_description: false
-    third_party_settings: {  }
-  field_districts:
-    type: select2_entity_reference
-    weight: 29
-    region: content
-    settings:
-      width: 100%
-      autocomplete: false
-      match_operator: STARTS_WITH
-      match_limit: 10
     third_party_settings: {  }
 hidden:
   created: true
