@@ -3734,16 +3734,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.4.26",
+            "version": "6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "c2eec066a3d16e08249f1ba0ce62ff87614eadb7"
+                "reference": "06cf3da5c3992b63794f7ef6eac1e7ca2090cbbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/c2eec066a3d16e08249f1ba0ce62ff87614eadb7",
-                "reference": "c2eec066a3d16e08249f1ba0ce62ff87614eadb7",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/06cf3da5c3992b63794f7ef6eac1e7ca2090cbbc",
+                "reference": "06cf3da5c3992b63794f7ef6eac1e7ca2090cbbc",
                 "shasum": ""
             },
             "require": {
@@ -3761,10 +3761,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.4.26",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.4.27",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2024-03-15T13:21:30+00:00"
+            "time": "2024-03-20T15:54:56+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4023,16 +4023,16 @@
         },
         {
             "name": "drupal/helfi_navigation",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation.git",
-                "reference": "0da4087a191d7fef371fd72924eaff2e33223f91"
+                "reference": "69ab951f8dc3bbd2c2916f67f3d9b597ab0b5bef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-navigation/zipball/0da4087a191d7fef371fd72924eaff2e33223f91",
-                "reference": "0da4087a191d7fef371fd72924eaff2e33223f91",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-navigation/zipball/69ab951f8dc3bbd2c2916f67f3d9b597ab0b5bef",
+                "reference": "69ab951f8dc3bbd2c2916f67f3d9b597ab0b5bef",
                 "shasum": ""
             },
             "require": {
@@ -4050,10 +4050,10 @@
             ],
             "description": "Helfi - Navigation",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/tree/2.2.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/tree/2.2.1",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/issues"
             },
-            "time": "2024-01-16T08:17:38+00:00"
+            "time": "2024-03-20T15:55:31+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
@@ -6859,16 +6859,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "12.5.0",
+            "version": "12.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "48dc17e0678e9ac162d4598c9e0a7e9009344ed8"
+                "reference": "71fcea30a22e7336e17be18bb5945400b2c63fad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/48dc17e0678e9ac162d4598c9e0a7e9009344ed8",
-                "reference": "48dc17e0678e9ac162d4598c9e0a7e9009344ed8",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/71fcea30a22e7336e17be18bb5945400b2c63fad",
+                "reference": "71fcea30a22e7336e17be18bb5945400b2c63fad",
                 "shasum": ""
             },
             "require": {
@@ -6991,7 +6991,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/12.5.0"
+                "source": "https://github.com/drush-ops/drush/tree/12.5.1"
             },
             "funding": [
                 {
@@ -6999,7 +6999,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-18T17:30:17+00:00"
+            "time": "2024-03-20T15:03:27+00:00"
         },
         {
             "name": "easyrdf/easyrdf",

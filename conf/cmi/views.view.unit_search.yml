@@ -11,7 +11,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: mwuTSnSRTePqNG6WFWBI9ajFxnho8CH-6sfyfJnDr0E
+  default_config_hash: aMXI78okDdG1WmRzpZBIIpkiRxm_tQnWnoAreyeTY5Y
 id: unit_search
 label: 'Unit search'
 module: views
