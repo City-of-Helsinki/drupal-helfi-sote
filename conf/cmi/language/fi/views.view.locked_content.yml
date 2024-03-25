@@ -1,9 +1,9 @@
-label: 'Locked content'
+label: 'Lukitut sisällöt'
 display:
   default:
     display_title: Oletus
     display_options:
-      title: 'Locked content'
+      title: 'Lukitut sisällöt'
       exposed_form:
         options:
           submit_button: Käytä
@@ -60,9 +60,9 @@ display:
             label: Otsikko
       empty:
         area_text_custom:
-          content: 'Lukittuja toimipisteitä ei ole.'
+          content: 'Lukittua sisältöä ei ole.'
   page_1:
     display_title: Sivu
     display_options:
       menu:
-        title: 'Locked content'
+        title: 'Lukitut sisällöt'
