@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - helfi_media_chart
+_core:
+  default_config_hash: YImkDFPrmCpI5G1zYLIYxEOIL_x5X9aNG__n0peJK4Y
 id: helfi_chart
 label: Chart
 description: 'Media type Chart can be used to present interactive charts. Supports Microsoft Power BI.'
