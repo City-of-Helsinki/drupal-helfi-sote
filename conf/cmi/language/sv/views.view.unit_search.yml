@@ -30,15 +30,34 @@ display:
           exception:
             title: Alla
       filters:
-        provided_languages_value:
-          group_info:
-            group_items:
-              1:
-                title: 'Visa endast de verksamhetsställen där man får betjäning på svenska.'
         combine:
           expose:
             label: Sök
           group_info:
             label: 'Kombinera filterfält'
+        provided_languages_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Visa endast de verksamhetsställen där man får betjäning på svenska.'
+      fields:
+        name:
+          separator: ', '
+        address__postal_code:
+          separator: ', '
+        address__address_line1:
+          separator: ', '
+        address__address_line2:
+          separator: ', '
   entity_reference:
     display_title: Objektsreferens
+    display_options:
+      fields:
+        name_override:
+          separator: ', '
+        id:
+          separator: ', '
+        name:
+          separator: ', '
+  block:
+    display_title: Block

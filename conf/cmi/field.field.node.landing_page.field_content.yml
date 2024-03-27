@@ -46,29 +46,29 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      banner: banner
-      chart: chart
-      columns: columns
-      content_cards: content_cards
-      content_liftup: content_liftup
-      event_list: event_list
-      from_library: from_library
-      health_station_search: health_station_search
-      hearings: hearings
-      liftup_with_image: liftup_with_image
       list_of_links: list_of_links
-      map: map
-      news_list: news_list
-      phasing: phasing
+      content_cards: content_cards
+      banner: banner
+      liftup_with_image: liftup_with_image
       popular_services: popular_services
+      from_library: from_library
+      columns: columns
+      phasing: phasing
+      map: map
       remote_video: remote_video
-      service_list: service_list
-      service_list_search: service_list_search
+      chart: chart
       target_group_links: target_group_links
+      event_list: event_list
+      news_list: news_list
+      hearings: hearings
       unit_accessibility_information: unit_accessibility_information
       unit_contact_card: unit_contact_card
-      unit_search: unit_search
+      health_station_search: health_station_search
       maternity_and_child_health_clini: maternity_and_child_health_clini
+      content_liftup: content_liftup
+      service_list: service_list
+      service_list_search: service_list_search
+      unit_search: unit_search
     negate: 0
     target_bundles_drag_drop:
       banner:
