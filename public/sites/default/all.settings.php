@@ -56,7 +56,9 @@ $additionalEnvVars = [
   'SENTRY_DSN',
   'SENTRY_ENVIRONMENT',
   // Project specific variables.
-  'ELASTIC_PROXY_URL',
+  // @fixme removed elastic proxy url for now since this is misconfigured on
+  // staging and production environments.
+  // 'ELASTIC_PROXY_URL',
   'ELASTICSEARCH_URL',
   'ELASTIC_USER',
   'ELASTIC_PASSWORD',
