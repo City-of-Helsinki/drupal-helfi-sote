@@ -34,7 +34,7 @@ jobs:
       - name: Build project
         run: |
           composer install --no-interaction
-          drush si -y && drush sql-drop -y
+          mkdir public/sites/default/files/translations
           $(drush sql:connect) < latest.sql
           drush cim -y && drush updb -y && drush cr
           composer update drupal/helfi_* drupal/hdbt* -W --no-interaction
