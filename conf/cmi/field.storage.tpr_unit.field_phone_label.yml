@@ -1,0 +1,23 @@
+uuid: e2d9dcc8-6bd3-4a30-b6b3-2eff184f8715
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+_core:
+  default_config_hash: pAAPVi_THK1VRuz7-PPbWldgFbN7Y0-nlPNZpTYyShI
+id: tpr_unit.field_phone_label
+field_name: field_phone_label
+entity_type: tpr_unit
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
