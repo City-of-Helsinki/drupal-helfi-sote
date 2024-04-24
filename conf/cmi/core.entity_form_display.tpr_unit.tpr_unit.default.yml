@@ -21,7 +21,7 @@ dependencies:
     - readonly_field_widget
     - text
 _core:
-  default_config_hash: rWjpesn9mLPiT19k4RZ1DEjahx07CnmM2G6kg47-IFE
+  default_config_hash: 3g-O4ktKMQhcD-6PCt5VJF3r8nqL-lulPMSA7-Y6ra4
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit
@@ -146,16 +146,6 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_districts:
-    type: select2_entity_reference
-    weight: 29
-    region: content
-    settings:
-      width: 100%
-      autocomplete: false
-      match_operator: STARTS_WITH
-      match_limit: 10
     third_party_settings: {  }
   field_lower_content:
     type: paragraphs
@@ -443,6 +433,16 @@ content:
       formatter_type: null
       formatter_settings: {  }
       show_description: false
+    third_party_settings: {  }
+  field_districts:
+    type: select2_entity_reference
+    weight: 29
+    region: content
+    settings:
+      width: 100%
+      autocomplete: false
+      match_operator: STARTS_WITH
+      match_limit: 10
     third_party_settings: {  }
 hidden:
   created: true
