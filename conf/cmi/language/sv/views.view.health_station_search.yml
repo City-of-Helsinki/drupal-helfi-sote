@@ -32,8 +32,6 @@ display:
         provided_languages_value:
           expose:
             label: 'Tillhandahållna språk'
-            description: ''
-            placeholder: ''
           group_info:
             group_items:
               1:
