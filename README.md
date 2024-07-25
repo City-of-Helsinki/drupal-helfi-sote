@@ -5,7 +5,7 @@
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
 development | * | - | http://helfi-sote.docker.so/
-production | main | @main | TBD
+production | main | @main | https://hel.fi/fi/sosiaali-ja-terveyspalvelut
 
 ## Requirements
 
@@ -31,8 +31,8 @@ $ make fresh
 
 NOTE: Change these according of the state of your project.
 
-## CSS-files not loading? 
-If stylesheets are not loading correctly, you need to give write access to 
+## CSS-files not loading?
+If stylesheets are not loading correctly, you need to give write access to
 ``public/sites/default/files``
 
 Run ``make drush-cr; drush-uli`` after this.
@@ -45,3 +45,15 @@ This will log you inside the app container:
 ```
 $ make shell
 ```
+
+### Instance specific features
+
+#### Watson chat bot
+
+Sote uses watson-chat implementation. It uses 2 blocks for controlling the visibility of the chat.
+Chat implementations have plenty of documentation elsewhere. (confluence)
+
+#### TPR searches
+
+Sote uses a couple of different react-applications for searching TPR-data.
+`Health station search` and `Maternity and child health clinic search`
