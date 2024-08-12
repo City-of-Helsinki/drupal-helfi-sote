@@ -44,6 +44,7 @@ dependencies:
     - siteimprove
     - system
     - taxonomy
+    - tfa
     - toolbar
     - view_unpublished
     - views_bulk_edit
@@ -129,6 +130,7 @@ permissions:
   - 'delete remote entities'
   - 'delete terms in keywords'
   - 'delete terms in neighbourhoods'
+  - 'disable own tfa'
   - 'edit any announcement content'
   - 'edit any file media'
   - 'edit any hel_map media'
@@ -160,6 +162,7 @@ permissions:
   - 'set announcement published on date'
   - 'set landing_page published on date'
   - 'set page published on date'
+  - 'setup own tfa'
   - 'translate announcement node'
   - 'translate any entity'
   - 'translate configuration'
