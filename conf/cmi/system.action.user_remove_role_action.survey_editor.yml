@@ -1,0 +1,14 @@
+uuid: 30bb27a4-19ea-43f9-a036-d477407deb8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.survey_editor
+  module:
+    - user
+id: user_remove_role_action.survey_editor
+label: 'Remove the Survey editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: survey_editor
