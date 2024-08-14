@@ -25,6 +25,7 @@ module:
   editor: 0
   editoria11y: 0
   elasticsearch_connector: 0
+  encrypt: 0
   entity: 0
   entity_reference_revisions: 0
   entity_usage: 0
@@ -46,8 +47,8 @@ module:
   helfi_base_content: 0
   helfi_calculator: 0
   helfi_ckeditor: 0
+  helfi_etusivu_entities: 0
   helfi_eu_cookie_compliance: 0
-  helfi_global_announcement: 0
   helfi_image_styles: 0
   helfi_media: 0
   helfi_media_chart: 0
@@ -56,6 +57,7 @@ module:
   helfi_node_announcement: 0
   helfi_node_landing_page: 0
   helfi_node_page: 0
+  helfi_node_survey: 0
   helfi_paragraphs_accordion: 0
   helfi_paragraphs_banner: 0
   helfi_paragraphs_chart: 0
@@ -82,6 +84,7 @@ module:
   helfi_react_search: 0
   helfi_sote: 0
   helfi_sote_config: 0
+  helfi_tfa: 0
   helfi_toc: 0
   helfi_tpr: 0
   helfi_tpr_config: 0
@@ -95,6 +98,7 @@ module:
   inline_form_errors: 0
   jquery_ui: 0
   jquery_ui_draggable: 0
+  key: 0
   language: 0
   link: 0
   linkit: 0
@@ -132,6 +136,7 @@ module:
   raven: 0
   rdf: 0
   readonly_field_widget: 0
+  real_aes: 0
   redirect: 0
   redis: 0
   responsive_image: 0
@@ -151,6 +156,7 @@ module:
   taxonomy: 0
   telephone: 0
   text: 0
+  tfa: 0
   token: 0
   toolbar: 0
   translatable_menu_link_uri: 0

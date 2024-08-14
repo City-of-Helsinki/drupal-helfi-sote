@@ -1,5 +1,6 @@
 _core:
   default_config_hash: t5W6QbLZA8s7VAoHDDldhRB2Emm1blOGOOKHMV855Gk
+langcode: en
 token: e398be18e27e42aaa2ee4c22e7e7e9fb
 domain_plugin_id: siteimprovedomain_simple
 prepublish_enabled: false

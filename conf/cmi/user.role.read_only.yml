@@ -2,11 +2,16 @@ uuid: 3d836eb0-aa7f-4154-9d13-bd4e94b704a6
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.announcement
+    - node.type.landing_page
+    - node.type.page
   module:
     - file
     - helfi_tpr
     - node
     - paragraphs
+    - tfa
     - toolbar
     - view_unpublished
 id: read_only
@@ -16,6 +21,8 @@ is_admin: null
 permissions:
   - 'access toolbar'
   - 'delete own files'
+  - 'disable own tfa'
+  - 'setup own tfa'
   - 'view any unpublished announcement content'
   - 'view any unpublished landing_page content'
   - 'view any unpublished page content'
