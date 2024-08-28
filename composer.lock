@@ -4227,16 +4227,16 @@
         },
         {
             "name": "drupal/helfi_azure_fs",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs.git",
-                "reference": "25c7b80d6d1dc71176a576102665704b7e8fedeb"
+                "reference": "8f3de38beffb83286371b4909fc4e37ebfc1bf18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-azure-fs/zipball/25c7b80d6d1dc71176a576102665704b7e8fedeb",
-                "reference": "25c7b80d6d1dc71176a576102665704b7e8fedeb",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-azure-fs/zipball/8f3de38beffb83286371b4909fc4e37ebfc1bf18",
+                "reference": "8f3de38beffb83286371b4909fc4e37ebfc1bf18",
                 "shasum": ""
             },
             "require": {
@@ -4253,6 +4253,9 @@
             "type": "drupal-module",
             "extra": {
                 "patches": {
+                    "drupal/core": {
+                        "UHF-10533 D10.3 images": "https://raw.githubusercontent.com/City-of-Helsinki/drupal-module-helfi-azure-fs/f933226cdd9b046d76757d4f885d3d3567365264/patches/UHF-10533-d10-images.patch"
+                    },
                     "twistor/flysystem-stream-wrapper": {
                         "PHP 8.2 support (https://www.drupal.org/project/flysystem/issues/3387094)": "https://raw.githubusercontent.com/City-of-Helsinki/drupal-module-helfi-azure-fs/ddb222622b92d1c2b7db975a84167a00579a1ad0/patches/3387094-add-context-property-to-stream-wrapper.patch"
                     }
@@ -4263,10 +4266,10 @@
             ],
             "description": "Helfi - Azure FS",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/tree/2.0.3",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/tree/2.0.4",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/issues"
             },
-            "time": "2024-08-16T08:49:23+00:00"
+            "time": "2024-08-28T06:48:32+00:00"
         },
         {
             "name": "drupal/helfi_drupal_tools",
@@ -4389,16 +4392,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "4.4.13",
+            "version": "4.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "c609a3f7abd306e1ae11c6ddb422f34e421f0748"
+                "reference": "ad9ef9d638544a4b61ea097d7a224886983ea478"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/c609a3f7abd306e1ae11c6ddb422f34e421f0748",
-                "reference": "c609a3f7abd306e1ae11c6ddb422f34e421f0748",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/ad9ef9d638544a4b61ea097d7a224886983ea478",
+                "reference": "ad9ef9d638544a4b61ea097d7a224886983ea478",
                 "shasum": ""
             },
             "require": {
@@ -4516,10 +4519,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/4.4.13",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/4.4.14",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2024-08-27T10:45:17+00:00"
+            "time": "2024-08-28T07:56:47+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
