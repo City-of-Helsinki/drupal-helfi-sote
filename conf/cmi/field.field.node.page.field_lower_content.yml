@@ -125,7 +125,7 @@ settings:
         weight: 21
         enabled: true
       unit_contact_card:
-        weight: 22
+        weight: 18
         enabled: true
       unit_search:
         weight: 17
