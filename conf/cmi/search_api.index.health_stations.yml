@@ -24,7 +24,7 @@ field_settings:
   coordinates:
     label: Coordinates
     property_path: coordinates
-    type: object
+    type: location
   id:
     label: ID
     datasource_id: 'entity:tpr_unit'
