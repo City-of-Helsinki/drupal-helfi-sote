@@ -22,6 +22,7 @@ dependencies:
     - content_translation
     - editoria11y
     - entity_usage
+    - eu_cookie_compliance
     - file
     - filter
     - hdbt_cookie_banner
@@ -70,7 +71,8 @@ permissions:
   - 'access tpr_unit overview'
   - 'access user profiles'
   - 'administer blocks'
-  - 'administer hdbt_cookie_banner'
+  - 'administer eu cookie compliance categories'
+  - 'administer eu cookie compliance popup'
   - 'administer menu'
   - 'administer nodes'
   - 'administer paragraphs library'
