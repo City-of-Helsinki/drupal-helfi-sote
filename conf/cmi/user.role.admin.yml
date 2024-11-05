@@ -25,7 +25,6 @@ dependencies:
     - eu_cookie_compliance
     - file
     - filter
-    - hdbt_cookie_banner
     - helfi_api_base
     - helfi_tpr
     - locale
