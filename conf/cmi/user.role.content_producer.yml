@@ -30,6 +30,7 @@ dependencies:
     - paragraphs_library
     - path
     - publication_date
+    - raven
     - scheduler
     - siteimprove
     - system
@@ -105,6 +106,7 @@ permissions:
   - 'revert landing_page revisions'
   - 'revert page revisions'
   - 'schedule publishing of nodes'
+  - 'send performance traces to sentry'
   - 'set announcement published on date'
   - 'set landing_page published on date'
   - 'set page published on date'
