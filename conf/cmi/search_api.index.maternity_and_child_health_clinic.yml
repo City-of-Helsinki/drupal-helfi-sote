@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.server.elastic_sote
+    - search_api.server.default
   module:
     - helfi_tpr
     - search_api
@@ -120,4 +120,4 @@ options:
   cron_limit: 50
   index_directly: true
   track_changes_in_references: true
-server: elastic_sote
+server: default
