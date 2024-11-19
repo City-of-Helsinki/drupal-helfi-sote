@@ -7,7 +7,6 @@ dependencies:
     - node.type.landing_page
     - node.type.page
   module:
-    - eu_cookie_compliance
     - file
     - helfi_tpr
     - node
@@ -24,7 +23,6 @@ permissions:
   - 'access toolbar'
   - 'delete own files'
   - 'disable own tfa'
-  - 'display eu cookie compliance popup'
   - 'send performance traces to sentry'
   - 'setup own tfa'
   - 'view any unpublished announcement content'
