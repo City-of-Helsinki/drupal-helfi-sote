@@ -132,7 +132,6 @@ permissions:
   - 'delete terms in keywords'
   - 'delete terms in neighbourhoods'
   - 'disable own tfa'
-  - 'display eu cookie compliance popup'
   - 'edit any announcement content'
   - 'edit any file media'
   - 'edit any hel_map media'
