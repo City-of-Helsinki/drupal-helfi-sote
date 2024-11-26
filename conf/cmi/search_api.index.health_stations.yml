@@ -5,9 +5,8 @@ dependencies:
   config:
     - search_api.server.elastic_sote
   module:
-    - helfi_tpr
-    - search_api
     - helfi_react_search
+    - helfi_tpr
 id: health_stations
 name: 'Health stations'
 description: ''
