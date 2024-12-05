@@ -28,7 +28,7 @@ display:
         combine:
           expose:
             label: 'Sök hälsostationer'
-            description: "Ange hälsostationens namn eller adress"
+            description: 'Ange hälsostationens namn eller adress'
             placeholder: 'T.ex. Haga hälsostation'
         provided_languages_value:
           expose:
