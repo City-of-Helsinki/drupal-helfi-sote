@@ -28,7 +28,8 @@ display:
         combine:
           expose:
             label: 'Sök hälsostationer'
-            placeholder: 'Skriv in stadsdelen eller namnet på hälsostationen här'
+            description: "Ange hälsostationens namn eller adress"
+            placeholder: 'T.ex. Haga hälsostation'
         provided_languages_value:
           expose:
             label: 'Tillhandahållna språk'

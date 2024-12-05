@@ -31,7 +31,8 @@ display:
         combine:
           expose:
             label: 'Terveysasemien haku'
-            placeholder: 'Syötä tähän kaupunginosa tai terveysaseman nimi'
+            description: "Kirjoita terveysaseman nimi tai osoite"
+            placeholder: 'Esim. Haagan terveysasema'
         provided_languages_value:
           expose:
             label: 'Saatavissa olevat kielet'

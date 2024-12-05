@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_unit.teaser_with_image
-    - taxonomy.vocabulary.neighbourhoods
   module:
     - address
     - helfi_tpr
-    - taxonomy
 id: health_station_search
 label: 'Health station search'
 module: views
@@ -79,6 +77,71 @@ display:
           click_sort_column: value
           type: string
           settings: {  }
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        name_override:
+          id: name_override
+          table: tpr_unit_field_data
+          field: name_override
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: tpr_unit
+          entity_field: name_override
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
           group_column: entity_id
           group_columns: {  }
           group_rows: true
@@ -347,72 +410,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        name_1:
-          id: name_1
-          table: taxonomy_term_field_data
-          field: name
-          relationship: field_districts
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: entity_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          convert_spaces: false
       pager:
         type: full
         options:
@@ -513,7 +510,7 @@ display:
           expose:
             operator_id: combine_op
             label: 'Health station search'
-            description: ''
+            description: "Enter the health station's name or address"
             use_operator: false
             operator: combine_op
             operator_limit_selection: false
@@ -529,9 +526,9 @@ display:
               content_producer: '0'
               editor: '0'
               admin: '0'
-              debug_api: '0'
               super_administrator: '0'
-            placeholder: "Enter the city district or the health station's name here"
+              survey_editor: '0'
+            placeholder: 'For example, Haaga Health Station'
           is_grouped: false
           group_info:
             label: ''
@@ -546,10 +543,10 @@ display:
             group_items: {  }
           fields:
             name: name
+            name_override: name_override
             address__address_line1: address__address_line1
             address__address_line2: address__address_line2
             address__postal_code: address__postal_code
-            name_1: name_1
         content_translation_status:
           id: content_translation_status
           table: tpr_unit_field_data
@@ -757,98 +754,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        field_districts_target_id:
-          id: field_districts_target_id
-          table: tpr_unit__field_districts
-          field: field_districts_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: empty
-          value: {  }
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          vid: neighbourhoods
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
-        langcode_1:
-          id: langcode_1
-          table: taxonomy_term_field_data
-          field: langcode
-          relationship: field_districts
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          entity_field: langcode
-          plugin_id: language
-          operator: in
-          value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       filter_groups:
         operator: AND
         groups:
           1: AND
-          2: OR
       style:
         type: default
         options:
@@ -880,15 +789,6 @@ display:
           entity_field: services
           plugin_id: standard
           required: true
-        field_districts:
-          id: field_districts
-          table: tpr_unit__field_districts
-          field: field_districts
-          relationship: none
-          group_type: group
-          admin_label: 'field_districts: Taxonomy term'
-          plugin_id: standard
-          required: false
       group_by: true
       header: {  }
       footer: {  }
