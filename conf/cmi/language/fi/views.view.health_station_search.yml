@@ -31,7 +31,7 @@ display:
         combine:
           expose:
             label: 'Terveysasemien haku'
-            description: "Kirjoita terveysaseman nimi tai osoite"
+            description: 'Kirjoita terveysaseman nimi tai osoite'
             placeholder: 'Esim. Haagan terveysasema'
         provided_languages_value:
           expose:
