@@ -472,11 +472,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items:
-              -
+              1:
                 title: Published
                 operator: '='
                 value: '1'
-              -
+              2:
                 title: Unpublished
                 operator: '='
                 value: '0'
@@ -495,7 +495,6 @@ display:
             fi: fi
             sv: sv
             en: en
-            ru: ru
           group: 1
           exposed: true
           expose:
@@ -543,7 +542,7 @@ display:
       filter_groups:
         operator: AND
         groups:
-          - AND
+          1: AND
       style:
         type: table
         options:
