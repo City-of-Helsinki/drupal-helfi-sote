@@ -90,14 +90,6 @@ chat with one being the default and the other exceptions. You can configure the 
 layout page (admin/structure/block). More documentation about the IBM Watson chatbot is available in [Confluence](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/HEL/pages/8145469986/IBM+Chat+App+Drupal+integration),
 and the code for the Drupal block can be found [here](https://github.com/City-of-Helsinki/drupal-helfi-platform-config/blob/main/src/Plugin/Block/IbmChatApp.php).
 
-### SUUNTE Chat
-The SUUNTE chat, also referred to as Genesys Chat, is implemented on the SOTE instance and includes a block that
-controls where the chat is visible. The code related to the chat can be found in the custom module [`helfi_sote`](https://github.com/City-of-Helsinki/drupal-helfi-sote/tree/dev/public/modules/custom/helfi_sote).
-
-You can configure the chat block on the block layout page (admin/structure/block). Additional documentation about the
-SUUNTE chat can be found on Confluence using the keywords _Genesys_ or _SUUNTE_. Most of the information there is in
-Finnish.
-
 ### Template customization for the TPR entities
 SOTE has customization on how the Errand services and Service Channels are displayed. Customization can be found from
 the `hdbt_subtheme` templates folder [here](https://github.com/City-of-Helsinki/drupal-helfi-sote/tree/dev/public/themes/custom/hdbt_subtheme/templates/module/helfi_tpr).
