@@ -9,7 +9,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: IV9HaopKVuXUhTly62bndhPetfg5MmB3FKOud1RqnNk
+  default_config_hash: lstlYqyDuxffhG6_KlqYEX65K6EDoV9jzNiYAuswSu4
 id: paragraph.calculator.default
 targetEntityType: paragraph
 bundle: calculator
