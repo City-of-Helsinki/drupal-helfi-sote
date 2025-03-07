@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: nC51dNmmyCVk7ig7qpYMOc69UxdmGo26EMF3HNe02Go
+  default_config_hash: cjDkOC6b6J_rVgoqX4O2jaE-C7nObpMRwc8TYfzlC8M
 id: paragraph.calculator.field_calculator
 field_name: field_calculator
 entity_type: paragraph

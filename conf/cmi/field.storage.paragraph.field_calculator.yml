@@ -6,7 +6,7 @@ dependencies:
     - options
     - paragraphs
 _core:
-  default_config_hash: 8ttyUjXwYzU9Wtlyub9tIN-_lxaF5mV0rXomnfBPUGI
+  default_config_hash: 4CPKApPiqbFT1VUtHFecJAe176DnMFwbIlEZbRFFGoE
 id: paragraph.field_calculator
 field_name: field_calculator
 entity_type: paragraph
