@@ -8,7 +8,7 @@ third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 _core:
-  default_config_hash: qPuITOAR6fQC3hedFhewKtZkjm93xFyGyYPgTOAiYRM
+  default_config_hash: BAFNReN7tDKFf-aDohDCqKdXeaUeWmQNbfWVivqg53I
 id: calculator
 label: Calculator
 icon_uuid: null

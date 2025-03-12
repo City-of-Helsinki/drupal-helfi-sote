@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.calculator.field_calculator_title
     - paragraphs.paragraphs_type.calculator
 _core:
-  default_config_hash: 4Of9h7ovkWKwJnZsh4GLlyV35pilmuA6ukxjRZ1_nC4
+  default_config_hash: oidsK5Gbjpqc50yrLakSNTleVrr8jtrpQJfktf_R2rs
 id: paragraph.calculator.default
 targetEntityType: paragraph
 bundle: calculator
