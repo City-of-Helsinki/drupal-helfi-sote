@@ -1,4 +1,4 @@
-{% embed '@hdbt/component/unit-search.twig'%}
+{% embed '@hdbt/component/content-list-with-count.twig'%}
   {% block count_container%}
     {%- if total_rows -%}
       {{ total_rows }} {% trans with {'context': 'Health station search count'}%}health station{% plural total_rows %}health stations{% endtrans %}
