@@ -69,7 +69,7 @@ display:
                 title: Julkaisematon
         langcode:
           expose:
-            label: Kieli
+            label: 'Tapahtuman kieli'
       title: Media
   media_page_list:
     display_title: Media
