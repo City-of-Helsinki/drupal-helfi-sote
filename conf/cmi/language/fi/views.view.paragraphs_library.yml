@@ -30,7 +30,7 @@ display:
           label: Lohkot
           separator: ', '
         langcode:
-          label: 'Tapahtuman kieli'
+          label: Kieli
           separator: ', '
         id:
           label: ID
