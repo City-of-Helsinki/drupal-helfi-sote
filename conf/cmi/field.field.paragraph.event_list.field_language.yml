@@ -6,12 +6,12 @@ dependencies:
     - field.storage.paragraph.field_language
     - paragraphs.paragraphs_type.event_list
 _core:
-  default_config_hash: Yreb6eFUv48TKau1q284v32KDIP5Oqy796PLdI0I3uw
+  default_config_hash: qyL8mGc1WEon1pdMSbIkkegAfPCAwnHiweV8pPL9fuY
 id: paragraph.event_list.field_language
 field_name: field_language
 entity_type: paragraph
 bundle: event_list
-label: Language
+label: 'Event Language'
 description: 'Show "Language" filter.'
 required: false
 translatable: false
