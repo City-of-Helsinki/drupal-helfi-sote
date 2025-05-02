@@ -1,0 +1,29 @@
+uuid: 5a82c547-df0c-4ae1-a240-34ff69406ed6
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_platform_config
+    - system
+  theme:
+    - hdbt_subtheme
+id: ibmchatapp_sotebot_extra
+theme: hdbt_subtheme
+region: attachments
+weight: 0
+provider: null
+plugin: ibm_chat_app
+settings:
+  id: ibm_chat_app
+  label: 'Watson Sotebot / Hester extra'
+  label_display: '0'
+  provider: helfi_platform_config
+  hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
+  engagementId: sote-bot-alt
+  tenantId: sote-prod
+  assistantId: sote-bot
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/senioripalvelut\r\n/senioripalvelut/*\r\n/sosiaalinen-ja-taloudellinen-tuki\r\n/sosiaalinen-ja-taloudellinen-tuki/ohjeistusta-ja-neuvontaa\r\n/sosiaalinen-ja-taloudellinen-tuki/ohjeistusta-ja-neuvontaa/*\r\n/sosiaalinen-ja-taloudellinen-tuki/talous-tyokyky-ja-toimeentulo\r\n/sosiaalinen-ja-taloudellinen-tuki/talous-tyokyky-ja-toimeentulo/*\r\n/sosiaalinen-ja-taloudellinen-tuki/asunnottomien-palvelut\r\n/sosiaalinen-ja-taloudellinen-tuki/asunnottomien-palvelut/*\r\n/sosiaalinen-ja-taloudellinen-tuki/aikuissosiaalityo\r\n/sosiaalinen-ja-taloudellinen-tuki/aikuissosiaalityo/*\r\n/senior-services\r\n/senior-services/*\r\n/social-support-and-financial-assistance\r\n/social-support-and-financial-assistance/guidance-and-advice\r\n/social-support-and-financial-assistance/guidance-and-advice/*\r\n/social-support-and-financial-assistance/finances-work-ability-and-livelihood\r\n/social-support-and-financial-assistance/finances-work-ability-and-livelihood/*\r\n/social-support-and-financial-assistance/services-for-the-unhoused\r\n/social-support-and-financial-assistance/services-for-the-unhoused/*\r\n/social-support-and-financial-assistance/adult-social-work\r\n/social-support-and-financial-assistance/adult-social-work/*\r\n/seniortjanster\r\n/seniortjanster/*\r\n/socialt-och-ekonomiskt-stod\r\n/socialt-och-ekonomiskt-stod/handledning-och-rad\r\n/socialt-och-ekonomiskt-stod/handledning-och-rad/*\r\n/socialt-och-ekonomiskt-stod/ekonomi-arbetsformaga-och-utkomst\r\n/socialt-och-ekonomiskt-stod/ekonomi-arbetsformaga-och-utkomst/*\r\n/socialt-och-ekonomiskt-stod/tjanster-for-bostadslosa\r\n/socialt-och-ekonomiskt-stod/tjanster-for-bostadslosa/*\r\n/socialt-och-ekonomiskt-stod/vuxensocialarbete\r\n/socialt-och-ekonomiskt-stod/vuxensocialarbete/*\r\n"
