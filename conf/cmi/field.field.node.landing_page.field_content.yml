@@ -20,6 +20,7 @@ dependencies:
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.maternity_and_child_health_clini
     - paragraphs.paragraphs_type.news_list
+    - paragraphs.paragraphs_type.number_highlights
     - paragraphs.paragraphs_type.phasing
     - paragraphs.paragraphs_type.popular_services
     - paragraphs.paragraphs_type.remote_video
@@ -62,6 +63,7 @@ settings:
       event_list: event_list
       news_list: news_list
       image_gallery: image_gallery
+      number_highlights: number_highlights
       curated_event_list: curated_event_list
       hearings: hearings
       unit_accessibility_information: unit_accessibility_information
@@ -117,6 +119,9 @@ settings:
         enabled: true
       news_list:
         weight: 14
+        enabled: true
+      number_highlights:
+        weight: 16
         enabled: true
       phasing:
         weight: 7

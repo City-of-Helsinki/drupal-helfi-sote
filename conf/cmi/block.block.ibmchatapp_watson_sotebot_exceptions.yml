@@ -15,7 +15,7 @@ provider: null
 plugin: ibm_chat_app
 settings:
   id: ibm_chat_app
-  label: 'Watson Sotebot / Hester (Exceptions)'
+  label: 'Watson Sotebot / Hester original (Exceptions)'
   label_display: visible
   provider: helfi_platform_config
   hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
