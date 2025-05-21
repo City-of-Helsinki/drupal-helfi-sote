@@ -86,87 +86,11 @@ function helfi_sote_helfi_paragraph_types() : array {
 }
 
 /**
- * Implements hook_preprocess_HOOK().
+ * Implements hook_first_paragraph_grey_alter().
  */
-function helfi_sote_preprocess_block(&$variables) {
-  if ($variables['plugin_id'] !== 'hero_block') {
-    return;
-  }
-
-  // Get current entity and entity version.
-  $entity_matcher = \Drupal::service('helfi_platform_config.entity_version_matcher')->getType();
-
-  /** @var \Drupal\Core\Entity\ContentEntityInterface $entity */
-  $entity = $entity_matcher['entity'];
-
-  // No need to continue if current entity doesn't have hero set.
-  if (
-    !$entity instanceof ContentEntityInterface ||
-    !$entity->hasField('field_has_hero') ||
-    !(bool) $entity->get('field_has_hero')->value ||
-    $entity->get('field_content')->isEmpty()
-  ) {
-    return;
-  }
-  $paragraph = $entity->get('field_content')->first()->get('entity')->getValue();
-
-  if (
-    empty($paragraph) ||
-    !in_array($entity->bundle(), ['landing_page', 'page']) ||
-    !$paragraph instanceof ParagraphInterface
-  ) {
-    return;
-  }
-  $first_paragraph_gray = &$variables['content']['hero_block']['#first_paragraph_grey'];
-
-  // Check if the content field first paragraph is unit search clone
-  // and add classes accordingly.
-  $paragraph_types = [
+function helfi_sote_first_paragraph_grey_alter(array &$paragraphs): void {
+  $paragraphs = [
     'health_station_search',
     'maternity_and_child_health_clini',
   ];
-
-  if (in_array($paragraph->getType(), $paragraph_types)) {
-    $first_paragraph_gray = 'has-first-gray-bg-block';
-
-    // If lead_in field has value, unset 1st gray paragraph class.
-    if (
-      $entity->hasField('field_lead_in') &&
-      // @phpstan-ignore-next-line
-      !$entity->field_lead_in->isEmpty()
-    ) {
-      $first_paragraph_gray = '';
-      return;
-    }
-
-    // If table of contents is enabled, unset 1st gray paragraph class.
-    if (
-      $entity->hasField('toc_enabled') &&
-      // @phpstan-ignore-next-line
-      $entity->toc_enabled->value == TRUE
-    ) {
-      $first_paragraph_gray = '';
-      return;
-    }
-
-    // Special cases if the node type is page.
-    if ($entity->bundle() === 'page') {
-      // Load menu links for the current page entity.
-      $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
-      $menu_links = $menu_link_manager->loadLinksByRoute(
-        "entity.{$entity->getEntityTypeId()}.canonical",
-        [$entity->getEntityTypeId() => $entity->id()]
-      );
-
-      // If the page is in navigation set a different value for 1st gray
-      // paragraph class.
-      if (!empty($menu_links) && is_array($menu_links)) {
-        $menu_Link = reset($menu_links);
-
-        if ($menu_Link->isEnabled()) {
-          $first_paragraph_gray = 'has-first-gray-bg-block--desktop';
-        }
-      }
-    }
-  }
 }
