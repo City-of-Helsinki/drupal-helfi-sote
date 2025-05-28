@@ -1,0 +1,32 @@
+{
+  "name": "helfi-sote-e2e-tests",
+  "version": "1.0.0",
+  "description": "End-to-end tests for Helsinki SOTE services, focusing on maternity and child health clinic search (Chromium only)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:maternity": "playwright test tests/e2e/maternity-search.spec.js",
+    "show-report": "playwright show-report",
+    "install-browsers": "playwright install chromium"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "testing",
+    "helsinki",
+    "sote",
+    "maternity",
+    "healthcare",
+    "chromium"
+  ],
+  "author": "Helsinki City",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+} 

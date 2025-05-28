@@ -28,3 +28,9 @@ public/sites/default/local.services.yml
 !*.gitkeep
 !*.keepme
 .phpunit.*
+
+# Playwright test artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
