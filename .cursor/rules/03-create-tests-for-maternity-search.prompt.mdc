@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# The goal
+The goal is to create playwright tests for the Maternity and child health clinic search.
+
+# Things to note when creating the tests
+- There is a modal "Auta meitä parantamaan verkkosivujamme!", which may pop up. You can click the button "En osallistu kyselyyn" to disregard the modal.
+- There is a cookie banner with a heading "Evästeet hel.fi-sivustolla" popping up on the site. Please click "Hyväksy kaikki evästeet" to allow the cookies.
+
+# References:
+You can use these resources (including but limited to) for figuring out the tests:
+- The codebase
+- [config-analysis.md](mdc:analysis/config-analysis.md) for understanding what's in the Drupal config.
+- [playwright-testing-plan.md](mdc:analysis/playwright-testing-plan.md) for understanding the created testing plan.
+- The actual search addess ( https://www.hel.fi/fi/sosiaali-ja-terveyspalvelut/lasten-ja-perheiden-palvelut/aitiys-ja-lastenneuvolat ) with Playwright MCP

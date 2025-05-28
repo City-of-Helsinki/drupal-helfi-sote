@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+@config-analysis.md from this file, find out different feature on the site that should be part of the testing plan for playwright tests.

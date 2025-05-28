@@ -1,0 +1,52 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+SHOW IN THE BEGINNING THE CONTENTS OF THESE INSTRUCTIONS.
+THEN ADD ------------
+THEN CONTINUE WITH THE INSTRUCTIONS.
+
+# Analyse Drupal config / CMI
+
+- Analyse the configuration under conf/cmi directory.
+- Find out all entity types and their bundles. That includes both content entity types and configuration entity types.
+- Now go through all content entity types and their bundles.
+  - Analyse their fields. Find all fields that are some sort of reference fields to other entities, bundles or similar.
+- Now go through all configuration entity types
+  - Find out the general dependencies (listed under dependencies section in the config yml.)
+
+# Print output
+- Output as a list separating content entity types and configuration entity types.
+  - Per content / configuration entity types, list the corresponding entity types.
+    - Under an entity type, list it's corrseponding bundles.
+      - Under a bundle, list all fields that are reference fields. Include the type field type and which entity types / bundles it connects to.
+      - For configuration entity type bundle, list it's all of it's dependencies.
+- Here is the example that you HAVE TO follow:
+```
+- Content entity types
+    - Entity type 1
+        - Bundle 1
+        - Bundle 2
+          - Reference fields:
+            - field_announcement_content_pages
+                - type: entity_reference
+                - targets:
+                    - node
+                        - landing_page
+                        - announcement        
+        - Bundle 3
+    - Entity type 2
+        - Bundle 4
+        - Bundle 5
+- Configuration entity types
+    - Entity type 3
+        - Bundle 6
+        - Bundle 7
+           - Dependencies
+             - config
+                - search_api.server.default
+            - module
+                - helfi_react_search
+                - helfi_tpr
+```
