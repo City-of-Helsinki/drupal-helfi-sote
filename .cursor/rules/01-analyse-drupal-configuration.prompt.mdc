@@ -3,12 +3,12 @@ description:
 globs: 
 alwaysApply: false
 ---
-SHOW IN THE BEGINNING THE CONTENTS OF THESE INSTRUCTIONS.
-THEN ADD ------------
-THEN CONTINUE WITH THE INSTRUCTIONS.
+** GOAL **
+Generate an analysis of the Drupal codebase's configuration as a file under analysis/drupal-config-analysis.md based on the given instructions.
 
-# Analyse Drupal config / CMI
+---
 
+## Analyse Drupal CMI
 - Analyse the configuration under conf/cmi directory.
 - Find out all entity types and their bundles. That includes both content entity types and configuration entity types.
 - Now go through all content entity types and their bundles.
@@ -16,8 +16,10 @@ THEN CONTINUE WITH THE INSTRUCTIONS.
 - Now go through all configuration entity types
   - Find out the general dependencies (listed under dependencies section in the config yml.)
 
-# Print output
-- Output as a list separating content entity types and configuration entity types.
+---
+
+## Format the data
+- Format the data as a list separating content entity types and configuration entity types.
   - Per content / configuration entity types, list the corresponding entity types.
     - Under an entity type, list it's corrseponding bundles.
       - Under a bundle, list all fields that are reference fields. Include the type field type and which entity types / bundles it connects to.
