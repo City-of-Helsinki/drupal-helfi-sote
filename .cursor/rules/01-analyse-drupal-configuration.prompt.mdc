@@ -4,7 +4,7 @@ globs:
 alwaysApply: false
 ---
 ** GOAL **
-Generate an analysis of the Drupal codebase's configuration as a file under analysis/drupal-config-analysis.md based on the given instructions.
+Generate an analysis of the Drupal codebase's configuration as a file under config_analysis/drupal_config_analysis.md based on the given instructions. To optimize the consecutive runs, create a tool script under config_analysis/ that you can use and update.
 
 ---
 
