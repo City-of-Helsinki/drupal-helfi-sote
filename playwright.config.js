@@ -12,8 +12,14 @@ module.exports = defineConfig({
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  /* Control how many tests run simultaneously */
+  workers: process.env.CI ? 1 : 1, // CI: 1 worker, Local: auto-detect
+  // Alternative worker configurations:
+  // workers: 1,                    // Always run tests sequentially (one at a time)
+  // workers: 2,                    // Always run 2 tests simultaneously
+  // workers: '50%',                // Use 50% of available CPU cores
+  // workers: undefined,            // Auto-detect based on CPU cores (default)
+  
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
