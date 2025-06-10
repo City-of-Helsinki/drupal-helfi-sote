@@ -7,7 +7,9 @@
     "test:headed": "playwright test --project=chromium --headed",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
-    "test:maternity": "playwright test tests/e2e/maternity-search.spec.js",
+    "test:maternity": "playwright test tests/e2e/maternity-and-child-health-clinic-search.spec.js",
+    "test:health-station": "playwright test tests/e2e/health-station-search.spec.js",
+    "test:searches": "playwright test tests/e2e/maternity-and-child-health-clinic-search.spec.js tests/e2e/health-station-search.spec.js",
     "show-report": "playwright show-report",
     "install-browsers": "playwright install"
   },
@@ -18,7 +20,8 @@
     "helsinki",
     "sote",
     "maternity",
-    "healthcare"
+    "healthcare",
+    "health-station"
   ],
   "author": "Helsinki City",
   "license": "MIT",

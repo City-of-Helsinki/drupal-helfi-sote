@@ -13,7 +13,7 @@ module.exports = defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Control how many tests run simultaneously */
-  workers: process.env.CI ? 1 : 1, // CI: 1 worker, Local: auto-detect
+  workers: process.env.CI ? 1 : undefined, // CI: 1 worker, Local: auto-detect
   // Alternative worker configurations:
   // workers: 1,                    // Always run tests sequentially (one at a time)
   // workers: 2,                    // Always run 2 tests simultaneously
