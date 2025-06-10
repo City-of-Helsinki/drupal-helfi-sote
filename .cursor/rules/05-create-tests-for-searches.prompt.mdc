@@ -12,11 +12,13 @@ Do a separate test file per search.
 --
 
 ## References
-It's paramount that you find the right test plan PER feature under e2e/generated_plan! The plans are named like <feature_name>.test_plan.md .
+- It's paramount that you find the right test plan PER feature under e2e/generated_plan/plans! The plans are named like <feature_name>.test_plan.md .
 Base the tests only to the tests described in the test plan for the given feature that you are creating the tests for.
+- For the locators, use e2e/generated_plan/locators/<feature_name>.locators.md .
 
 You can use these resources (including but limited to) for figuring out the tests:
-- The found test_plan from e2e/generated_plan.
+- The found test_plan file from e2e/generated_plan/plans.
+- The found locators file from e2e/generated_plan/locators.
 - The codebase
 - The actual feature with Playwright MCP. The base URL is https://www.hel.fi/fi/sosiaali-ja-terveyspalvelut and the path may be found from the test plan file.
 
