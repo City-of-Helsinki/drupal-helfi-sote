@@ -30,3 +30,5 @@ You can use these resources (including but limited to) for figuring out the test
 - Disregard ALL performance related tests.
 - Only create tests for one browser.
 - You may create shared and individual helper files for separating the helper functionalities from the test code.
+- When handling things like results, take into account Finnish singular and plural forms. For example 'paikka' being singluar, 'paikkaa' being plural.
+- Use the generated locators!
