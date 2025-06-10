@@ -4,7 +4,7 @@ globs:
 alwaysApply: false
 ---
 ** GOAL **
-Generate testing plans for each search feature listed in the [feature_list.md](mdc:tests/e2e/generated_plan/feature_list.md). Save each plan into separate a file under tests/e2e/generated_plan. Use the naming convention like <snake_case_name_of_the_feature>.test_plan.md for example interesting_search_feature.test_plan.md .
+Generate testing plans for each search feature listed in the [feature_list.md](mdc:tests/e2e/generated_plan/feature_list.md). Save each plan into separate a file under tests/e2e/generated_plan/plans . Use the naming convention like <snake_case_name_of_the_feature>.test_plan.md for example interesting_search_feature.test_plan.md .
 
 ---
 
