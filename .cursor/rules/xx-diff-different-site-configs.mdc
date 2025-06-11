@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+** GOAL **
+Find out, what is unique about the current site's (SOTE) configurations compared to other sites. Save the difference to config_analysis/sote_unique.md
+
+---
+
+## Instructions on how to do the diff
+All of the config analysis files are from the different sites that have a very shared config base and codebase, which makes them similar in many aspects.
+Based on the other config analyses from the different sites, create a diff, what is unique for the current site.
+The goal is NOT to find unique items from other sites, only from SOTE.
+
+---
+
+## Resources
+Use the configurations stored into config_analysis folder.
+- config_analysis/drupal_config_analysis.md is for the main site (SOTE)
+- config_analysis/drupal_config_analysis.<site>.md files are for the other sites.
+
+--
+
+## Output
+Use the similar format to drupal_config_analysis.md for showing the differences.
