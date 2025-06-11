@@ -11,7 +11,7 @@ Find out, what is unique about the current site's (SOTE) configurations compared
 ## Instructions on how to do the diff
 All of the config analysis files are from the different sites that have a very shared config base and codebase, which makes them similar in many aspects.
 Based on the other config analyses from the different sites, create a diff, what is unique for the current site.
-The goal is NOT to find unique items from other sites, only from SOTE.
+The goal is NOT to find unique items from other sites, only from SOTE. Analyse what kind of features the unique configuration entities form.
 
 ---
 
@@ -23,4 +23,52 @@ Use the configurations stored into config_analysis folder.
 --
 
 ## Output
-Use the similar format to drupal_config_analysis.md for showing the differences.
+Create two sections in the output report file.
+1. Create a list of features you analysed, which the configuration entities form. Please use the following format that includes both the information about the feature as well as the configuration entities that form it:
+```
+### <Feature name>
+<Short description of the feature>
+Contents:
+    - Entity type 1
+        - Bundle 1
+        - Bundle 2
+          - Reference fields:
+            - field_announcement_content_pages
+                - type: entity_reference
+                - targets:
+                    - node
+                        - landing_page
+                        - announcement
+        - Bundle 3
+    - Entity type 2
+        - Bundle 4
+        - Bundle 5
+```
+2. Plain list of the unique configuration entities in the config_analysis format:
+```
+- Content entity types
+    - Entity type 1
+        - Bundle 1
+        - Bundle 2
+          - Reference fields:
+            - field_announcement_content_pages
+                - type: entity_reference
+                - targets:
+                    - node
+                        - landing_page
+                        - announcement
+        - Bundle 3
+    - Entity type 2
+        - Bundle 4
+        - Bundle 5
+- Configuration entity types
+    - Entity type 3
+        - Bundle 6
+        - Bundle 7
+           - Dependencies
+             - config
+                - search_api.server.default
+            - module
+                - helfi_react_search
+                - helfi_tpr
+```
