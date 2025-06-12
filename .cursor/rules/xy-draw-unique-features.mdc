@@ -1,0 +1,15 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+** GOAL **
+Draw a diagram in Graphwiz dot format about the internal workings of the each feature provided by the [sote_unique.md](mdc:config_analysis/sote_unique.md) and save the results as config_analysis/diagrams/<feature_name_in_snake_case>.dot
+
+---
+
+## Instructions
+Take all of the unique features in the report and handle them one by one.
+Per each feature, draw a dependency based graph between the internal config entities / compontents.
+
+--
