@@ -1,3 +1,4 @@
+verbose: true
 types:
   tpr_service_channel: {  }
   tpr_errand_service: {  }
