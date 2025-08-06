@@ -1,3 +1,4 @@
+verbose: true
 types:
   tpr_service_channel: {  }
   tpr_errand_service: {  }
@@ -28,3 +29,4 @@ form_op_lock:
   tpr_unit:
     mode: 0
     values: {  }
+timeout: 7200

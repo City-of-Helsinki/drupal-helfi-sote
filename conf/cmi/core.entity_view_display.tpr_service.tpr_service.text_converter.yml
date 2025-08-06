@@ -1,0 +1,61 @@
+uuid: 6c0d2054-b1f8-46fc-bc30-465dd3cddc43
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.tpr_service.text_converter
+    - field.field.tpr_service.tpr_service.field_content
+    - field.field.tpr_service.tpr_service.field_hide_errand_services
+    - field.field.tpr_service.tpr_service.field_lower_content
+    - field.field.tpr_service.tpr_service.field_metatags
+    - field.field.tpr_service.tpr_service.field_sidebar_content
+  module:
+    - entity_reference_revisions
+    - helfi_tpr
+id: tpr_service.tpr_service.text_converter
+targetEntityType: tpr_service
+bundle: tpr_service
+mode: text_converter
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_lower_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_sidebar_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden:
+  description: true
+  errand_services: true
+  field_hide_errand_services: true
+  field_metatags: true
+  has_unit: true
+  hide_service_points: true
+  langcode: true
+  links: true
+  name: true
+  name_override: true
+  name_synonyms: true
+  search_api_excerpt: true
+  service_id: true
+  toc_enabled: true
