@@ -1,0 +1,98 @@
+# Title: Drupal Config Analysis Rules
+
+## Scope (MUST)
+- Applies when the task is about analyzing Drupal configuration in this codebase.
+- Always generate output under `tests/e2e/ai/output/analysis/drupal_config_analysis.md`.
+- Always create or update a PHP helper script at `tests/e2e/ai/output/analysis/analyze_drupal_config.php`.
+
+## Priority (MUST)
+- This file
+
+---
+
+## Goal (MUST)
+Generate an **analysis of the Drupal codebase’s configuration** according to the steps and output format below, using the PHP script as the **single source of truth** for data gathering.
+
+---
+
+## Tooling Contract (MUST)
+- Script path: `tests/e2e/ai/output/analysis/analyze_drupal_config.php`
+- Runtime: PHP 8.3+
+- Output (MUST)
+  - Use the example format in Response contract
+- Coding standards (MUST):
+  - Strong typing (`declare(strict_types=1);`)
+  - No deprecated Drupal APIs
+  - Unit-free pure functions for parsing / grouping logic when possible
+  - Pure PHP code; no symfony/drupal dependencies
+
+---
+
+## Execution Flow (MUST)
+1. **Prefer tool over prompt:** Never hand-parse YAML in the prompt. Always (re)generate output by running the PHP script.
+2. **If script missing or incomplete:** Create/extend `analyze_drupal_config.php` first, then run it.
+3. **If output outdated:** Re-run the script; do not manually edit the MD except to fix formatting emitted by the script and then backport fixes into the script.
+4. **If requirements evolve:** Update the script (not the MD) to meet them, then re-run.
+
+---
+
+## Determinism (MUST)
+- Ensure stable sort order (entity types, bundles, fields, dependencies) for deterministic diffs.
+
+---
+
+## Directives (MUST)
+1. Analyse the configuration under `conf/cmi/`.
+2. Identify all **entity types** and their **bundles**:
+   - Includes **content entity types** and **configuration entity types**.
+3. For **content entity types**:
+   - List their bundles.
+   - For each bundle, list all fields that are **reference fields**:
+     - Include the **field name**.
+     - Include the **field type**.
+     - Include all **targets** (entity types + bundles).
+4. For **configuration entity types**:
+   - List their bundles.
+   - For each bundle, list all **dependencies**:
+     - From the `dependencies` section in the yml-file.
+     - Group them by `config` and `module`.
+5. Check which modules are enabled and **focus analysis only on modules relevant to this codebase** (module list detection belongs in the script).
+6. Format the output as a **hierarchical list** (see “Response Contract”).
+7. All grouping/formatting logic must live in the script; the MD is a pure render artifact.
+
+---
+
+## Forbidden (MUST NOT)
+- MUST NOT invent bundles, fields, or dependencies that are not in `conf/cmi`.
+- MUST NOT change the output file location (`tests/e2e/ai/output/analysis/drupal_config_analysis.md`).
+- MUST NOT skip the PHP helper script requirement or replicate its logic in the prompt.
+
+---
+
+## Response Contract (MUST)
+- Provide results in **three parts**:
+  1. **Plan**: ≤6 bullets outlining the steps you will take.
+  2. **Generated Markdown analysis** (the exact content that the script will write to `tests/e2e/ai/output/analysis/drupal_config_analysis.md`).
+  3. **PHP script** at `tests/e2e/ai/output/analysis/analyze_drupal_config.php` (complete, runnable, idempotent).
+- Use the following example format **exactly** for the Markdown:
+```md
+- Content entity types
+    - Entity type 1
+        - Bundle 1
+        - Bundle 2
+          - Reference fields:
+            - field_announcement_content_pages
+                - type: entity_reference
+                - targets:
+                    - node
+                        - landing_page
+                        - announcement
+- Configuration entity types
+    - Entity type 3
+        - Bundle 7
+           - Dependencies
+             - config
+                - search_api.server.default
+             - module
+                - helfi_react_search
+                - helfi_tpr

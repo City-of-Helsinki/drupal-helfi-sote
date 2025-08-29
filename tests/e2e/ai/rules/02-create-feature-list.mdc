@@ -1,0 +1,119 @@
+# Title: Drupal Feature List Rules
+
+## File Operations (MUST)
+- ALWAYS create or overwrite the output file at `tests/e2e/ai/output/plans/feature_list.md`
+- If the file exists, replace its contents with the new feature list
+- Ensure the output directory exists before writing the file
+
+## Scope (MUST)
+- Applies when generating a **list of site features** for Playwright test planning.
+- Output file: `tests/e2e/ai/output/plans/feature_list.md`.
+  - Always update this file if it exists.
+- Focus only on **anonymous user features**.
+
+---
+
+## Goal (MUST)
+Create a clear, well-structured list of site features.  
+- The list is for Playwright test planning.  
+- It must emphasize **search features with React apps**.  
+- It MUST NOT include logged-in features.  
+- It MUST NOT include Views that don't have a React counterpart.
+- It MUST have correlation with conf/cmi, codebase and `tests/e2e/ai/output/analysis/plans/drupal_config_analysis.md`
+- It MUST verify from conf/cmi that the feature is enabled for current drupal installation by:
+  - Checking for corresponding configuration in `conf/cmi/*.yml`
+  - Verifying the feature is not disabled in the configuration
+  - Confirming the feature has required dependencies enabled
+  - Checking for feature flags or settings that might disable the feature
+
+---
+
+## Resources (MUST, in priority order)
+1. `tests/e2e/ai/output/analysis/drupal_config_analysis.md`  
+   - Main source of features.  
+   - MUST include views with React apps by checking:
+     - `public/themes/contrib/hdbt/src/js/react/apps/` for React applications
+     - `*.jsx`, `*.tsx`, and `*.js` files for React components
+     - Check for React-related build configurations (e.g., `theme-builder.mjs`)
+   - Look for React initialization in theme templates:
+     - Check for `data-*` attributes indicating React mounting points
+     - Look for `data-drupal-selector` attributes in templates
+     - Check for `.js--react` or similar classes in templates
+   - For each feature, VERIFY it's enabled by:
+     - Checking for corresponding module configuration in `conf/cmi/*.yml`
+     - Ensuring the feature is not explicitly disabled in configuration
+     - Verifying required dependencies are enabled
+
+2. Codebase inspection:  
+   - `public/modules/custom/`, `public/modules/contrib/`  
+   - `public/themes/custom/`, `public/themes/contrib/hdbt/`  
+   - Search patterns:
+     - `**/*.jsx`, `**/*.tsx`, `**/*.js` for React components
+     - `**/package.json` for React dependencies
+     - `**/theme-builder.mjs` for build configurations
+     - `**/*.theme`, `**/*.module` and `**/*.libraries.yml` files for React-related dependencies
+
+3. `tests/e2e/ai/project_metadata.md` for extra context.
+
+---
+
+## Directives (MUST)
+1. Start the list with **search features using React**.  
+   - Include inputs, filters, results, empty states.  
+2. After searches, list other **special features** (integrations, custom flows).  
+3. Then list **normal Drupal features** (content types, pages, menus, blocks).  
+4. Group features with headings and numbered sub-sections.  
+   - Example:  
+     ```
+     ## 1. Content Types and Pages
+     ### 1.1 Announcements
+     - View announcements listing page
+     - View individual announcement details
+     ```
+5. Keep descriptions short and action-oriented (what the user can do).  
+6. Ensure deterministic ordering:  
+   - Section order: React searches → Special → Normal  
+   - Subsections: alphabetical by feature name  
+
+---
+
+## Forbidden (MUST NOT)
+- MUST NOT include logged-in features.  
+- MUST NOT include Views without a React app.  
+- MUST NOT change the output file path.
+- MUST NOT include features that are not enabled in the Drupal configuration
+- MUST NOT include features that have been explicitly disabled in the configuration
+- MUST NOT include features that are missing required dependencies
+
+---
+
+## Response Contract (MUST)
+- Provide three parts:  
+  1. **Verification** of enabled features by checking Drupal configuration
+  2. **Plan** (≤5 bullets) of how features were collected and verified.  
+  3. **Markdown feature list** ready for `feature_list.md` containing ONLY enabled features.
+- For each feature in the list, indicate how its enabled status was verified
+- If a feature is found in the codebase but not in the configuration, note it as 'potentially disabled' and exclude it from the main list
+- Use headings and bullet points like this example:  
+
+```md
+## 1. Search Features (React)
+
+### 1.1 Service Search
+- Search services by name
+- Filter services by unit
+- View search results and empty state
+
+## 2. Special Features
+
+### 2.1 Integrations
+- External search API integration
+- Embedded React widgets
+
+## 3. Content Types and Pages
+
+### 3.1 Announcements
+- View announcements listing page
+- View individual announcement details
+- Filter announcements by content pages and service pages
+- View announcement relationships with TPR services and units

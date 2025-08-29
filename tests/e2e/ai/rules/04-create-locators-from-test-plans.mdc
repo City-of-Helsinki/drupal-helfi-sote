@@ -1,0 +1,114 @@
+# Title: Per-Feature Playwright Locators Rules
+
+## Scope (MUST)
+- Applies when creating **locators** for each feature that has a test plan.
+- Read plans from: `tests/e2e/ai/output/plans/<feature_name>.test_plan.md`
+- Write locators to: `tests/e2e/ai/output/locators/<feature_name>.locators.md`
+- One output file **per feature**. Anonymous users only.
+
+---
+
+## Goal (MUST)
+Generate **stable, unique Playwright locators** for **every element** interacted with in each feature’s test plan.  
+If a plan **does not specify a URL**, **do not** create locators for that feature.
+
+---
+
+## Resources (MUST, in priority order)
+1) The feature’s test plan: `tests/e2e/ai/output/plans/<feature_name>.test_plan.md`  
+   - This is the source of truth for URLs and interactions.
+2) Playwright MCP (or `curl`) against the **baseURL** from `tests/e2e/playwright.config.ts`  
+   - Use baseURL from config; append path(s) found in the test plan.
+   - **MUST verify** each URL is reachable before proceeding
+   - **MUST verify** page title and key elements match expectations
+3) Codebase (to confirm React components / `data-testid`):
+   - `public/themes/contrib/hdbt`, `public/themes/custom`
+   - `public/modules/custom`, `public/modules/contrib`
+
+_Do not contradict a higher-priority resource with a lower one._
+
+---
+
+## MCP Verification (MUST)
+Before creating locators, verify each URL from the test plan using Playwright MCP or curl:
+
+1. **URL Reachability**
+   - Navigate to each URL from the test plan
+   - Verify HTTP status is 200
+   - Verify page title is present and matches expected pattern
+   
+2. **Key Elements Verification**
+   - Verify presence of main content area
+   - Verify language selector is present (if multilingual)
+   - Verify search/filter components (if applicable)
+   - Verify results container (if applicable)
+
+3. **Language Support**
+   - Verify all required language versions are accessible
+   - Verify language switching works correctly
+
+---
+
+## Directives (MUST)
+1. **Find the plan** for each feature using the filename convention `<feature_name>.test_plan.md`.  
+2. **Extract URL(s)** from the plan. If **no URL**, skip this feature (no locators file).
+3. **Verify URLs** using MCP as described in the MCP Verification section.
+4. **Open the page** at each verified URL and **enumerate all elements** that the plan interacts with.
+5. **Create locators** for each element following **Locator Rules** below.
+6. **Cover languages** present in the plan/pages. Always include **Finnish (fi)** and **English (en)** if applicable.
+7. **Account for states** mentioned or visible (loading, error, empty, results).
+8. **Organize** the output by human-readable sections (e.g., “Main navigation”, “Search component”).
+9. **Determinism:** keep section order stable and group related locators together.
+
+---
+
+## Locator Rules (MUST)
+- Prefer `page.getByRole()` with accessible name/level.  
+- Locator must resolve to **exactly one element** when a single element is expected.  
+- For React components, prefer `data-testid` (`getByTestId`) when available.  
+- Use **regex** for bilingual text (e.g., `/search|etsi/i`) when needed.  
+- Avoid brittle CSS selectors; avoid nth-child unless no alternative.  
+- Add brief inline comments to clarify intent and language.
+
+---
+
+## Forbidden (MUST NOT)
+- MUST NOT create locators if the plan does **not** specify a URL.  
+- MUST NOT invent selectors or text that do not exist on the page.  
+- MUST NOT hardcode the base URL; always read it from `playwright.config.ts`.  
+- MUST NOT include logged-in flows.
+- MUST NOT proceed with locator creation if MCP verification fails for any URL
+- MUST NOT skip MCP verification for any URL in the test plan
+
+---
+
+## Response Contract (MUST)
+Produce **one Markdown file per feature** at  
+`tests/e2e/ai/output/locators/<feature_name>.locators.md`  
+with sections and JavaScript code fences like this:
+
+### <Human-readable section heading, e.g. "Main navigation">
+```javascript
+// Language buttons
+page.getByRole('button', { name: 'Suomi' })
+page.getByRole('button', { name: 'Svenska' })
+page.getByRole('button', { name: 'English' })
+
+// Language-specific headings
+page.getByRole('heading', { name: 'Saavutettavuusseloste – Kerrokantasi.hel.fi' }) // fi
+page.getByRole('heading', { name: 'Accessibility statement – Voice Your Opinion' }) // en
+page.getByRole('heading', { name: 'Tillgänglighetsutlåtande – Säg Din Åsikt' }) // sv
+
+// Search component (React)
+const searchComponent = page.getByTestId('search-component')
+const searchInput = searchComponent.getByRole('searchbox', { name: /address|osoite/i })
+const searchButton = searchComponent.getByRole('button', { name: /search|etsi/i })
+
+// View toggle
+const listViewTab = page.getByRole('tab', { name: /list view|näytä listana/i })
+const mapViewTab = page.getByRole('tab', { name: /map view|näytä kartalla/i })
+
+// Results
+const resultItems = page.getByRole('article')
+const firstResult = resultItems.first()
+const resultTitle = firstResult.getByRole('heading', { level: 2 })

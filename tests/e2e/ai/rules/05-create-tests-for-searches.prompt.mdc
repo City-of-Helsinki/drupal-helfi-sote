@@ -1,0 +1,173 @@
+# Title: Playwright Search Tests Rules
+
+## Scope (MUST)
+- Applies when creating Playwright tests for any features that have both:
+  - A test plan in `tests/e2e/ai/output/plans/*.test_plan.md`
+  - Locators in `tests/e2e/ai/output/locators/*.locators.md`
+- Create **one test file per feature** under `tests/e2e/tests/` with the same base name as the test plan.
+- Anonymous users only. Chromium only.
+- **MUST** create tests for ALL features that have both a test plan and locators file.
+
+---
+
+## Goal (MUST)
+Implement robust, stable Playwright tests for the two searches based **only** on their corresponding **feature test plans** and **generated locators**.
+
+---
+
+## Resources (MUST, in priority order)
+1. The feature’s **test plan**: `tests/e2e/ai/output/plans/<feature_name>.test_plan.md`
+   - Use only the tests described there for that feature.
+2. The feature’s **locators**: `tests/e2e/ai/output/locators/<feature_name>.locators.md`
+   - Use these selectors preferentially.
+3. **Playwright MCP** (to verify URLs/paths are correct and reachable).
+4. The codebase (for context if needed).
+
+_Do not contradict higher-priority resources with lower-priority ones._
+
+---
+
+## File Outputs (MUST)
+- For each feature with a test plan and locators, create a test file at:
+  - `tests/e2e/tests/{feature_name}.spec.ts` (where {feature_name} matches the test plan filename)
+- Required shared helpers:
+  - `tests/e2e/tests/helpers/modals.ts` (e.g., `handleModals(page)`)
+  - `tests/e2e/tests/helpers/utils.ts` (small shared utilities)
+
+## Test Creation Process (MUST)
+1. List all test plan files in `tests/e2e/ai/output/plans/`
+2. For each `{feature_name}.test_plan.md`:
+   - Verify corresponding locators exist at `tests/e2e/ai/output/locators/{feature_name}.locators.md`
+   - Create test file at `tests/e2e/tests/{feature_name}.spec.ts`
+   - If test file already exists, update it to match the current test plan and locators
+
+---
+
+## Pre-Run Requirements (MUST)
+- Read **baseURL** from `tests/e2e/playwright.config.ts`.
+- **Verify** the feature URL(s) from the test plan with Playwright MCP before testing.
+  - If not reachable/incorrect → **fail fast** with a clear message and skip that spec.
+
+---
+
+## Modals & Helpers (MUST)
+- Create `handleModals(page)` and call it in `beforeEach` of every spec:
+  - Accept cookies: button `/hyväksy kaikki evästeet/i`
+  - Dismiss survey: button `/en osallistu kyselyyn/i`
+
+---
+
+## Locator Usage (MUST)
+- **Always** use generated locators from the feature's locator file first
+- For new elements, follow this priority:
+  1. `getByRole()` with accessible name
+  2. `getByLabelText()` for form elements
+  3. `getByTestId()` for dynamic content
+  4. `getByText()` as last resort
+- Handle all three languages (FI/SV/EN) in text matchers using regex
+- Add JSDoc comments for complex locators
+- Group related locators in nested objects (e.g., `searchForm`, `filters`)
+- Add `@type` annotations for TypeScript type safety
+
+---
+
+## Things to Test (MUST)
+Include the feature-plan’s functional tests **plus** these accessibility & structure checks:
+
+### Headings & Landmarks
+- H1 is visible via role/level.
+- Breadcrumb exists: `role="navigation"` with a valid name.
+- Results container is an accessible landmark (e.g., `role="region"`) and correctly named.
+
+### Form Semantics
+- Search input is `role="searchbox"` (or textbox) with accessible name; helper/placeholder visible.
+- Search button is `role="button"` with a valid name.
+
+### Results Semantics
+- Each result item is an article/card.
+- Result headings are **links** (focusable/clickable).
+- Required fields present (e.g., address label; distance when applicable).
+
+### View Toggles
+- If a tablist exists, clicking tabs switches tabpanel content.
+
+### Keyboard Navigation
+- Focus searchbox → Tab to search button → Enter triggers search → results update.
+
+### No-Results State
+- Invalid address shows localized **“Ei hakutuloksia”** (or plan-specified message).
+
+### Optional
+- Pagination `role="navigation"` named **“Sivutus”** present when applicable; page links reachable.
+
+---
+
+## Waiting & Stability (MUST)
+- **Do NOT** use `waitForTimeout`.
+- Prefer:
+  - `await expect(<results region>).toBeVisible()`
+  - `await page.waitForLoadState('networkidle')` after actions that trigger network
+  - Wait for **specific** locators (first result article, etc.)
+- Avoid brittle assumptions (fixed names) unless required by the plan.
+
+---
+
+## Languages (MUST)
+- Prefer **Finnish** paths and assertions first; also cover **English** (and others if present in plan).
+- Handle Finnish singular/plural in assertions (e.g., `paikka` vs `paikkaa`) using regex.
+
+---
+
+## Coding Conventions (MUST)
+- Use role/name-based locators or generated locators.
+- No `for` loops; use `.forEach()`, `.map()`, `.reduce()`.
+- Keep assertions local and resilient (regex with `/i` where appropriate).
+- Extract tiny helpers when it clarifies tests.
+
+---
+
+## Response Contract (MUST)
+Produce the two spec files, each containing:
+- `test.describe` named after the feature.
+- `beforeEach`:
+  - `page.goto(<verified URL>)`
+  - `await handleModals(page)`
+- Tests that:
+  - Implement the **feature plan’s** cases.
+  - Add the **Accessibility & UI structure** checks above.
+  - Use **generated locators**.
+  - Use stable waits (no `waitForTimeout`).
+
+---
+
+## Forbidden (MUST NOT)
+- MUST NOT add tests not present in the feature’s plan (beyond required a11y/structure checks).
+- MUST NOT test performance or logged-in flows.
+- MUST NOT hardcode baseURL.
+- MUST NOT ignore popups/cookie banner handling.
+
+---
+
+## Compliance Checklist (MUST)
+- [ ] Two spec files created at the exact paths.
+- [ ] URLs verified with Playwright MCP before running tests.
+- [ ] Generated locators used wherever available.
+- [ ] A11y/structure checks included.
+- [ ] Finnish-first with bilingual handling where applicable.
+- [ ] No `waitForTimeout`; stable waits only.
+- [ ] Helpers extracted and `handleModals(page)` used in `beforeEach`.
+- [ ] No `for` loops used.
+
+---
+
+## Uncertainty & Failure Policy (MUST)
+- If URL verification fails: mark spec as **skipped** with reason and log the failing URL.
+- If a required locator is missing: fall back to role-based locator; add a TODO comment referencing the locator file.
+- If a modal text changes, match with a broader regex and leave a TODO to update generated locators.
+
+---
+
+## Litmus Tests (SHOULD)
+- Running specs locally triggers modal helper actions, lands on Finnish page, and passes landmark checks.
+- Search flow updates results and handles empty/invalid states deterministically.
+- Re-runs are stable without flaky waits or brittle selectors.

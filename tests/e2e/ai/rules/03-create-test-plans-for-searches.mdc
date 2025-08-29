@@ -1,0 +1,111 @@
+# Title: Per-Feature Test Plan Rules
+
+## Scope (MUST)
+- Applies when creating **Playwright-oriented test plans** for site features.
+- Read features from `tests/e2e/ai/output/plans/feature_list.md` (mdc link supported).
+- Write each plan to `tests/e2e/ai/output/plans/<snake_case_feature>.test_plan.md`.
+- Focus on **anonymous users** only.
+
+## Priority (MUST)
+- This file
+
+---
+
+## Goal (MUST)
+For **each "Priority Testing" feature** in the feature list, generate a clear, actionable test plan (one file per feature), suitable for Playwright implementation.
+
+---
+
+## Resources (MUST, in priority order)
+1. **Feature list:** `tests/e2e/ai/output/feature_list.md`  
+2. **Drupal config analysis:** `tests/e2e/ai/output/analysis/drupal_config_analysis.md`  
+3. **Codebase:** `public/modules/custom`, `public/modules/contrib`, `public/themes/custom`, `public/themes/contrib/hdbt`  
+4. **Project meta:** `tests/e2e/project_metadata.md`  
+5. **Playwright MCP** (and/or `curl`) for **URL verification**
+
+_Do not contradict a higher-priority resource with a lower-priority one._
+
+---
+
+## Directives (MUST)
+1. **Process all features:** Automatically process all features listed in the feature list without asking for confirmation.
+2. **Identify implementation:** For each feature, determine how it's implemented (e.g., paragraph, block, view + React app path in `hdbt`, or other).
+3. **Find and verify URLs:**  
+   - **Search in project_metadata.md** for feature-specific URLs  
+   - **Search in Drupal configuration** for paths and routes  
+   - **Check routing files** in custom modules and themes  
+   - **Look for view displays** that might expose the feature  
+   - **Verify each URL** via Playwright MCP or `curl` (HTTP 200 or expected redirect to target)  
+   - If **no valid URL** is found → **exclude this feature** (do not create a plan).
+4. **Multilingual:** Prefer **Finnish** pages; also include **English** and other languages if present.
+5. **Page analysis:** Note how to isolate the feature's UI from surrounding content (selectors/regions, landmarks).
+6. **Test scope:** Anonymous users, **Chromium** only. Include **accessibility**, **mobile responsiveness**, **multilingual** notes. **Exclude performance**.
+7. **Automatic execution:** Process all features in sequence without pausing for confirmation between them.
+8. **Determinism:** Keep headings and lists stable. Sort language entries by locale code (fi, en, …).
+
+---
+
+## File Naming (MUST)
+- Convert feature name to **snake_case** and save as:  
+`tests/e2e/generated_plan/plans/<snake_case_feature>.test_plan.md`  
+  - Example: “Interesting Search Feature” → `interesting_search_feature.test_plan.md`
+
+---
+
+## Forbidden (MUST NOT)
+- MUST NOT include logged-in flows.
+- MUST NOT create a plan if the URL **is not verified**.
+- MUST NOT change output paths or naming convention.
+- MUST NOT invent pages, selectors, or behaviors not supported by resources.
+
+---
+
+## Response Contract (MUST)
+For each included feature, generate a Markdown file with **exact sections** below:
+
+```markdown
+# <Feature Name> Test Plan
+## Table of Contents
+- @Overview
+- @Page Analysis
+- @Test Cases
+  - @<Area 1>
+  - @<Area 2>
+- @Test Coverage
+- @Prerequisites
+
+## Overview
+<One-paragraph description of the feature and its business value.>
+
+## Page Analysis
+- **URL**:
+  - **fi**: /polku (include dynamic segments if necessary)
+  - **en**: /path (include dynamic segments if necessary)
+- **Description**: <What the page does>
+- **Key Functionalities**:
+  1. <Function 1>
+  2. <Function 2>
+- **Implementation**: paragraph | block | view (+ React app path if applicable)
+- **Isolation Notes**: <landmarks, selectors, or regions to target>
+
+## Test Cases
+### <Functional Area Heading>
+- **Test Title**: <Imperative sentence>
+- **Description**: <What the test verifies>
+- **Test Steps**:
+  1. <Step 1>
+  2. <Step 2>
+- **Expected Result**: <Outcome>
+
+### <Next Test Case>
+...
+
+## Test Coverage
+<Qualitative summary or % of covered functionalities.>
+
+## Prerequisites
+- Browser: Chromium
+- User: Anonymous
+- Locales: fi (primary), en, others if present
+- Accessibility checks enabled
+- Mobile viewport checks (e.g., 375×812) and desktop
