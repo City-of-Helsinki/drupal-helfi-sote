@@ -1,0 +1,20 @@
+{
+  "name": "drupal-helfi-sote",
+  "version": "1.0.0",
+  "description": "End-to-end tests for Drupal Helfi Sote using Playwright",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "preinstall": "npx playwright install",
+    "test": "npx playwright test tests",
+    "test-headed": "npx playwright test tests --headed"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
