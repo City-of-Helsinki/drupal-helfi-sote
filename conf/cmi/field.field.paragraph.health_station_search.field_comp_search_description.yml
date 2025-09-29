@@ -6,11 +6,7 @@ dependencies:
     - field.storage.paragraph.field_comp_search_description
     - paragraphs.paragraphs_type.health_station_search
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats: {  }
 id: paragraph.health_station_search.field_comp_search_description
 field_name: field_comp_search_description
 entity_type: paragraph
