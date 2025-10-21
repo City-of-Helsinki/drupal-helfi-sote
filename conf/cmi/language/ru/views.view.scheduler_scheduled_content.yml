@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Основной
     display_options:
       exposed_form:
         options:
@@ -61,7 +62,6 @@ display:
         langcode:
           expose:
             label: Язык
-    display_title: Основной
   overview:
     display_options:
       menu:
