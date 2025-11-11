@@ -4,7 +4,7 @@
   "description": "Theme builder configuration for HDBT subtheme",
   "author": "Druid",
   "license": "MIT",
-  "repository": "github:City-of-Helsinki/drupal-hel-platform",
+  "repository": "github:City-of-Helsinki/drupal-helfi-sote",
   "scripts": {
     "dev": "node theme-builder.mjs --watch --dev",
     "build": "npm run format:js --loglevel=silent && npm run lint --loglevel=silent && node theme-builder.mjs",
