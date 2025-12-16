@@ -571,9 +571,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              admin: '0'
-              content_producer: '0'
             placeholder: 'Type in unit name or address'
           is_grouped: false
           group_info:
