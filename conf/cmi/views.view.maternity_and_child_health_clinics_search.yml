@@ -524,13 +524,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              read_only: '0'
-              content_producer: '0'
-              editor: '0'
-              admin: '0'
-              debug_api: '0'
-              super_administrator: '0'
             placeholder: 'Enter the city district or the clinics name here'
           is_grouped: false
           group_info:

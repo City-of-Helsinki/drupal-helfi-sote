@@ -521,13 +521,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              read_only: '0'
-              content_producer: '0'
-              editor: '0'
-              admin: '0'
-              super_administrator: '0'
-              survey_editor: '0'
             placeholder: 'For example, Haaga Health Station'
           is_grouped: false
           group_info:
