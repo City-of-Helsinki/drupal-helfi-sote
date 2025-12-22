@@ -4,13 +4,13 @@ display:
     display_options:
       fields:
         node_bulk_form:
-          label: 'Node operations bulk form'
+          label: 'Форма массовых операций с материалами'
           action_title: Действие
         title:
-          label: Title
+          label: Заголовок
           separator: ', '
         type:
-          label: 'Content type'
+          label: 'Тип материала'
           separator: ', '
         name:
           separator: ', '
@@ -45,9 +45,9 @@ display:
                 title: Опубликовано
         type:
           expose:
-            label: 'Content type'
+            label: 'Тип материала'
         title:
           expose:
-            label: Title
+            label: Заголовок
   page_1:
     display_title: Страница

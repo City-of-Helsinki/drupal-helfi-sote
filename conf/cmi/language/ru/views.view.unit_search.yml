@@ -16,8 +16,8 @@ display:
           tags:
             next: 'Следующий ›'
             previous: '‹ Предыдущий'
-            first: First
-            last: Last
+            first: Первый
+            last: Последний
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
@@ -42,7 +42,7 @@ display:
           expose:
             label: Поиск
           group_info:
-            label: 'Combine fields filter'
+            label: 'Фильтр комбинированных полей'
   block:
     display_title: Блок
   entity_reference:

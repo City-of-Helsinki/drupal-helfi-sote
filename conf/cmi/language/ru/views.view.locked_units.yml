@@ -7,12 +7,12 @@ display:
           label: 'Массовое обновление'
           action_title: Действие
         name:
-          label: Title
+          label: Заголовок
           separator: ', '
         name_1:
           separator: ', '
         langcode:
-          label: 'Content language'
+          label: 'Язык содержимого'
           separator: ', '
         operations:
           label: Операции
@@ -21,8 +21,8 @@ display:
           tags:
             next: 'Следующий ›'
             previous: '‹ Предыдущий'
-            first: First
-            last: Last
+            first: Первый
+            last: Последний
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
@@ -37,6 +37,6 @@ display:
       filters:
         name:
           expose:
-            label: Title
+            label: Заголовок
   locked_units_block:
     display_title: Блок

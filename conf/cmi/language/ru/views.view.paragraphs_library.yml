@@ -21,7 +21,7 @@ display:
             offset_label: Пропустить
       fields:
         label:
-          label: Label
+          label: Метка
           separator: ', '
         type:
           label: Тип
@@ -46,9 +46,9 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Метка
           group_info:
-            label: Label
+            label: Метка
         type:
           expose:
             label: Тип
