@@ -2,6 +2,31 @@ display:
   default:
     display_title: Основной
     display_options:
+      fields:
+        node_bulk_form:
+          label: 'Форма массовых операций с материалами'
+          action_title: Действие
+        title:
+          label: Заголовок
+          separator: ', '
+        type:
+          label: 'Тип материала'
+          separator: ', '
+        name:
+          separator: ', '
+        operations:
+          label: Операции
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Первая'
+            last: 'Последняя »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
       exposed_form:
         options:
           submit_button: фильтр
@@ -9,31 +34,6 @@ display:
           exposed_sorts_label: 'Сортировать по'
           sort_asc_label: 'По возрастанию'
           sort_desc_label: 'По убыванию'
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« Первая'
-            last: 'Последняя »'
-          expose:
-            items_per_page_label: 'Элементов на страницу'
-            items_per_page_options_all_label: '- Все -'
-            offset_label: Пропустить
-      fields:
-        node_bulk_form:
-          label: 'Node operations bulk form'
-          action_title: Действие
-        title:
-          label: Title
-          separator: ', '
-        type:
-          label: 'Content type'
-          separator: ', '
-        name:
-          separator: ', '
-        operations:
-          label: Операции
       filters:
         status:
           expose:
@@ -45,9 +45,9 @@ display:
                 title: Опубликовано
         type:
           expose:
-            label: 'Content type'
+            label: 'Тип материала'
         title:
           expose:
-            label: Title
+            label: Заголовок
   page_1:
     display_title: Страница

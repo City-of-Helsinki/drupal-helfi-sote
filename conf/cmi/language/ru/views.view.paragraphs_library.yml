@@ -1,3 +1,4 @@
+label: 'Библиотека параграфов'
 display:
   default:
     display_title: Основной
@@ -20,7 +21,7 @@ display:
             offset_label: Пропустить
       fields:
         label:
-          label: Label
+          label: Метка
           separator: ', '
         type:
           label: Тип
@@ -45,9 +46,9 @@ display:
       filters:
         label:
           expose:
-            label: Label
+            label: Метка
           group_info:
-            label: Label
+            label: Метка
         type:
           expose:
             label: Тип
@@ -57,4 +58,3 @@ display:
           content: 'В библиотеке нет доступных элементов.'
   page_1:
     display_title: Страница
-label: 'Библиотека параграфов'

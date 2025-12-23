@@ -10,8 +10,8 @@ display:
           tags:
             next: 'Следующий ›'
             previous: '‹ Предыдущий'
-            first: First
-            last: Last
+            first: Первый
+            last: Последний
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
@@ -50,8 +50,8 @@ display:
           tags:
             next: 'Следующий ›'
             previous: '‹ Предыдущий'
-            first: First
-            last: Last
+            first: Первый
+            last: Последний
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
