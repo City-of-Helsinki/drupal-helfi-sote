@@ -108,6 +108,7 @@ permissions:
   - 'edit terms in keywords'
   - 'edit terms in neighbourhoods'
   - 'mark as hidden in editoria11y'
+  - 'rebuild node access permissions'
   - 'revert announcement revisions'
   - 'revert landing_page revisions'
   - 'revert page revisions'
