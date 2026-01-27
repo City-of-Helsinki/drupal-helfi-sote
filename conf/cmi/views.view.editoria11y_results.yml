@@ -478,6 +478,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -695,6 +696,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -898,7 +900,7 @@ display:
           precision: 0
           decimal: .
           separator: ','
-          format_plural: 0
+          format_plural: false
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
@@ -957,6 +959,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -1192,6 +1195,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -1646,6 +1650,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -2253,6 +2258,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -2352,7 +2358,7 @@ display:
           precision: 0
           decimal: .
           separator: ','
-          format_plural: 0
+          format_plural: false
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
@@ -2644,6 +2650,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -3336,6 +3343,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
