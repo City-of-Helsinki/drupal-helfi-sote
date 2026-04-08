@@ -1,0 +1,51 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function helfi_sote_first_paragraph_grey_alter\\(\\) has parameter \\$paragraphs with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: public/modules/custom/helfi_sote/helfi_sote.module
+
+		-
+			message: "#^Function helfi_sote_helfi_paragraph_types\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: public/modules/custom/helfi_sote/helfi_sote.module
+
+		-
+			message: "#^Function helfi_sote_preprocess_tpr_unit\\(\\) has parameter \\$variables with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: public/modules/custom/helfi_sote/helfi_sote.module
+
+		-
+			message: "#^Function hdbt_subtheme_preprocess_block\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
+
+		-
+			message: "#^Function hdbt_subtheme_preprocess_block\\(\\) has parameter \\$variables with no type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
+
+		-
+			message: "#^Function hdbt_subtheme_theme_suggestions_block_alter\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
+
+		-
+			message: "#^Function hdbt_subtheme_theme_suggestions_block_alter\\(\\) has parameter \\$suggestions with no type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
+
+		-
+			message: "#^Function hdbt_subtheme_theme_suggestions_menu_alter\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
+
+		-
+			message: "#^Function hdbt_subtheme_theme_suggestions_menu_alter\\(\\) has parameter \\$suggestions with no type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
+
+		-
+			message: "#^Function hdbt_subtheme_theme_suggestions_menu_alter\\(\\) has parameter \\$variables with no type specified\\.$#"
+			count: 1
+			path: public/themes/custom/hdbt_subtheme/hdbt_subtheme.theme
