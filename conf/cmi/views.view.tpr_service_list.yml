@@ -562,7 +562,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -594,7 +593,6 @@ display:
             fi: fi
             sv: sv
             en: en
-            ru: ru
           group: 1
           exposed: true
           expose:
@@ -611,9 +609,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              admin: '0'
-              content_producer: '0'
             reduce: true
           is_grouped: false
           group_info:
@@ -694,6 +689,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
       query:
