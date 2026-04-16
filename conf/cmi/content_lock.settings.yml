@@ -1,32 +1,54 @@
+_core:
+  default_config_hash: 6Ka3T1c-CIjEUO1Q64NXKksLthkMhj53a6zy4RJBtkc
 verbose: true
 types:
-  tpr_service_channel: {  }
-  tpr_errand_service: {  }
-  tpr_ontology_word_details: {  }
-  tpr_service:
-    '*': '*'
-  tpr_unit:
-    '*': '*'
+  crop: {  }
+  file: {  }
+  menu_link_content: {  }
   node:
     '*': '*'
   paragraphs_library_item:
     '*': '*'
+  path_alias: {  }
+  redirect: {  }
   taxonomy_term:
     '*': '*'
+  user: {  }
+  paragraph: {  }
+  media: {  }
+types_translation_lock: {  }
 form_op_lock:
-  tpr_service_channel:
+  crop:
     mode: 0
     values: {  }
-  tpr_errand_service:
+  file:
+    mode: null
+    values: {  }
+  menu_link_content:
     mode: 0
     values: {  }
-  tpr_ontology_word_details:
+  node:
     mode: 0
     values: {  }
-  tpr_service:
+  paragraphs_library_item:
     mode: 0
     values: {  }
-  tpr_unit:
+  path_alias:
+    mode: 0
+    values: {  }
+  redirect:
+    mode: 0
+    values: {  }
+  taxonomy_term:
+    mode: 0
+    values: {  }
+  user:
+    mode: 0
+    values: {  }
+  paragraph:
+    mode: 0
+    values: {  }
+  media:
     mode: 0
     values: {  }
 timeout: 7200
