@@ -4363,16 +4363,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.17.9",
+            "version": "6.17.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "bb68efbe2e3eec2a8621ae8b7c68cd191568ffff"
+                "reference": "d91bc5f9a915f887f624177bcfea2296c50f2220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/bb68efbe2e3eec2a8621ae8b7c68cd191568ffff",
-                "reference": "bb68efbe2e3eec2a8621ae8b7c68cd191568ffff",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d91bc5f9a915f887f624177bcfea2296c50f2220",
+                "reference": "d91bc5f9a915f887f624177bcfea2296c50f2220",
                 "shasum": ""
             },
             "require": {
@@ -4391,10 +4391,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.17.9",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.17.13",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2026-05-07T11:14:52+00:00"
+            "time": "2026-05-13T09:15:38+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4485,16 +4485,16 @@
         },
         {
             "name": "drupal/helfi_api_base",
-            "version": "2.8.21",
+            "version": "2.8.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "e211dae9448ac94910ae40b85b605c5badb526b9"
+                "reference": "1d8a9b09c8a96e307e95aaf2104693fbcc09ee5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/e211dae9448ac94910ae40b85b605c5badb526b9",
-                "reference": "e211dae9448ac94910ae40b85b605c5badb526b9",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/1d8a9b09c8a96e307e95aaf2104693fbcc09ee5e",
+                "reference": "1d8a9b09c8a96e307e95aaf2104693fbcc09ee5e",
                 "shasum": ""
             },
             "require": {
@@ -4537,10 +4537,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/2.8.21",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/2.8.22",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2026-04-30T06:23:36+00:00"
+            "time": "2026-05-11T07:18:21+00:00"
         },
         {
             "name": "drupal/helfi_azure_fs",
@@ -4702,16 +4702,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "5.1.51",
+            "version": "5.1.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "533e518692593124634a37cd8cd36a24f5f4cc05"
+                "reference": "696340dc99921acf5fc7e8963552c70b309cb3b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/533e518692593124634a37cd8cd36a24f5f4cc05",
-                "reference": "533e518692593124634a37cd8cd36a24f5f4cc05",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/696340dc99921acf5fc7e8963552c70b309cb3b9",
+                "reference": "696340dc99921acf5fc7e8963552c70b309cb3b9",
                 "shasum": ""
             },
             "require": {
@@ -4828,10 +4828,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.51",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.53",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2026-05-08T11:53:37+00:00"
+            "time": "2026-05-12T11:33:16+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -5023,17 +5023,17 @@
         },
         {
             "name": "drupal/imagecache_external",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/imagecache_external.git",
-                "reference": "3.0.8"
+                "reference": "3.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/imagecache_external-3.0.8.zip",
-                "reference": "3.0.8",
-                "shasum": "a3cafe1479209b09a29962cabe005200b3894971"
+                "url": "https://ftp.drupal.org/files/projects/imagecache_external-3.0.9.zip",
+                "reference": "3.0.9",
+                "shasum": "2188d55fb0d9da9cd62b87c26cd55df8c4158cee"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11",
@@ -5042,8 +5042,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.8",
-                    "datestamp": "1768219433",
+                    "version": "3.0.9",
+                    "datestamp": "1778408819",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5468,7 +5468,7 @@
             "extra": {
                 "drupal": {
                     "version": "7.0.14",
-                    "datestamp": "1777307887",
+                    "datestamp": "1778324786",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7790,16 +7790,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "13.7.2",
+            "version": "13.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "670c5f81b3f525b3f08263f038c7f07558f2580d"
+                "reference": "a4974fabbd14337fbfdc2918184e6ef773cfeb78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/670c5f81b3f525b3f08263f038c7f07558f2580d",
-                "reference": "670c5f81b3f525b3f08263f038c7f07558f2580d",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/a4974fabbd14337fbfdc2918184e6ef773cfeb78",
+                "reference": "a4974fabbd14337fbfdc2918184e6ef773cfeb78",
                 "shasum": ""
             },
             "require": {
@@ -7828,7 +7828,7 @@
                 "symfony/yaml": "^6.0 || ^7"
             },
             "conflict": {
-                "drupal/core": "< 10.4",
+                "drupal/core": "<10.4 <12.0",
                 "drupal/migrate_run": "*",
                 "drupal/migrate_tools": "<= 5"
             },
@@ -7927,7 +7927,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/13.7.2"
+                "source": "https://github.com/drush-ops/drush/tree/13.7.3"
             },
             "funding": [
                 {
@@ -7935,7 +7935,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-20T19:18:11+00:00"
+            "time": "2026-05-11T10:48:11+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -16143,16 +16143,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.9.7",
+            "version": "2.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "82a2fbd1372a98d7915cfb092acf05207d9b4113"
+                "reference": "39ee8baff8e97a1b657bbfcd6a236ff93a5efbb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/82a2fbd1372a98d7915cfb092acf05207d9b4113",
-                "reference": "82a2fbd1372a98d7915cfb092acf05207d9b4113",
+                "url": "https://api.github.com/repos/composer/composer/zipball/39ee8baff8e97a1b657bbfcd6a236ff93a5efbb2",
+                "reference": "39ee8baff8e97a1b657bbfcd6a236ff93a5efbb2",
                 "shasum": ""
             },
             "require": {
@@ -16240,7 +16240,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.9.7"
+                "source": "https://github.com/composer/composer/tree/2.9.8"
             },
             "funding": [
                 {
@@ -16252,7 +16252,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-14T11:31:52+00:00"
+            "time": "2026-05-13T07:28:38+00:00"
         },
         {
             "name": "composer/metadata-minifier",
