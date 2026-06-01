@@ -107,7 +107,7 @@ processor_settings:
   maternity_and_child_health_clinic: {  }
   media_reference_to_object:
     fields:
-      picture_url_override: 1
+      picture_url_override: true
   project_execution_schedule: {  }
   project_plan_schedule: {  }
   rendered_item: {  }
