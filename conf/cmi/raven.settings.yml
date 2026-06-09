@@ -34,3 +34,4 @@ browser_traces_sample_rate: 0.2
 database_tracing: true
 twig_tracing: true
 auto_session_tracking: false
+enable_logs: true
