@@ -1,8 +1,5 @@
 verbose: true
 types:
-  tpr_service_channel: {  }
-  tpr_errand_service: {  }
-  tpr_ontology_word_details: {  }
   tpr_service:
     '*': '*'
   tpr_unit:
@@ -14,15 +11,6 @@ types:
   taxonomy_term:
     '*': '*'
 form_op_lock:
-  tpr_service_channel:
-    mode: 0
-    values: {  }
-  tpr_errand_service:
-    mode: 0
-    values: {  }
-  tpr_ontology_word_details:
-    mode: 0
-    values: {  }
   tpr_service:
     mode: 0
     values: {  }
