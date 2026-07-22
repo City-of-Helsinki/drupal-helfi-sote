@@ -4491,16 +4491,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.17.38",
+            "version": "6.17.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "5be44cb9f719001a07cfd8b553b1e877bedc9dd7"
+                "reference": "81f626f41b89ab5e643d74d6eff084b472dd185f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/5be44cb9f719001a07cfd8b553b1e877bedc9dd7",
-                "reference": "5be44cb9f719001a07cfd8b553b1e877bedc9dd7",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/81f626f41b89ab5e643d74d6eff084b472dd185f",
+                "reference": "81f626f41b89ab5e643d74d6eff084b472dd185f",
                 "shasum": ""
             },
             "require": {
@@ -4519,10 +4519,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.17.38",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.17.39",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2026-07-20T10:22:17+00:00"
+            "time": "2026-07-22T05:42:56+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -6363,17 +6363,17 @@
         },
         {
             "name": "drupal/purge",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/purge.git",
-                "reference": "8.x-3.6"
+                "reference": "8.x-3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/purge-8.x-3.6.zip",
-                "reference": "8.x-3.6",
-                "shasum": "f01d53c5a1d34301e86371c70a1d237a517b2897"
+                "url": "https://ftp.drupal.org/files/projects/purge-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "a471c8e9c5f766fc83057eabae257c77609051f1"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -6381,8 +6381,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.6",
-                    "datestamp": "1719557519",
+                    "version": "8.x-3.7",
+                    "datestamp": "1784660713",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
