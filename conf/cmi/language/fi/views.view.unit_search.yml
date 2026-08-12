@@ -1,6 +1,11 @@
 display:
   default:
     display_options:
+      empty:
+        area:
+          content:
+            format: full_html
+            value: '<p>Ei tuloksia</p>'
       filters:
         provided_languages_value:
           group_info:
@@ -13,11 +18,6 @@ display:
             placeholder: 'Syötä toimipisteen nimi tai osoite'
           group_info:
             label: 'Kentät yhdistävä suodatin'
-      empty:
-        area:
-          content:
-            format: full_html
-            value: '<p>Ei tuloksia</p>'
       fields:
         name:
           separator: ', '
