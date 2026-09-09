@@ -15,3 +15,11 @@ msgid "clinic"
 msgid_plural "clinics"
 msgstr[0] "neuvola"
 msgstr[1] "neuvolaa"
+
+msgctxt "Health station search form aria label"
+msgid "Health station search"
+msgstr "Terveysasemahaku"
+
+msgctxt "Maternity and child health clinic search form aria label"
+msgid "Maternity and child health clinic search"
+msgstr "Neuvolahaku"
