@@ -9,9 +9,9 @@ alternative_title_field: ''
 home_segment_title: 'Health and social services'
 home_segment_keep: false
 include_title_segment: true
-title_from_page_when_available: true
+title_from_page_when_available: false
 title_segment_as_link: false
-use_menu_title_as_fallback: false
+use_menu_title_as_fallback: true
 use_page_title_as_menu_title_fallback: false
 remove_repeated_segments: true
 language_path_prefix_as_segment: false
