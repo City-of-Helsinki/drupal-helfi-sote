@@ -4,7 +4,7 @@ include_invalid_paths: false
 excluded_paths: ''
 replaced_titles: ''
 custom_paths: ''
-include_home_segment: true
+include_home_segment: false
 alternative_title_field: ''
 home_segment_title: 'Health and social services'
 home_segment_keep: false
