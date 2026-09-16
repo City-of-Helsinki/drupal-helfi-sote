@@ -16,6 +16,7 @@ dependencies:
     - taxonomy.vocabulary.keywords
     - taxonomy.vocabulary.neighbourhoods
   module:
+    - ai
     - block
     - config_translation
     - content_lock
@@ -25,7 +26,6 @@ dependencies:
     - external_entities
     - file
     - filter
-    - hdbt_cookie_banner
     - helfi_ai
     - helfi_api_base
     - helfi_recommendations
@@ -74,13 +74,13 @@ permissions:
   - 'access tpr_unit overview'
   - 'access user profiles'
   - 'administer blocks'
-  - 'administer hdbt_cookie_banner'
   - 'administer helfi_search'
   - 'administer menu'
   - 'administer nodes'
   - 'administer paragraphs library'
   - 'administer pathauto'
   - 'administer redirects'
+  - 'administer site configuration'
   - 'administer siteimprove'
   - 'administer sitemap settings'
   - 'administer tpr_service'
@@ -162,6 +162,7 @@ permissions:
   - 'edit remote entities'
   - 'edit terms in keywords'
   - 'edit terms in neighbourhoods'
+  - 'manage ai prompts'
   - 'mark as hidden in editoria11y'
   - 'rebuild node access permissions'
   - 'revert all revisions'

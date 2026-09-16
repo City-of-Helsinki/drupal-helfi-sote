@@ -4568,16 +4568,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.18.31",
+            "version": "6.18.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "4725443f3a863a930b354b9478884588eb16813d"
+                "reference": "72cbd71be115c69631c5998d4ae9553ed74161c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/4725443f3a863a930b354b9478884588eb16813d",
-                "reference": "4725443f3a863a930b354b9478884588eb16813d",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/72cbd71be115c69631c5998d4ae9553ed74161c7",
+                "reference": "72cbd71be115c69631c5998d4ae9553ed74161c7",
                 "shasum": ""
             },
             "require": {
@@ -4596,10 +4596,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.18.31",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.18.32",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2026-09-15T12:21:11+00:00"
+            "time": "2026-09-16T13:23:58+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4901,16 +4901,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "5.1.135",
+            "version": "5.1.136",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "de7c38ba9b8eb5c036a68c671687e22b0829f38a"
+                "reference": "df9899f4dd88a568149412db994ccb33e88add85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/de7c38ba9b8eb5c036a68c671687e22b0829f38a",
-                "reference": "de7c38ba9b8eb5c036a68c671687e22b0829f38a",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/df9899f4dd88a568149412db994ccb33e88add85",
+                "reference": "df9899f4dd88a568149412db994ccb33e88add85",
                 "shasum": ""
             },
             "require": {
@@ -4992,6 +4992,9 @@
             "type": "drupal-module",
             "extra": {
                 "patches": {
+                    "drupal/ai_provider_azure": {
+                        "[#3563730] Fix ai_provider_azure settings schema to match actual configuration structure": "https://www.drupal.org/files/issues/2025-12-17/3563730-ai-provider-azure-settings-schema-fix.patch"
+                    },
                     "drupal/core": {
                         "[#UHF-13177, #3569803] htmx:beforeSwap fails with TypeError requestAssetsLoaded.get(...) is undefined": "./public/modules/contrib/helfi_platform_config/patches/3569803.patch",
                         "[#UHF-12709] Patch 'Deleted and replaced ...' error messages": "./public/modules/contrib/helfi_platform_config/patches/UHF-12709-skip_deleted_and_replaced_log.patch",
@@ -5045,10 +5048,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.135",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.136",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2026-09-16T07:16:37+00:00"
+            "time": "2026-09-16T11:42:57+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -5098,16 +5101,16 @@
         },
         {
             "name": "drupal/helfi_tpr",
-            "version": "2.4.8",
+            "version": "2.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "8725d3e5cadba0b3523527462ce67464097c1b8a"
+                "reference": "fa0165a792eb72980f3259bbb9ce9aa273acf7c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/8725d3e5cadba0b3523527462ce67464097c1b8a",
-                "reference": "8725d3e5cadba0b3523527462ce67464097c1b8a",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/fa0165a792eb72980f3259bbb9ce9aa273acf7c3",
+                "reference": "fa0165a792eb72980f3259bbb9ce9aa273acf7c3",
                 "shasum": ""
             },
             "require": {
@@ -5139,10 +5142,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/2.4.8",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/2.4.9",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2026-09-09T13:42:28+00:00"
+            "time": "2026-09-16T11:46:15+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -16981,23 +16984,24 @@
         },
         {
             "name": "brick/math",
-            "version": "0.18.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "82944324d1c1bdb2c2618e89978d4e2ad78d69ad"
+                "reference": "2effe05d2177c451b86c6a073196a4034c02f211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/82944324d1c1bdb2c2618e89978d4e2ad78d69ad",
-                "reference": "82944324d1c1bdb2c2618e89978d4e2ad78d69ad",
+                "url": "https://api.github.com/repos/brick/math/zipball/2effe05d2177c451b86c6a073196a4034c02f211",
+                "reference": "2effe05d2177c451b86c6a073196a4034c02f211",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.2"
             },
             "require-dev": {
-                "phpstan/phpstan": "2.1.22",
+                "phpstan/phpstan": "2.2.13",
+                "phpstan/phpstan-phpunit": "2.0.18",
                 "phpunit/phpunit": "^11.5"
             },
             "type": "library",
@@ -17028,7 +17032,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.18.0"
+                "source": "https://github.com/brick/math/tree/1.0.0"
             },
             "funding": [
                 {
@@ -17036,7 +17040,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-14T18:21:03+00:00"
+            "time": "2026-09-12T10:28:18+00:00"
         },
         {
             "name": "colinodell/psr-testlogger",
@@ -20072,20 +20076,20 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.9.3",
+            "version": "4.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "1df15849d00943a67d677dc9cfd80795f038c9f8"
+                "reference": "75d73f48d02797c2c285a7e9f348fadc0102ffe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/1df15849d00943a67d677dc9cfd80795f038c9f8",
-                "reference": "1df15849d00943a67d677dc9cfd80795f038c9f8",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/75d73f48d02797c2c285a7e9f348fadc0102ffe2",
+                "reference": "75d73f48d02797c2c285a7e9f348fadc0102ffe2",
                 "shasum": ""
             },
             "require": {
-                "brick/math": ">=0.8.16 <=0.18",
+                "brick/math": "^0.8.16 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14 || ^0.15 || ^0.16 || ^0.17 || ^0.18 || ^0.19 || ^0.20 || ^1.0",
                 "php": "^8.0",
                 "ramsey/collection": "^1.2 || ^2.0"
             },
@@ -20144,9 +20148,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.9.3"
+                "source": "https://github.com/ramsey/uuid/tree/4.9.4"
             },
-            "time": "2026-06-18T03:57:49+00:00"
+            "time": "2026-09-16T11:39:30+00:00"
         },
         {
             "name": "react/promise",
