@@ -14,7 +14,7 @@ dependencies:
     - helfi_tpr
     - text
 _core:
-  default_config_hash: BKJdRgCeG3fkmATTkCV3UnrG7P38ZKikpC9TeMaqnqg
+  default_config_hash: l2rZNoJecheXUMmSGEnoSH-qUCrbOi4uFOAsx1LdtNs
 id: tpr_service.tpr_service.teaser
 targetEntityType: tpr_service
 bundle: tpr_service
@@ -44,6 +44,7 @@ content:
     weight: 1
     region: content
 hidden:
+  ai_summary: true
   created: true
   errand_services: true
   field_content: true
