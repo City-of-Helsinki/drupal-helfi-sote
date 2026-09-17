@@ -15,7 +15,7 @@ dependencies:
     - helfi_tpr
     - text
 _core:
-  default_config_hash: HtI31FjOdIhbV1z_kw_TGYbdZdUJjl-XeINPevKVYV4
+  default_config_hash: Hfm6vrgHdnXEQuzt-_TMsYnqQ9Yai4mqmEMC-y9Lbxg
 id: tpr_service.tpr_service.text_converter
 targetEntityType: tpr_service
 bundle: tpr_service
