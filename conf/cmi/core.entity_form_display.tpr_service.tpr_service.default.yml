@@ -11,7 +11,6 @@ dependencies:
     - field.field.tpr_service.tpr_service.field_upper_content
   module:
     - hdbt_admin_tools
-    - helfi_ai
     - helfi_recommendations
     - helfi_tpr
     - metatag
@@ -19,18 +18,12 @@ dependencies:
     - path
     - readonly_field_widget
 _core:
-  default_config_hash: PSQfY1rZaeG_UMByPTEZp3lmG-78ZRBa7Ic4MgEmPGc
+  default_config_hash: rKrN7fJGgZ2SJFxFy0sNOjm0EPVg4DhQWoS5F57h0gQ
 id: tpr_service.tpr_service.default
 targetEntityType: tpr_service
 bundle: tpr_service
 mode: default
 content:
-  ai_summary:
-    type: ai_summary
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   description:
     type: readonly_field_widget
     weight: 6
@@ -248,6 +241,12 @@ content:
     third_party_settings: {  }
   translation:
     weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ai_summary:
+    type: ai_summary
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
