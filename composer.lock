@@ -2182,17 +2182,17 @@
         },
         {
             "name": "drupal/ai",
-            "version": "1.4.8",
+            "version": "1.4.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ai.git",
-                "reference": "1.4.8"
+                "reference": "1.4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ai-1.4.8.zip",
-                "reference": "1.4.8",
-                "shasum": "398b0b806427e6a6d64af02233981c921ebadfbd"
+                "url": "https://ftp.drupal.org/files/projects/ai-1.4.9.zip",
+                "reference": "1.4.9",
+                "shasum": "f8cc7d6129df0e75fea7647030ec72b3cdf2fbdc"
             },
             "require": {
                 "drupal/core": "^10.5 || ^11.2",
@@ -2222,8 +2222,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.4.8",
-                    "datestamp": "1788366381",
+                    "version": "1.4.9",
+                    "datestamp": "1789567509",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2715,16 +2715,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "11.4.6",
+            "version": "11.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "3fe867f57e51975d4b32243663c7dfd9b92d978a"
+                "reference": "093cabca228b49f5df2283fc02d7e212ce31b6e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/3fe867f57e51975d4b32243663c7dfd9b92d978a",
-                "reference": "3fe867f57e51975d4b32243663c7dfd9b92d978a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/093cabca228b49f5df2283fc02d7e212ce31b6e3",
+                "reference": "093cabca228b49f5df2283fc02d7e212ce31b6e3",
                 "shasum": ""
             },
             "require": {
@@ -2896,7 +2896,7 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/11.4.6"
+                "source": "https://github.com/drupal/core/tree/11.4.7"
             },
             "funding": [
                 {
@@ -2904,11 +2904,11 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-09-03T08:08:54+00:00"
+            "time": "2026-09-16T14:39:21+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.4.6",
+            "version": "11.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2952,7 +2952,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.6"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.7"
             },
             "time": "2026-07-09T23:23:24+00:00"
         },
@@ -4901,16 +4901,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "5.1.136",
+            "version": "5.1.137",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "df9899f4dd88a568149412db994ccb33e88add85"
+                "reference": "901b4ed0ceca44b3b29bacf758a666897372ad3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/df9899f4dd88a568149412db994ccb33e88add85",
-                "reference": "df9899f4dd88a568149412db994ccb33e88add85",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/901b4ed0ceca44b3b29bacf758a666897372ad3d",
+                "reference": "901b4ed0ceca44b3b29bacf758a666897372ad3d",
                 "shasum": ""
             },
             "require": {
@@ -5048,10 +5048,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.136",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.137",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2026-09-16T11:42:57+00:00"
+            "time": "2026-09-16T18:33:07+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -17912,16 +17912,16 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "11.4.6",
+            "version": "11.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
-                "reference": "5fe43ba4d1800ef9baab3a19b3cde7c85075658e"
+                "reference": "718af3bbdd9b80b1a7c9a7c385834d0b3c1828f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev/zipball/5fe43ba4d1800ef9baab3a19b3cde7c85075658e",
-                "reference": "5fe43ba4d1800ef9baab3a19b3cde7c85075658e",
+                "url": "https://api.github.com/repos/drupal/core-dev/zipball/718af3bbdd9b80b1a7c9a7c385834d0b3c1828f7",
+                "reference": "718af3bbdd9b80b1a7c9a7c385834d0b3c1828f7",
                 "shasum": ""
             },
             "require": {
@@ -17964,9 +17964,9 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/11.4.6"
+                "source": "https://github.com/drupal/core-dev/tree/11.4.7"
             },
-            "time": "2026-09-03T08:08:54+00:00"
+            "time": "2026-09-16T14:39:21+00:00"
         },
         {
             "name": "google/protobuf",
