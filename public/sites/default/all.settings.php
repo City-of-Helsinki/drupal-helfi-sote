@@ -7,6 +7,10 @@
 
 // Elastic proxy URL.
 $config['elastic_proxy.settings']['elastic_proxy_url'] = getenv('ELASTIC_PROXY_URL');
+
+// Sentry DSN for React.
+$config['react_search.settings']['sentry_dsn_react'] = getenv('SENTRY_DSN_REACT');
+
 $config['openid_connect.client.tunnistamo']['settings']['ad_roles'] = [
   [
     'ad_role' => 'Drupal_Helfi_kaupunkitaso_paakayttajat',
