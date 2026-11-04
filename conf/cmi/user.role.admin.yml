@@ -16,7 +16,6 @@ dependencies:
     - taxonomy.vocabulary.keywords
     - taxonomy.vocabulary.neighbourhoods
   module:
-    - ai
     - block
     - config_translation
     - content_lock
@@ -166,7 +165,6 @@ permissions:
   - 'edit remote entities'
   - 'edit terms in keywords'
   - 'edit terms in neighbourhoods'
-  - 'manage ai prompts'
   - 'mark as hidden in editoria11y'
   - 'rebuild node access permissions'
   - 'revert all revisions'
